@@ -1,0 +1,83 @@
+// ==========================================================================
+//  HELPER CLASSES
+// ==========================================================================
+
+
+
+
+.cf:before,
+.cf:after { 
+	content: ""; display:
+	table !important;
+}
+.cf:after { clear: both; }
+.ir {
+	overflow: hidden;
+	white-space: nowrap;
+	text-indent: 100%;
+}
+.elps {  
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.bk { display: block; }
+
+.fl { float: left; }
+.fr { float: right; }
+
+.mod {margin: 10px; }
+
+
+//  Spacing classes
+// ==========================================================================
+
+.mtn { margin-top: 0 !important; }
+.mts { margin-top: 5px !important; }
+.mtm { margin-top: 10px !important; }
+.mtl { margin-top: 20px !important; }
+.mrn { margin-right: 0 !important; }
+.mrs { margin-right: 5px !important; }
+.mrm { margin-right: 10px !important; }
+.mrl { margin-right: 20px !important; }
+.mbn { margin-bottom: 0 !important; }  
+.mbs { margin-bottom: 5px !important; }
+.mbm { margin-bottom: 10px !important; }
+.mbl { margin-bottom: 20px !important; }
+.mln { margin-left: 0 !important; }
+.mls { margin-left: 5px !important; }
+.mlm { margin-left: 10px !important; }
+.mll { margin-left: 20px !important; }
+.mra { margin-right: auto !important; }
+.mla { margin-left: auto !important; }
+.ptn { padding-top: 0 !important; }
+.pts { padding-top: 5px !important; }
+.ptm { padding-top: 10px !important; }
+.ptl { padding-top: 20px !important; }
+.prn { padding-right: 0 !important; }
+.prs { padding-right: 5px !important; }
+.prm { padding-right: 10px !important; }
+.prl { padding-right: 20px !important; }
+.pbn { padding-bottom: 0 !important; }  
+.pbs { padding-bottom: 5px !important; }
+.pbm { padding-bottom: 10px !important; }
+.pbl { padding-bottom: 20px !important; }
+.pln { padding-left: 0 !important; }
+.pls { padding-left: 5px !important; }
+.plm { padding-left: 10px !important; }
+.pll { padding-left: 20px !important; }
+
+.l { text-align: left !important; }
+.c { text-align: center !important; }
+.r { text-align: right !important; }
+.b { font-weight: bold; }
+.txul { text-decoration: underline; }
+
+.tcm { color: #FF8CA9; }
+.tcs { color: #F1AC1A; }
+.tce { color: #E42413; }
+
+.ts { font-size: 12px; }
+.tm { font-size: 14px; }
+.tl { font-size: 16px; }

@@ -1,0 +1,30 @@
+/* Structure
+============================================
+// Compass Variables
+$experimental-support-for-opera: false;
+$experimental-support-for-mozilla: false;
+$experimental-support-for-microsoft: false;
+
+// Setting
+@import "_compass";
+@include global-reset;
+@import "_config";
+@import "_common";
+
+// Component
+@import "_header";
+@import "_nav-global";
+@import "_nav-category";
+@import "_listview";
+@import "_list-nest";
+@import "_box-modal";
+
+// Page
+@import "_entrance";
+@import "_mypage";
+@import "_enquete";
+@import "_advice";
+@import "_contents";
+
+// Mr.Katoken use
+@import "_katoken";
