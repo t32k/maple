@@ -6,15 +6,14 @@ $experimental-support-for-microsoft: false;
 // Setting
 @import "compass";
 @include global-reset;
-@import "config";
-@import "common";
+@import "helper";
+@import "settings";
 
 // Component
 @import "mod-header";
 @import "mod-global";
 @import "mod-category";
 @import "mod-listview";
-@import "mod-list-nest";
 @import "box-modal";
 
 // Page
