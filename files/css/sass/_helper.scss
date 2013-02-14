@@ -74,3 +74,18 @@
 .ts { font-size: 12px; }
 .tm { font-size: 14px; }
 .tl { font-size: 16px; }
+
+
+//  State Classes
+// ==========================================================================
+.is-visible { display: block; }
+.is-hidden { display: none; }
+
+.is-active {}
+.is-disabled {}
+.is-pressed {}
+
+.is-on, .is-off {}
+
+.has-child {}
+
