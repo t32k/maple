@@ -17,18 +17,18 @@ My boilerplate of HTML/CSS.
  + __hd__ header
  + __bd__ body
  + __ft__ footer
- + __tab__ tab
- + __line__ line
+ + __tb__ tab
+ + __line__ line/rule/hr
  + __bar__ bar
  + __bnr__ banner
  + __nav__ navigation
  + __mod__ module
+ + __btn__ button
  + __hl__ headlinetx text
- + __bt__ button
  + __bx__ box/section
  + __bg__ background
- + __mg__ margin
- + __pd__ padding
+ + __m__ margin
+ + __p__ padding
  + __pic__ picture
 
 ## States
