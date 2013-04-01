@@ -5,18 +5,8 @@ $experimental-support-for-microsoft: false;
 
 // Setting
 @import "compass";
-@include global-reset; // @import "reset";
-@import "helper";
-@import "settings";
-
-// Modules
-@import "mod-global";
-@import "mod-headline";
-@import "mod-listview";
-@import "mod-hoge";
-
-// Page
-@import "page-hoge";
+@import "core";
+@import "modules";
 
 // For JavaScript Engineer
-@import "scripting";
+@import "js-engingeer";

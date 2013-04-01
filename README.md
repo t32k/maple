@@ -2,8 +2,6 @@
 
 My boilerplate of HTML/CSS.
 
-
-
 ## Naming conventions
  
 ## Resources

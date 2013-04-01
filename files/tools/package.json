@@ -1,0 +1,12 @@
+{
+  "name": "YOUR_PROJECT_NAME",
+  "version": "0.0.1",
+  "author": "YOUR_NAME",
+  "description": "DESCRIPTION",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib": "~0.5.0",
+    "grunt-csso": "~0.5.0",
+    "grunt-regarde": "~0.1.1"
+  }
+}
