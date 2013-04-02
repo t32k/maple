@@ -5,8 +5,7 @@
   "description": "DESCRIPTION",
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-contrib": "~0.5.0",
-    "grunt-csso": "~0.5.0",
+    "grunt-contrib": "~0.6.1",
     "grunt-regarde": "~0.1.1"
   }
 }

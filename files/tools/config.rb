@@ -2,10 +2,10 @@
 
 # Set this to the root of your project when deployed:
 http_path = "../"
-css_dir = "../files/css/"
-sass_dir = "../files/css/_dev/"
-images_dir = ".."
-javascripts_dir = "../files/js/"
+css_dir = "../css/"
+sass_dir = "../css/sass/"
+images_dir = "../img/"
+javascripts_dir = "../js/"
 #sprite_load_path = ".."
 
 # You can select your preferred output style here (can be overridden via the command line):
@@ -16,7 +16,7 @@ output_style = :expanded
 # relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-line_comments = false
+line_comments = true
 
 
 # If you prefer the indented syntax, you might want to regenerate this

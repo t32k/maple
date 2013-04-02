@@ -10,8 +10,6 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    meta: {
-    },
     // Start a static web server. 
     connect: {
       // Reload assets live in the browser
@@ -19,7 +17,7 @@ module.exports = function(grunt) {
         options: {
           port: 8000,
           middleware: function(connect, options) {
-            return [lrSnippet, folderMount(connect, '../')]
+            return [lrSnippet, folderMount(connect, '../../')]
           }
         }
       }
@@ -27,7 +25,7 @@ module.exports = function(grunt) {
     // Configuration to be run (and then tested)
     regarde: {
       fred: {
-        files: ['../files/css/**/*.scss'],
+        files: ['../css/**/*.scss'],
         tasks: ['compass','livereload']
       }
     },
@@ -38,10 +36,6 @@ module.exports = function(grunt) {
           config: 'config.rb'
         }
       }
-    },
-    // Minification task with CSSO.
-    csso: {
-      app: { src: '../files/css/app.css', dest:'../files/css/app.css' },
     },
     // Validate files with JSHint.
     jshint: {
@@ -68,15 +62,10 @@ module.exports = function(grunt) {
   // Load the plugins.
   grunt.loadNpmTasks('grunt-contrib');
   grunt.loadNpmTasks('grunt-regarde');
-  grunt.loadNpmTasks('grunt-csso');
 
   // Default task.
   grunt.registerTask('default', ['']);
 
   // Indivisual Tasks.
   grunt.registerTask('kj', ['livereload-start', 'connect', 'regarde']);
-  grunt.registerTask('kk', ['jshint', 'concat', 'copy', 'watch:script']);
-
-  grunt.registerTask('dist-css', ['compass', 'csso']);
-  grunt.registerTask('dist-js', ['concat', 'copy', 'uglify']);
 };

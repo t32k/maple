@@ -1,6 +1,6 @@
-// ==========================================================================
+// --------------------------------------------------------------------------
 //  HELPER CLASSES
-// ==========================================================================
+// --------------------------------------------------------------------------
 .cf:before,
 .cf:after { 
 	content: ""; display:
@@ -24,7 +24,7 @@
 .fr { float: right; }
 
 //  Spacing classes
-// ==========================================================================
+// --------------------------------------------------------------------------
 
 .mtn { margin-top: 0 !important; }
 .mts { margin-top: 5px !important; }
@@ -64,8 +64,9 @@
 .l { text-align: left !important; }
 .c { text-align: center !important; }
 .r { text-align: right !important; }
-.b { font-weight: bold; }
-.tul { text-decoration: underline; }
+.b { font-weight: bold !important; }
+.n { font-weight: normal !important; }
+._ { text-decoration: underline; }
 
 .tcm { color: #FF8CA9; }
 .tcs { color: #F1AC1A; }
@@ -77,7 +78,7 @@
 
 
 //  State Classes
-// ==========================================================================
+// --------------------------------------------------------------------------
 .is-visible { display: block; }
 .is-hidden { display: none; }
 
