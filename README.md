@@ -5,10 +5,21 @@ My boilerplate of HTML/CSS.
 ## Naming conventions
  
 ## Resources
- + [idiomatic-css](necolas/idiomatic-css · GitHub https://github.com/necolas/idiomatic-css/)
+
+### Tips
+
+ + [necolas/idiomatic-css · GitHub ](https://github.com/necolas/idiomatic-css/)
  + [stubbornella/oocss · GitHub](https://github.com/stubbornella/oocss)
+ + [stubbornella/csslint · GitHub](https://github.com/stubbornella/csslint)
  + [About HTML semantics and front-end architecture – Nicolas Gallagher](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
 
+### Framework
+
+ + [Sencha Touch](http://docs.sencha.com/touch/2-1/#!/api/Global_CSS)
+ + [Bootstrap](http://twitter.github.com/bootstrap/components.html)
+ + [jquery/jquery-mobile · GitHub](https://github.com/jquery/jquery-mobile)
+ + [zurb / foundation](https://github.com/zurb/foundation)
+ 
 
 ## Prefix ##
 
@@ -31,8 +42,8 @@ My boilerplate of HTML/CSS.
 
 ## States
 
+ + on
+ + off
  + active
  + disabled
  + hidden
- + on
- + off
