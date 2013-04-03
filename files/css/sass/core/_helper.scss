@@ -3,7 +3,8 @@
 // --------------------------------------------------------------------------
 .cf:before,
 .cf:after { 
-	content: ""; display:
+	content: "";
+	display:
 	table !important;
 }
 .cf:after { clear: both; }
@@ -18,7 +19,7 @@
 	white-space: nowrap;
 }
 
-.bk { display: block; }
+
 
 .fl { float: left; }
 .fr { float: right; }
@@ -79,14 +80,29 @@
 
 //  State Classes
 // --------------------------------------------------------------------------
-.is-visible { display: block; }
-.is-hidden { display: none; }
+.is-block { display: block; }
+.is-none { display: none; }
 
-.is-active {}
-.is-disabled {}
-.is-pressed {}
+.is-on {
+	.btn-primary {}
+	.btn-secondary {}
+}
+.is-off {
+	.btn-primary {}
+	.btn-secondary {}
+}
 
-.is-on, .is-off {}
+// Toggling content
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.ref { position: relative; }
+// .is-active {}
+// .is-disabled {}
+// .is-pressed {}
 
 .has-child {}
 

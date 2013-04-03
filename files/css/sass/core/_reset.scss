@@ -15,7 +15,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+figure, figcaption, footer, header,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -25,9 +25,10 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline;
 }
-
+// Modified
 html {
   line-height: 1;
+  -webkit-text-size-adjust: 100%;
 }
 
 ol, ul {
@@ -57,6 +58,15 @@ a img {
   border: none;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, summary {
   display: block;
 }
+
+// --------------------------------------------------------------------------
+//  User reset styles
+// --------------------------------------------------------------------------
+i {
+  display: inline-block;
+}
+em { font-style: normal }
+select, button, input, textarea { -webkit-appearance: none }
