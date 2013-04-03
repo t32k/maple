@@ -24,8 +24,8 @@
 .fl { float: left; }
 .fr { float: right; }
 
-//  Spacing classes
-// --------------------------------------------------------------------------
+// Spacing Classes
+//--------------------------------------------------
 
 .mtn { margin-top: 0 !important; }
 .mts { margin-top: 5px !important; }
@@ -84,12 +84,12 @@
 .is-none { display: none; }
 
 .is-on {
-	.btn-primary {}
-	.btn-secondary {}
+	&.btn-primary {}
+	&.btn-secondary {}
 }
 .is-off {
-	.btn-primary {}
-	.btn-secondary {}
+	&.btn-primary {}
+	&.btn-secondary {}
 }
 
 // Toggling content

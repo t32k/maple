@@ -68,5 +68,8 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section,
 i {
   display: inline-block;
 }
+a {
+  color: inherit;
+}
 em { font-style: normal }
 select, button, input, textarea { -webkit-appearance: none }

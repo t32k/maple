@@ -37,17 +37,28 @@ module.exports = function(grunt) {
         }
       }
     },
+    csso: {
+      app: {
+        files: [
+          {src: ['../css/app.min.css'], dest: '../css/app.min.css'}
+        ]
+      }
+    },
     // Validate files with JSHint.
     jshint: {
    
     },
     // Concatenate files.
     concat: {
-  
+
     },
     // Copy files and folders.
     copy: {
-
+      css: {
+        files: [
+          {src: ['../css/app.css'], dest: '../css/app.min.css'}
+        ]
+      }
     },
     // Minify files with UglifyJS.
     uglify: {
@@ -62,10 +73,12 @@ module.exports = function(grunt) {
   // Load the plugins.
   grunt.loadNpmTasks('grunt-contrib');
   grunt.loadNpmTasks('grunt-regarde');
+  grunt.loadNpmTasks('grunt-csso');
 
   // Default task.
   grunt.registerTask('default', ['']);
 
   // Indivisual Tasks.
   grunt.registerTask('kj', ['livereload-start', 'connect', 'regarde']);
+  grunt.registerTask('css', ['compass', 'copy', 'csso']);
 };
