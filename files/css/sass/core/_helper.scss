@@ -82,6 +82,8 @@
 // --------------------------------------------------------------------------
 .is-block { display: block; }
 .is-none { display: none; }
+.is-inline-block { display: inline-block; }
+.is-inline { display: inline; }
 
 .is-on {
 	&.btn-primary {}
@@ -106,3 +108,11 @@
 
 .has-child {}
 
+.is-table {
+	@extend %border-box;
+	display: table;
+	width: 100%;
+	> li {
+		display: table-cell;
+	}
+}
