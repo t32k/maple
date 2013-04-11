@@ -19,8 +19,6 @@
 	white-space: nowrap;
 }
 
-
-
 .fl { float: left; }
 .fr { float: right; }
 
@@ -62,6 +60,10 @@
 .plm { padding-left: 10px !important; }
 .pll { padding-left: 20px !important; }
 
+
+// Text Decorative Classes
+//--------------------------------------------------
+
 .l { text-align: left !important; }
 .c { text-align: center !important; }
 .r { text-align: right !important; }
@@ -80,10 +82,11 @@
 
 //  State Classes
 // --------------------------------------------------------------------------
-.is-block { display: block; }
+
 .is-none { display: none; }
-.is-inline-block { display: inline-block; }
+.is-block { display: block; }
 .is-inline { display: inline; }
+.is-iblock { display: inline-block; }
 
 .is-on {
 	&.btn-primary {}
