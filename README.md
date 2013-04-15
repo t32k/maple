@@ -2,48 +2,64 @@
 
 My boilerplate of HTML/CSS.
 
+
 ## Naming conventions
- 
-## Resources
 
-### Tips
+### Serial Number
 
- + [necolas/idiomatic-css · GitHub ](https://github.com/necolas/idiomatic-css/)
- + [stubbornella/oocss · GitHub](https://github.com/stubbornella/oocss)
- + [stubbornella/csslint · GitHub](https://github.com/stubbornella/csslint)
- + [About HTML semantics and front-end architecture – Nicolas Gallagher](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
+ 1. alpha
+ 2. beta
+ 3. gamma
+ 4. delta
+ 5. epsilon
+ 6. zeta
 
-### Framework
+* * *
 
- + [Sencha Touch](http://docs.sencha.com/touch/2-1/#!/api/Global_CSS)
- + [Bootstrap](http://twitter.github.com/bootstrap/components.html)
- + [jquery/jquery-mobile · GitHub](https://github.com/jquery/jquery-mobile)
- + [zurb / foundation](https://github.com/zurb/foundation)
- 
+ 1. primary
+ 2. secondary
+ 3. tertiary
 
-## Prefix ##
+### Prefix
 
- + __hd__ header
- + __bd__ body
- + __ft__ footer
- + __tb__ tab
- + __line__ line/rule/hr
- + __bar__ bar
- + __bnr__ banner
- + __nav__ navigation
- + __mod__ module
- + __btn__ button
- + __hl__ headlinetx text
- + __bx__ box/section
- + __bg__ background
- + __m__ margin
- + __p__ padding
- + __pic__ picture
+ + __hd - header
+ + __bd - body
+ + __ft - footer
+ + __line - line/rule/hr
+ + __tb - tab
+ + __bt - button
+ + __hl - headline text
+ + __bx - box/section
+ + __bg - background
+ + __fig - figure
+ + __bar - bar
+ + __bnr - banner
+ + __nav - navigation
+ + __mod - module
 
-## States
+### States
 
  + on
  + off
  + active
  + disabled
  + hidden
+
+
+## Resources
+
+### Tips
+
+ + [stubbornella/csslint · GitHub](https://github.com/stubbornella/csslint)
+ + [Scalable and Modular Architecture for CSS](http://smacss.com/)
+ + [necolas/idiomatic-css · GitHub ](https://github.com/necolas/idiomatic-css/)
+ + [About HTML semantics and front-end architecture – Nicolas Gallagher](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
+
+### Framework
+
+ + [Sencha Touch](http://docs.sencha.com/touch/2-1/#!/api/Global_CSS)
+ + [twitter/bootstrap](https://github.com/twitter/bootstrap)
+ + [jquery/jquery-mobile](https://github.com/jquery/jquery-mobile)
+ + [zurb/foundation](https://github.com/zurb/foundation)
+ + [stubbornella/oocss · GitHub](https://github.com/stubbornella/oocss)
+ + [csswizardry/inuit.css](https://github.com/csswizardry/inuit.css)

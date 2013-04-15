@@ -25,6 +25,8 @@
 // Spacing Classes
 //--------------------------------------------------
 
+.mod { margin: 10px; }
+
 .mtn { margin-top: 0 !important; }
 .mts { margin-top: 5px !important; }
 .mtm { margin-top: 10px !important; }
@@ -43,6 +45,7 @@
 .mll { margin-left: 20px !important; }
 .mra { margin-right: auto !important; }
 .mla { margin-left: auto !important; }
+
 .ptn { padding-top: 0 !important; }
 .pts { padding-top: 5px !important; }
 .ptm { padding-top: 10px !important; }
@@ -71,14 +74,27 @@
 .n { font-weight: normal !important; }
 ._ { text-decoration: underline; }
 
-.tcm { color: #FF8CA9; }
-.tcs { color: #F1AC1A; }
-.tce { color: #E42413; }
+.ca { color: $alpha-color; }
+.cb { color: $beta-color; }
+.cg { color: $gamma-color; }
+.cd { color: $delta-color; }
+.ce { color: $epsilon-color; }
+.cz { color: $zeta-color; }
 
-.ts { font-size: 12px; }
-.tm { font-size: 14px; }
-.tl { font-size: 16px; }
+.fsa { font-size: $alpha-font-size; }
+.fsb { font-size: $beta-font-size; }
+.fsg { font-size: $gamma-font-size; }
+.fsd { font-size: $delta-font-size; }
+.fse { font-size: $epsilon-font-size; }
+.fsz { font-size: $zeta-font-size; }
 
+
+.loud {}
+.quiet {}
+
+.full { width: 100%; }
+.half { width: 50%; }
+.third { width: 33.3% }
 
 //  State Classes
 // --------------------------------------------------------------------------
@@ -86,7 +102,11 @@
 .is-none { display: none; }
 .is-block { display: block; }
 .is-inline { display: inline; }
-.is-iblock { display: inline-block; }
+.is-solid { display: inline-block; }
+
+.is-table { display: table; }
+.is-cell { display: table-cell; }
+
 
 .is-on {
 	&.btn-primary {}
@@ -96,7 +116,9 @@
 	&.btn-primary {}
 	&.btn-secondary {}
 }
+.is-disabled {
 
+}
 // Toggling content
 .hide {
   display: none;
@@ -111,11 +133,3 @@
 
 .has-child {}
 
-.is-table {
-	@extend %border-box;
-	display: table;
-	width: 100%;
-	> li {
-		display: table-cell;
-	}
-}

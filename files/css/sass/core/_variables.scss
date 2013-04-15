@@ -10,12 +10,12 @@
 
 // Colors Settings
 
-$mainColor: #2ba6cb;
-$secondaryColor: #e9e9e9;
-$alertColor: #c60f13;
-$successColor: #5da423;
-$txtColor: #222;
-$highlightColor: #ffff99;
+$main-color: #2ba6cb;
+$secondary-color: #e9e9e9;
+$alert-color: #c60f13;
+$success-color: #5da423;
+$txt-color: #222;
+$highlight-color: #ffff99;
 $black: #000;
 $white: #fff;
 $shinyEdge: rgba(#fff, .5);
@@ -27,11 +27,11 @@ $darkEdge: rgba(#000, .2);
 // $headerFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $headerFontWeight: bold;
 // $headerFontStyle: normal;
-// $headerFontColor: #222;
+// $headerFont-color: #222;
 // $bodyFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $bodyFontWeight: normal;
 // $bodyFontStyle: normal;
-// $bodyFontColor: $txtColor;
+// $bodyFont-color: $txt-color;
 
 // Text Direction Settings
 
@@ -50,14 +50,14 @@ $darkEdge: rgba(#000, .2);
 
 // $formSpacing: 12px;
 // $labelFontWeight: 500;
-// $labelFontColor: lighten(#000, 30%);
+// $labelFont-color: lighten(#000, 30%);
 // $labelBtmMargin: 3px;
-// $inputFontColor: rgba(0,0,0,0.75);
+// $inputFont-color: rgba(0,0,0,0.75);
 // $inputFontSize: 14px;
-// $inputBgColor: #fff;
-// $inputFocusBgColor: darken(#fff, 2%);
-// $inputBorderColor: darken(#fff, 20%);
-// $inputFocusBorderColor: darken(#fff, 30%);
+// $inputBg-color: #fff;
+// $inputFocusBg-color: darken(#fff, 2%);
+// $inputBorder-color: darken(#fff, 20%);
+// $inputFocusBorder-color: darken(#fff, 30%);
 // $inputBorderStyle: solid;
 // $inputBorderWidth: 1px;
 // $inputBorderRadius: 2px;
@@ -65,21 +65,21 @@ $darkEdge: rgba(#000, .2);
 
 // Custom Form Settings
 
-// $custFormBorderColor: #ccc;
-// $custFormBgColor: #fff;
-// $custCheckColor: #222;
-// $custSelectCurrentFontColor: #141414;
-// $custSelectBgColor: #fff;
-// $custSelectBorderColor: #ddd;
-// $custSelectTriangleColor: #aaa;
-// $custSelectTriangleColorOpen: #222;
+// $custFormBorder-color: #ccc;
+// $custFormBg-color: #fff;
+// $custCheck-color: #222;
+// $custSelectCurrentFont-color: #141414;
+// $custSelectBg-color: #fff;
+// $custSelectBorder-color: #ddd;
+// $custSelectTriangle-color: #aaa;
+// $custSelectTriangle-colorOpen: #222;
 // $custSelectDropHeight: 200px;
-// $custDropdownBgColor: #fff;
-// $custDropdownBorderColor: darken(#fff, 20%);
-// $custDropdownFontColor: #555;
-// $custDropdownSelectedBgColor: lighten(#2ba6cb, 40%);
-// $custDropdownSelectedFontColor: #000;
-// $custFormDisabledBgColor: #ddd;
+// $custDropdownBg-color: #fff;
+// $custDropdownBorder-color: darken(#fff, 20%);
+// $custDropdownFont-color: #555;
+// $custDropdownSelectedBg-color: lighten(#2ba6cb, 40%);
+// $custDropdownSelectedFont-color: #000;
+// $custFormDisabledBg-color: #ddd;
 
 // Tab Settings
 
@@ -93,30 +93,30 @@ $darkEdge: rgba(#000, .2);
 
 // Top Bar Settings
 
-// $topBarBgColor: #222;
+// $topBarBg-color: #222;
 // $topBarHeight: 45px;
 // $topBarHeightMobile: 45px;
 // $topBarBtmMargin: 30px;
 // $topBarTitleWeight: bold;
 // $topBarTitleSize: 17px;
-// $topBarLinkColor: #fff;
+// $topBarLink-color: #fff;
 // $topBarLinkWeight: bold;
 // $topBarLinkSize: 13px;
-// $topBarDropBgColor: #222;
-// $topBarDropLinkColor: #fff;
+// $topBarDropBg-color: #222;
+// $topBarDropLink-color: #fff;
 // $topBarDropToggleSize: 5px;
-// $topBarDropToggleColor: #fff;
+// $topBarDropToggle-color: #fff;
 // $topBarDropToggleAlpha: 0.5;
 // $topBarSearchWidth: 200px;
 // $topBarBreakPoint: 940px; // Change to 9999px for always mobile layout
 // $topBarNavToggleSize: 8px;
-// $topBarNavToggleColor: #fff;
+// $topBarNavToggle-color: #fff;
 
 // UI Settings
 
 // $thumbRadius: 3px;
 // $progBarHeight: 25px;
-// $progBarBorderColor: darken(#fff, 20%);
+// $progBarBorder-color: darken(#fff, 20%);
 // $progBarBorderSize: 1px;
 // $progBarPad: 2px;
 // $linkListBottomMargin: 17px -22px;
@@ -127,17 +127,17 @@ $darkEdge: rgba(#000, .2);
 
 // $hasTipBorderBottom: dotted 1px #ccc;
 // $hasTipFontWeight: bold;
-// $hasTipFontColor: #333;
-// $hasTipBorderBottomHover: dotted 1px darken($mainColor, 20%);
-// $hasTipFontColorHover: $mainColor;
-// $tooltipBackgroundColor: #000;
+// $hasTipFont-color: #333;
+// $hasTipBorderBottomHover: dotted 1px darken($main-color, 20%);
+// $hasTipFont-colorHover: $main-color;
+// $tooltipBackground-color: #000;
 // $tooltipBackgroundOpacity: 0.85;
 // $tooltipFontSize: 12px;
 // $tooltipFontWeight: bold;
-// $tooltipFontColor: #fff;
+// $tooltipFont-color: #fff;
 // $tapToCloseFontSize: 10;
 // $tapToCloseFontWeight: normal;
-// $tapToCloseFontColor: #888;
+// $tapToCloseFont-color: #888;
 // $tooltipFontSizeScreenSm: 14;
 // $tooltipBgOpacityScreenSm: 0.85;
 // $tooltipBorderRadius: 4px;
@@ -145,22 +145,22 @@ $darkEdge: rgba(#000, .2);
 // Pricing Table Settings
 
 // $priceTableBorder: solid 1px #ddd;
-// $priceTitleBgColor: #ddd;
+// $priceTitleBg-color: #ddd;
 // $priceTitlePadding: 15px 20px;
 // $priceTitleAlign: center;
-// $priceTitleColor: #333;
+// $priceTitle-color: #333;
 // $priceTitleWeight: bold;
 // $priceTitleSize: 16px;
 
-// $priceMoneyBgColor: #eee;
+// $priceMoneyBg-color: #eee;
 // $priceMoneyPadding: 15px 20px;
 // $priceMoneyAlign: center;
-// $priceMoneyColor: #333;
+// $priceMoney-color: #333;
 // $priceMoneyWeight: normal;
 // $priceMoneySize: 20px;
 
-// $priceBgColor: #fff;
-// $priceDescColor: #777;
+// $priceBg-color: #fff;
+// $priceDesc-color: #777;
 // $priceDescPadding: 15px;
 // $priceDescAlign: center;
 // $priceDescFontSize: 12px;
@@ -168,29 +168,29 @@ $darkEdge: rgba(#000, .2);
 // $priceDescLineHeight: 1.4;
 // $priceDescBtmBorder: dotted 1px #ddd;
 
-// $priceItemColor: #333;
+// $priceItem-color: #333;
 // $priceItemPadding: 15px;
 // $priceItemAlign: center;
 // $priceItemFontSize: 14px;
 // $priceItemWeight: normal;
 // $priceItemBtmBorder: dotted 1px #ddd;
 
-// $priceCtaBgColor: #f5f5f5;
+// $priceCtaBg-color: #f5f5f5;
 // $priceCtaAlign: center;
 // $priceCtaPadding: 20px;
 
 // Orbit Settings
 
-// $orbitCaptionBgColorOldBrowser: #000;
-// $orbitCaptionBgColor: rgba(0,0,0,.6);
-// $orbitCaptionFontColor: #fff;
-// $orbitBulletNavColor: #999;
-// $orbitBulletNavColorActive: #222;
-// $orbitHasThumbBorderColor: #000;
+// $orbitCaptionBg-colorOldBrowser: #000;
+// $orbitCaptionBg-color: rgba(0,0,0,.6);
+// $orbitCaptionFont-color: #fff;
+// $orbitBulletNav-color: #999;
+// $orbitBulletNav-colorActive: #222;
+// $orbitHasThumbBorder-color: #000;
 // $orbitHasThumbBorderWidth: 2px;
 // $orbitHasThumbBorderStyle: solid;
-// $orbitSlideNumBgColor: rgba(0,0,0,0.7);
-// $orbitSlideNumFontColor: #fff;
+// $orbitSlideNumBg-color: rgba(0,0,0,0.7);
+// $orbitSlideNumFont-color: #fff;
 // $orbitSlideNumPadding: 5px;
 
 // Clearing Settings
@@ -199,9 +199,9 @@ $darkEdge: rgba(#000, .2);
 // $clearingOldBrowserBg: rgb(0,0,0);
 // $clearingCaptionBg: rgba(0,0,0,0.7);
 // $clearingCaptionOldBrowserBg: rgb(0,0,0);
-// $clearingCaptionFontColor: #fff;
-// $clearingCloseColor: #fff;
-// $clearingArrowColor: #fff;
+// $clearingCaptionFont-color: #fff;
+// $clearingClose-color: #fff;
+// $clearingArrow-color: #fff;
 // $clearingArrowSize: 16px;
 // $clearingCarouselBg: rgba(0,0,0,0.75);
 // $clearingCarouselOldBrowserBg: rgb(0,0,0);
@@ -216,7 +216,7 @@ $darkEdge: rgba(#000, .2);
 
 // $tipBg: rgba(0,0,0,0.8);
 // $tipBgIE8: #000;
-// $tipFontColor: #fff;
+// $tipFont-color: #fff;
 // $tipHeaderWeight: bold;
 // $tipDefaultWidth: 300px;
 // $tipBorderRadius: 4px;
@@ -226,8 +226,8 @@ $darkEdge: rgba(#000, .2);
 // $tipTimerWidth: 50px;
 // $tipTimerHeight: 3px;
 // $tipTimerBorder: solid 1px #555;
-// $tipTimerColor: #666;
-// $tipCloseColor: #777;
+// $tipTimer-color: #666;
+// $tipClose-color: #777;
 // $tipCloseSize: 20px;
 // $tipCloseWeight: normal;
 // $tipScreenFill: rgba(0,0,0,0.5);
