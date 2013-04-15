@@ -18,9 +18,15 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+.ref { position: relative; }
+.abs { position: absolute; }
 
 .fl { float: left; }
 .fr { float: right; }
+
+.full { width: 100%; }
+.half { width: 50%; }
+.third { width: 33.3% }
 
 // Spacing Classes
 //--------------------------------------------------
@@ -88,16 +94,19 @@
 .fse { font-size: $epsilon-font-size; }
 .fsz { font-size: $zeta-font-size; }
 
-
 .loud {}
 .quiet {}
 
-.full { width: 100%; }
-.half { width: 50%; }
-.third { width: 33.3% }
+.v0 { vertical-align: 0px; }
+.v1 { vertical-align: 1px; }
+.v2 { vertical-align: 2px; }
+.v3 { vertical-align: 3px; }
+.v4 { vertical-align: 4px; }
+.v5 { vertical-align: 5px; }
+.v6 { vertical-align: 6px; }
 
 //  State Classes
-// --------------------------------------------------------------------------
+//--------------------------------------------------
 
 .is-none { display: none; }
 .is-block { display: block; }
@@ -126,7 +135,6 @@
 .show {
   display: block;
 }
-.ref { position: relative; }
 // .is-active {}
 // .is-disabled {}
 // .is-pressed {}

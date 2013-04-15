@@ -22,20 +22,20 @@ My boilerplate of HTML/CSS.
 
 ### Prefix
 
- + __hd - header
- + __bd - body
- + __ft - footer
- + __line - line/rule/hr
- + __tb - tab
- + __bt - button
- + __hl - headline text
- + __bx - box/section
- + __bg - background
- + __fig - figure
- + __bar - bar
- + __bnr - banner
- + __nav - navigation
- + __mod - module
+ + __hd__ - header
+ + __bd__ - body
+ + __ft__ - footer
+ + __line__ - line/rule/hr
+ + __tb__ - tab
+ + __bt__ - button
+ + __hl__ - headline text
+ + __bx__ - box/section
+ + __bg__ - background
+ + __fig__ - figure
+ + __bar__ - bar
+ + __bnr__ - banner
+ + __nav__ - navigation
+ + __mod__ - module
 
 ### States
 
