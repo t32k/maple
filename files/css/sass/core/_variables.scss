@@ -19,12 +19,14 @@ $zeta-color: #000;
 
 // Font Size Settings
 //--------------------------------------------------
+$step-font-size: 1px;
+
 $alpha-font-size: 10px;
-$beta-font-size: 10px;
-$gamma-font-size: 10px;
-$delta-font-size: 10px;
-$epsilon-font-size: 10px;
-$zeta-font-size: 10px;
+$beta-font-size: $alpha-font-size + $step-font-size;
+$gamma-font-size: $alpha-font-size + $step-font-size*2;
+$delta-font-size: $alpha-font-size + $step-font-size*3;
+$epsilon-font-size: $alpha-font-size + $step-font-size*4;
+$zeta-font-size: $alpha-font-size + $step-font-size*5;
 
 // Space Settings
 //--------------------------------------------------
