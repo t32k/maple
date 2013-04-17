@@ -21,12 +21,19 @@
 .ref { position: relative; }
 .abs { position: absolute; }
 
+.invisible { visibility: hidden; }
+
 .fl { float: left; }
 .fr { float: right; }
 
 .full { width: 100%; }
 .half { width: 50%; }
 .third { width: 33.3% }
+
+.rn { border-radius: 0 !important; }
+.rs { border-radius: 5px !important; }
+.rm { border-radius: 10px !important; }
+.rl { border-radius: 20px !important; }
 
 // Spacing Classes
 //--------------------------------------------------
@@ -125,16 +132,11 @@
 	&.btn-primary {}
 	&.btn-secondary {}
 }
-.is-disabled {
-
-}
+.is-disabled {}
 // Toggling content
-.hide {
-  display: none;
-}
-.show {
-  display: block;
-}
+.hide { display: none; }
+.show { display: block; }
+
 // .is-active {}
 // .is-disabled {}
 // .is-pressed {}
