@@ -5,6 +5,17 @@ My boilerplate of HTML/CSS.
 
 ## Naming conventions
 
+
+### Comments
+```
+//-------------------------------------
+//  First Level
+//-------------------------------------
+
+// ----- Second Level ----- //
+
+// Third Level
+```
 ### Serial Number
 
  1. alpha
@@ -22,20 +33,21 @@ My boilerplate of HTML/CSS.
 
 ### Prefix
 
- + __hd__ - header
- + __bd__ - body
- + __ft__ - footer
- + __line__ - line/rule/hr
- + __tb__ - tab
- + __bt__ - button
- + __hl__ - headline text
- + __bx__ - box/section
- + __bg__ - background
- + __fig__ - figure
- + __bar__ - bar
- + __bnr__ - banner
- + __nav__ - navigation
- + __mod__ - module
+ + __hd-*__ - header
+ + __bd-*__ - body
+ + __ft-*__ - footer
+ + __line-*__ - line/rule/hr
+ + __tb-*__ - tab
+ + __bt-*__ - button
+ + __hl-*__ - headline text
+ + __bx-*__ - box/section
+ + __bg-*__ - background
+ + __fig-*__ - figure
+ + __icn-*__ - icon
+ + __bar-*__ - bar
+ + __bnr-*__ - banner
+ + __nav-*__ - navigation
+ + __mod-*__ - module
 
 ### States
 
@@ -63,3 +75,4 @@ My boilerplate of HTML/CSS.
  + [zurb/foundation](https://github.com/zurb/foundation)
  + [stubbornella/oocss · GitHub](https://github.com/stubbornella/oocss)
  + [csswizardry/inuit.css](https://github.com/csswizardry/inuit.css)
+ + [mvcss/mvcss](https://github.com/mvcss/mvcss)

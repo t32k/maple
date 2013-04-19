@@ -28,7 +28,6 @@ time, mark, audio, video {
 // Modified
 html {
   line-height: 1;
-  -webkit-text-size-adjust: 100%;
 }
 
 ol, ul {
@@ -61,3 +60,19 @@ a img {
 article, aside, details, figcaption, figure, footer, header, menu, nav, section, summary {
   display: block;
 }
+
+// --------------------------------------------------------------------------
+//  User reset styles
+// --------------------------------------------------------------------------
+html {
+  line-height: 1;
+}
+
+i {
+  display: inline-block;
+}
+a {
+  color: inherit;
+}
+em { font-style: normal }
+select, button, input, textarea { -webkit-appearance: none }
