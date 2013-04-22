@@ -37,6 +37,20 @@ $color-alpha: #000;
 
 // ----- Extends ----- //
 
+%debug {
+	background-color: pink !important; 
+}
+%border-box {  
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+%cancell-border {
+	border: 0 !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+
 // Settings file containing Foundation defaults
 
 // Grid Settings
@@ -59,6 +73,8 @@ $color-zeta   : #000;
 // Font Size Settings
 //--------------------------------------------------
 $step-font-size: 1px;
+
+$font-size-base: 14px;
 
 $font-size-alpha: 10px;
 $font-size-beta: $alpha + $step;

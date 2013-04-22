@@ -5,6 +5,11 @@ My boilerplate of HTML/CSS.
 
 ## Naming conventions
 
+### Lint
+
+ + Disallow IDs in selectors
+ + Disallow units for 0 values
+ + Require shorthand properties
 
 ### Comments
 ```
@@ -59,6 +64,11 @@ My boilerplate of HTML/CSS.
 
 
 ## Resources
+
+### Apps
+
+ + [ImageOptim — make websites and apps load faster](http://imageoptim.com/)
+ + [ImageAlpha — lossy compression for 24-bit PNG images](http://pngmini.com/)
 
 ### Tips
 

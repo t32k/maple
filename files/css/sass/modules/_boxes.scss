@@ -1,7 +1,10 @@
-//-------------------------------------
-//  Boxes
-//-------------------------------------
+// ----- User's reset ----- //
 
-// ----- Second Level ----- //
-
-// Third Level
+i {
+  display: inline-block;
+}
+a {
+  color: inherit;
+}
+em { font-style: normal }
+select, button, input, textarea { -webkit-appearance: none }
