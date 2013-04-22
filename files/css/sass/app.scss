@@ -1,13 +1,18 @@
-// Compass Variables
+//-------------------------------------
+//  main app
+//-------------------------------------
+
+// ----- Compass Variables ----- //
 $experimental-support-for-opera: false;
 $experimental-support-for-mozilla: false;
 $experimental-support-for-microsoft: false;
-
-// Setting
-// ----- State Modifiers ----- //
 @import "compass";
+
+
+// ----- @import ----- //
 @import "core";
 @import "modules";
 
+
 // For JavaScript Engineer
-//@import "_4jser";
+// @import "_4jser";

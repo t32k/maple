@@ -1,10 +1,11 @@
-// --------------------------------------------------------------------------
-//  @include global-reset
-// --------------------------------------------------------------------------
+//-------------------------------------
+//  Reset a.k.a @include global-reset
+//-------------------------------------
+
 // Based on Eric Meyer's reset 2.0 Global reset rules. 
 // For more specific resets, use the reset mixins provided below
 // http://meyerweb.com/eric/tools/css/reset/
-// --------------------------------------------------------------------------
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,11 +26,9 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline;
 }
-// Modified
 html {
   line-height: 1;
 }
-
 ol, ul {
   list-style: none;
 }
@@ -61,12 +60,11 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section,
   display: block;
 }
 
-// --------------------------------------------------------------------------
-//  User reset styles
-// --------------------------------------------------------------------------
 html {
   line-height: 1;
 }
+
+// ----- User's reset ----- //
 
 i {
   display: inline-block;

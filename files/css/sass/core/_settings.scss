@@ -1,4 +1,21 @@
-// ## Mixin for CSS Sprite 
+//-------------------------------------
+//  Settings
+//-------------------------------------
+
+// ----- Variables ----- //
+$color-alpha: #000;
+$color-alpha: #000;
+$color-alpha: #000;
+$color-alpha: #000;
+$color-alpha: #000;
+$color-alpha: #000;
+$color-alpha: #000;
+$color-alpha: #000;
+
+
+// ----- Mixins ----- //
+
+// CSS Sprite 
 // - @mixin  sprites
 // - @param  $map {Glob} the first parameter is a glob
 // - @param  $map-item {Glob} the second parameter is a glob
@@ -17,17 +34,8 @@
 	}
 }
 
-//-------------------------------------
-//  Settings
-//-------------------------------------
-
-
-// ----- Variables ----- //
 
 // ----- Extends ----- //
-
-
-// ----- Mixins ----- //
 
 // Settings file containing Foundation defaults
 
@@ -41,23 +49,23 @@
 
 // Colors Settings
 //--------------------------------------------------
-$alpha-color: #000;
-$beta-color: #000;
-$gamma-color: #000;
-$delta-color: #000;
-$epsilon-color: #000;
-$zeta-color: #000;
+$color-alpha  : #000;
+$color-beta   : #000;
+$color-gamma  : #000;
+$color-delta  : #000;
+$color-epsilon: #000;
+$color-zeta   : #000;
 
 // Font Size Settings
 //--------------------------------------------------
 $step-font-size: 1px;
 
-$alpha-font-size: 10px;
-$beta-font-size: $alpha-font-size + $step-font-size;
-$gamma-font-size: $alpha-font-size + $step-font-size*2;
-$delta-font-size: $alpha-font-size + $step-font-size*3;
-$epsilon-font-size: $alpha-font-size + $step-font-size*4;
-$zeta-font-size: $alpha-font-size + $step-font-size*5;
+$font-size-alpha: 10px;
+$font-size-beta: $alpha + $step;
+$font-size-gamma: $alpha + $step*2;
+$font-size-delta: $alpha + $step*3;
+$font-size-epsilon: $alpha + $step*4;
+$font-size-zeta: $alpha-font-size + $step-font-size*5;
 
 // Space Settings
 //--------------------------------------------------

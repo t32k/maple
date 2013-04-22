@@ -1,6 +1,7 @@
 //-------------------------------------
-//  HELPER CLASSES
+//  Helper Classes
 //-------------------------------------
+
 .cf:before,
 .cf:after { 
 	content: "";
@@ -26,17 +27,17 @@
 .fl { float: left; }
 .fr { float: right; }
 
-.full { width: 100%; }
-.half { width: 50%; }
-.third { width: 33.3% }
+.full  { width: 100%; }
+.half  { width: 50%;  }
+.third { width: 33%;  }
 
 .rn { border-radius: 0 !important; }
 .rs { border-radius: 5px !important; }
 .rm { border-radius: 10px !important; }
 .rl { border-radius: 20px !important; }
 
-// Spacing Classes
-//--------------------------------------------------
+
+// ----- Spacing Classes ----- //
 
 .mod { margin: 10px; }
 
@@ -77,8 +78,7 @@
 .pll { padding-left: 20px !important; }
 
 
-// Text Decorative Classes
-//--------------------------------------------------
+// ----- Text Decorative Classes ----- //
 
 .l { text-align: left !important; }
 .c { text-align: center !important; }
@@ -112,13 +112,12 @@
 .v5 { vertical-align: 5px; }
 .v6 { vertical-align: 6px; }
 
-//  State Classes
-//--------------------------------------------------
+// ----- State Classes ----- //
 
-.is-none { display: none; }
-.is-block { display: block; }
+.is-hidden { display: none; }
+.is-block  { display: block; }
 .is-inline { display: inline; }
-.is-solid { display: inline-block; }
+.is-solid  { display: inline-block; }
 
 .is-table { display: table; }
 .is-cell { display: table-cell; }
