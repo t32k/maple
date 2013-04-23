@@ -59,6 +59,11 @@ module.exports = function(grunt) {
           {src: ['../css/app.css'], dest: '../css/app.min.css'}
         ]
       }
+      css: {
+        files: [
+          {src: ['../js/app.js'], dest: '../js/app.min.js'}
+        ]
+      }
     },
     // Minify files with UglifyJS.
     uglify: {

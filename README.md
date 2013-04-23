@@ -41,26 +41,27 @@ My boilerplate of HTML/CSS.
  + __hd-*__ - header
  + __bd-*__ - body
  + __ft-*__ - footer
- + __line-*__ - line/rule/hr
- + __tb-*__ - tab
- + __bt-*__ - button
  + __hl-*__ - headline text
  + __bx-*__ - box/section
  + __bg-*__ - background
+ + __btn-*__ - button
  + __fig-*__ - figure
  + __icn-*__ - icon
+ + __tab-*__ - tab
  + __bar-*__ - bar
  + __bnr-*__ - banner
  + __nav-*__ - navigation
  + __mod-*__ - module
+ + __line-*__ - line/rule/hr
 
 ### States
 
- + on
- + off
- + active
- + disabled
- + hidden
+ + is-on
+ + is-off
+ + is-active(is-selected)
+ + is-pressed(:hover.:avtive)
+ + is-disabled
+ + is-hidden(display:none)
 
 
 ## Resources
