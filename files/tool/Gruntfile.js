@@ -58,8 +58,8 @@ module.exports = function(grunt) {
         files: [
           {src: ['../css/app.css'], dest: '../css/app.min.css'}
         ]
-      }
-      css: {
+      },
+      js: {
         files: [
           {src: ['../js/app.js'], dest: '../js/app.min.js'}
         ]
@@ -84,6 +84,6 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['']);
 
   // Indivisual Tasks.
-  grunt.registerTask('kj', ['livereload-start', 'connect', 'regarde']);
-  grunt.registerTask('css', ['compass', 'copy', 'csso']);
+  grunt.registerTask('develop', ['livereload-start', 'connect', 'regarde']);
+  grunt.registerTask('minify', ['compass', 'copy:css', 'csso']);
 };
