@@ -1,7 +1,7 @@
 //-------------------------------------
 //  Helper Classes
 //-------------------------------------
-
+// Clearfix
 .cf:before,
 .cf:after { 
 	content: "";
@@ -9,30 +9,40 @@
 	table !important;
 }
 .cf:after { clear: both; }
+// Image Replacement
 .ir {
 	overflow: hidden;
 	white-space: nowrap;
 	text-indent: 100%;
 }
+// Ellipsis
 .elps {  
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
-.ref { position: relative; }
-.abs { position: absolute; }
 
 .fl { float: left; }
 .fr { float: right; }
 
 .full  { width: 100%; }
 .half  { width: 50%;  }
-.third { width: 33%;  }
+.third { width: 33.3%;  }
 
-.rn { border-radius: 0 !important; }
-.rs { border-radius: 5px !important; }
-.rm { border-radius: 10px !important; }
-.rl { border-radius: 20px !important; }
+.ref { position: relative; }
+.abs { position: absolute; }
+
+
+// ----- State Classes ----- //
+
+.invisible { visibility: hidden; }
+
+.is-hidden { display: none; }
+.is-block  { display: block; }
+.is-inline { display: inline; }
+.is-solid  { display: inline-block; }
+.is-table  { display: table; }
+.is-cell   { display: table-cell; }
 
 
 // ----- Spacing Classes ----- //
@@ -46,11 +56,6 @@
 .mtm { margin-top: $space-2 !important; }
 .mtl { margin-top: $space-4 !important; }
 .mtx { margin-top: $space-6  !important; }
-.mrn { margin-right: 0 !important; }
-.mrs { margin-right: $space-base !important; }
-.mrm { margin-right: $space-2 !important; }
-.mrl { margin-right: $space-4 !important; }
-.mrx { margin-right: $space-6  !important; }
 .mbn { margin-bottom: 0 !important; }
 .mbs { margin-bottom: $space-base !important; }
 .mbm { margin-bottom: $space-2 !important; }
@@ -61,6 +66,11 @@
 .mlm { margin-left: $space-2 !important; }
 .mll { margin-left: $space-4 !important; }
 .mlx { margin-left: $space-6  !important; }
+.mrn { margin-right: 0 !important; }
+.mrs { margin-right: $space-base !important; }
+.mrm { margin-right: $space-2 !important; }
+.mrl { margin-right: $space-4 !important; }
+.mrx { margin-right: $space-6  !important; }
 
 .mra { margin-right: auto !important; }
 .mla { margin-left: auto !important; }
@@ -71,11 +81,6 @@
 .ptm { padding-top: $space-2 !important; }
 .ptl { padding-top: $space-4 !important; }
 .ptx { padding-top: $space-6  !important; }
-.prn { padding-right: 0 !important; }
-.prs { padding-right: $space-base !important; }
-.prm { padding-right: $space-2 !important; }
-.prl { padding-right: $space-4 !important; }
-.prx { padding-right: $space-6  !important; }
 .pbn { padding-bottom: 0 !important; }
 .pbs { padding-bottom: $space-base !important; }
 .pbm { padding-bottom: $space-2 !important; }
@@ -86,6 +91,19 @@
 .plm { padding-left: $space-2 !important; }
 .pll { padding-left: $space-4 !important; }
 .plx { padding-left: $space-6  !important; }
+.prn { padding-right: 0 !important; }
+.prs { padding-right: $space-base !important; }
+.prm { padding-right: $space-2 !important; }
+.prl { padding-right: $space-4 !important; }
+.prx { padding-right: $space-6  !important; }
+
+
+// ----- Border Radius ----- //
+
+.rn { border-radius: 0 !important; }
+.rs { border-radius: 5px !important; }
+.rm { border-radius: 10px !important; }
+.rl { border-radius: 20px !important; }
 
 // ----- Text Decorative Classes ----- //
 
@@ -127,15 +145,3 @@
 .vt { vertical-align: top; }
 .vm { vertical-align: middle; }
 .vb { vertical-align: bottom; }
-
-
-// ----- State Classes ----- //
-
-.invisible { visibility: hidden; }
-
-.is-hidden { display: none; }
-.is-block  { display: block; }
-.is-inline { display: inline; }
-.is-solid  { display: inline-block; }
-.is-table  { display: table; }
-.is-cell   { display: table-cell; }
