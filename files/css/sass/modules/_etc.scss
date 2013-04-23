@@ -5,3 +5,9 @@
 // ----- Second Level ----- //
 
 // Third Level
+
+.rule {
+	&.hr-a {}
+	&.hr-b {}
+	&.hr-c {}
+}

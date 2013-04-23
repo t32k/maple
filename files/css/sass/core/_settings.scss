@@ -15,37 +15,36 @@ $color-g: #000;
 
 // Spaces
 $space-base: 6px;
-$space-2: $space-a * 2;
-$space-3: $space-a * 3;
-$space-4: $space-a * 4;
-$space-5: $space-a * 5;
-$space-6: $space-a * 6;
-$space-7: $space-a * 7;
-$space-8: $space-a * 8;
-$space-9: $space-a * 9;
-$space-10: $space-a * 10;
+$space-2: $space-base * 2;
+$space-3: $space-base * 3;
+$space-4: $space-base * 4;
+$space-5: $space-base * 5;
+$space-6: $space-base * 6;
+$space-7: $space-base * 7;
+$space-8: $space-base * 8;
+$space-9: $space-base * 9;
+$space-10: $space-base * 10;
 
 // Font Size
-$font-size-base: 1px;
-$font-size-2: 8px;
-$font-size-3: 9px;
-$font-size-4: 10px;
-$font-size-5: 11px;
-$font-size-6: 12px;
-$font-size-7: 13px;
-$font-size-8: 14px;
+$font-size-1: $font-size-base - 5px;
+$font-size-2: $font-size-base - 4px;
+$font-size-3: $font-size-base - 3px;
+$font-size-4: $font-size-base - 2px;
+$font-size-5: $font-size-base - 1px;
+$font-size-base: 14px;
+$font-size-6: $font-size-base + 1px;
+$font-size-7: $font-size-base + 2px;
+$font-size-8: $font-size-base + 3px;
+$font-size-9: $font-size-base + 4px;
+$font-size-10: $font-size-base + 5px;
 
 // Heights
-$height-base-button: 8px;
-$height-base-headline: 9px;
-$height-base-tab: 10px;
-$height-base-button: 11px;
-$height-base-button: 12px;
-$height-base-button: 13px;
-$height-base-button: 14px;
+$height-base-button: 30px;
+$height-base-headline: 30px;
+$height-base-tab: 42px;
 
-// Heights
-
+// Font Settings
+$font-family-body: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 
 // ----- Mixins ----- //
@@ -86,239 +85,5 @@ $height-base-button: 14px;
 }
 
 
-
 // ----- Animations ----- //
 
-
-
-$main-color: #2ba6cb;
-$secondary-color: #e9e9e9;
-$alert-color: #c60f13;
-$success-color: #5da423;
-$txt-color: #222;
-$highlight-color: #ffff99;
-$black: #000;
-$white: #fff;
-$shinyEdge: rgba(#fff, .5);
-$darkEdge: rgba(#000, .2);
-
-// Font Settings
-
-// $fontSmoothing: antialiased;
-// $headerFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $headerFontWeight: bold;
-// $headerFontStyle: normal;
-// $headerFont-color: #222;
-// $bodyFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $bodyFontWeight: normal;
-// $bodyFontStyle: normal;
-// $bodyFont-color: $txt-color;
-
-// Text Direction Settings
-
-// $textDirection: ltr; // Controls default global text direction, 'rtl' or 'ltr'
-
-// Button Settings
-
-// $buttonRadius: 3px;
-// $btnBase: 10px;
-
-// $tinyBtnBase: $btnBase - 5;
-// $smallBtnBase: $btnBase - 3;
-// $largeBtnBase: $btnBase + 5;
-
-// Form Settings
-
-// $formSpacing: 12px;
-// $labelFontWeight: 500;
-// $labelFont-color: lighten(#000, 30%);
-// $labelBtmMargin: 3px;
-// $inputFont-color: rgba(0,0,0,0.75);
-// $inputFontSize: 14px;
-// $inputBg-color: #fff;
-// $inputFocusBg-color: darken(#fff, 2%);
-// $inputBorder-color: darken(#fff, 20%);
-// $inputFocusBorder-color: darken(#fff, 30%);
-// $inputBorderStyle: solid;
-// $inputBorderWidth: 1px;
-// $inputBorderRadius: 2px;
-// $fieldsetBorderRadius: 3px;
-
-// Custom Form Settings
-
-// $custFormBorder-color: #ccc;
-// $custFormBg-color: #fff;
-// $custCheck-color: #222;
-// $custSelectCurrentFont-color: #141414;
-// $custSelectBg-color: #fff;
-// $custSelectBorder-color: #ddd;
-// $custSelectTriangle-color: #aaa;
-// $custSelectTriangle-colorOpen: #222;
-// $custSelectDropHeight: 200px;
-// $custDropdownBg-color: #fff;
-// $custDropdownBorder-color: darken(#fff, 20%);
-// $custDropdownFont-color: #555;
-// $custDropdownSelectedBg-color: lighten(#2ba6cb, 40%);
-// $custDropdownSelectedFont-color: #000;
-// $custFormDisabledBg-color: #ddd;
-
-// Tab Settings
-
-// $tabHeight: 40px;
-// $tabTermFontSize: 12px;
-
-// Nav Bar Settings
-
-// $navBarHeight: 40px;
-// $navFlyoutBaseWidth: 250px;
-
-// Top Bar Settings
-
-// $topBarBg-color: #222;
-// $topBarHeight: 45px;
-// $topBarHeightMobile: 45px;
-// $topBarBtmMargin: 30px;
-// $topBarTitleWeight: bold;
-// $topBarTitleSize: 17px;
-// $topBarLink-color: #fff;
-// $topBarLinkWeight: bold;
-// $topBarLinkSize: 13px;
-// $topBarDropBg-color: #222;
-// $topBarDropLink-color: #fff;
-// $topBarDropToggleSize: 5px;
-// $topBarDropToggle-color: #fff;
-// $topBarDropToggleAlpha: 0.5;
-// $topBarSearchWidth: 200px;
-// $topBarBreakPoint: 940px; // Change to 9999px for always mobile layout
-// $topBarNavToggleSize: 8px;
-// $topBarNavToggle-color: #fff;
-
-// UI Settings
-
-// $thumbRadius: 3px;
-// $progBarHeight: 25px;
-// $progBarBorder-color: darken(#fff, 20%);
-// $progBarBorderSize: 1px;
-// $progBarPad: 2px;
-// $linkListBottomMargin: 17px -22px;
-// $tableBorderRadius: 3px;
-// $alertBorderRadius: 3px;
-
-// Tooltip Settings
-
-// $hasTipBorderBottom: dotted 1px #ccc;
-// $hasTipFontWeight: bold;
-// $hasTipFont-color: #333;
-// $hasTipBorderBottomHover: dotted 1px darken($main-color, 20%);
-// $hasTipFont-colorHover: $main-color;
-// $tooltipBackground-color: #000;
-// $tooltipBackgroundOpacity: 0.85;
-// $tooltipFontSize: 12px;
-// $tooltipFontWeight: bold;
-// $tooltipFont-color: #fff;
-// $tapToCloseFontSize: 10;
-// $tapToCloseFontWeight: normal;
-// $tapToCloseFont-color: #888;
-// $tooltipFontSizeScreenSm: 14;
-// $tooltipBgOpacityScreenSm: 0.85;
-// $tooltipBorderRadius: 4px;
-
-// Pricing Table Settings
-
-// $priceTableBorder: solid 1px #ddd;
-// $priceTitleBg-color: #ddd;
-// $priceTitlePadding: 15px 20px;
-// $priceTitleAlign: center;
-// $priceTitle-color: #333;
-// $priceTitleWeight: bold;
-// $priceTitleSize: 16px;
-
-// $priceMoneyBg-color: #eee;
-// $priceMoneyPadding: 15px 20px;
-// $priceMoneyAlign: center;
-// $priceMoney-color: #333;
-// $priceMoneyWeight: normal;
-// $priceMoneySize: 20px;
-
-// $priceBg-color: #fff;
-// $priceDesc-color: #777;
-// $priceDescPadding: 15px;
-// $priceDescAlign: center;
-// $priceDescFontSize: 12px;
-// $priceDescWeight: normal;
-// $priceDescLineHeight: 1.4;
-// $priceDescBtmBorder: dotted 1px #ddd;
-
-// $priceItem-color: #333;
-// $priceItemPadding: 15px;
-// $priceItemAlign: center;
-// $priceItemFontSize: 14px;
-// $priceItemWeight: normal;
-// $priceItemBtmBorder: dotted 1px #ddd;
-
-// $priceCtaBg-color: #f5f5f5;
-// $priceCtaAlign: center;
-// $priceCtaPadding: 20px;
-
-// Orbit Settings
-
-// $orbitCaptionBg-colorOldBrowser: #000;
-// $orbitCaptionBg-color: rgba(0,0,0,.6);
-// $orbitCaptionFont-color: #fff;
-// $orbitBulletNav-color: #999;
-// $orbitBulletNav-colorActive: #222;
-// $orbitHasThumbBorder-color: #000;
-// $orbitHasThumbBorderWidth: 2px;
-// $orbitHasThumbBorderStyle: solid;
-// $orbitSlideNumBg-color: rgba(0,0,0,0.7);
-// $orbitSlideNumFont-color: #fff;
-// $orbitSlideNumPadding: 5px;
-
-// Clearing Settings
-
-// $clearingBg: rgba(0,0,0,0.8);
-// $clearingOldBrowserBg: rgb(0,0,0);
-// $clearingCaptionBg: rgba(0,0,0,0.7);
-// $clearingCaptionOldBrowserBg: rgb(0,0,0);
-// $clearingCaptionFont-color: #fff;
-// $clearingClose-color: #fff;
-// $clearingArrow-color: #fff;
-// $clearingArrowSize: 16px;
-// $clearingCarouselBg: rgba(0,0,0,0.75);
-// $clearingCarouselOldBrowserBg: rgb(0,0,0);
-// $clearingCarouselHeight: 150px;
-// $clearingActiveImgHeight: 75%;
-// $clearingCarouselThumbWidth: 175px;
-// $clearingCarouselThumbActiveBorder: 4px solid rgb(255,255,255);
-// $clearingImgBg: rgba(0,0,0,0.75);
-// $clearingImgOldBrowserBg: rgb(0,0,0);
-
-// Joyride Settings
-
-// $tipBg: rgba(0,0,0,0.8);
-// $tipBgIE8: #000;
-// $tipFont-color: #fff;
-// $tipHeaderWeight: bold;
-// $tipDefaultWidth: 300px;
-// $tipBorderRadius: 4px;
-// $tipPadding: 18px 20px 24px;
-// $tipNubSize: 14px;
-// $tipFontSize: 14px;
-// $tipTimerWidth: 50px;
-// $tipTimerHeight: 3px;
-// $tipTimerBorder: solid 1px #555;
-// $tipTimer-color: #666;
-// $tipClose-color: #777;
-// $tipCloseSize: 20px;
-// $tipCloseWeight: normal;
-// $tipScreenFill: rgba(0,0,0,0.5);
-
-// Modular Scale Settings
-
-// $ratio: $golden; // THIS IS DEFAULT IN MODULAR-SCALE
-// $baseFontSize: 14px;
-// $importantModNum: 44px;
-// $base-size: $baseFontSize $importantModNum;
-// Produced the following list of values: 14, 17, 23, 27, 37, 44, 59, 71, 95, 115;
-// http://www.modularscale.com by Tim Brown
-// https://github.com/scottkellum/modular-scale by scottkellum

@@ -5,3 +5,9 @@
 // ----- Second Level ----- //
 
 // Third Level
+
+.button {
+	&.btn-a {}
+	&.btn-b {}
+	&.btn-c {}
+}

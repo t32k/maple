@@ -67,10 +67,10 @@ My boilerplate of HTML/CSS.
 
  + is-on
  + is-off
- + is-active(is-selected)
- + is-pressed(:hover.:avtive)
+ + is-active (is-selected)
+ + is-pressed (:hover.:avtive)
  + is-disabled
- + is-hidden(display:none)
+ + is-hidden (display:none)
  + is-collapsed
 
 
