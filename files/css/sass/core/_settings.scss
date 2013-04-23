@@ -3,14 +3,49 @@
 //-------------------------------------
 
 // ----- Variables ----- //
-$color-alpha: #000;
-$color-alpha: #000;
-$color-alpha: #000;
-$color-alpha: #000;
-$color-alpha: #000;
-$color-alpha: #000;
-$color-alpha: #000;
-$color-alpha: #000;
+
+// Colors
+$color-a: #000;
+$color-b: #000;
+$color-c: #000;
+$color-d: #000;
+$color-e: #000;
+$color-f: #000;
+$color-g: #000;
+
+// Spaces
+$space-base: 6px;
+$space-2: $space-a * 2;
+$space-3: $space-a * 3;
+$space-4: $space-a * 4;
+$space-5: $space-a * 5;
+$space-6: $space-a * 6;
+$space-7: $space-a * 7;
+$space-8: $space-a * 8;
+$space-9: $space-a * 9;
+$space-10: $space-a * 10;
+
+// Font Size
+$font-size-base: 1px;
+$font-size-2: 8px;
+$font-size-3: 9px;
+$font-size-4: 10px;
+$font-size-5: 11px;
+$font-size-6: 12px;
+$font-size-7: 13px;
+$font-size-8: 14px;
+
+// Heights
+$height-base-button: 8px;
+$height-base-headline: 9px;
+$height-base-tab: 10px;
+$height-base-button: 11px;
+$height-base-button: 12px;
+$height-base-button: 13px;
+$height-base-button: 14px;
+
+// Heights
+
 
 
 // ----- Mixins ----- //
@@ -51,46 +86,8 @@ $color-alpha: #000;
 }
 
 
-// Settings file containing Foundation defaults
 
-// Grid Settings
-
-// $rowWidth: 1000px;
-// $columnGutter: 30px;
-// $totalColumns: 12;
-// $mobileTotalColumns: 4;
-// $blockGridElements: 12; // Highest number of block grid elements, Maximum of 24 supported
-
-// Colors Settings
-//--------------------------------------------------
-$color-alpha  : #000;
-$color-beta   : #000;
-$color-gamma  : #000;
-$color-delta  : #000;
-$color-epsilon: #000;
-$color-zeta   : #000;
-
-// Font Size Settings
-//--------------------------------------------------
-$step-font-size: 1px;
-
-$font-size-base: 14px;
-
-$font-size-alpha: 10px;
-$font-size-beta: $alpha + $step;
-$font-size-gamma: $alpha + $step*2;
-$font-size-delta: $alpha + $step*3;
-$font-size-epsilon: $alpha + $step*4;
-$font-size-zeta: $alpha-font-size + $step-font-size*5;
-
-// Space Settings
-//--------------------------------------------------
-$alpha-space: 10px;
-$beta-space: 10px;
-$gamma-space: 10px;
-$delta-space: 10px;
-$epsilon-space: 10px;
-$zeta-space: 10px;
+// ----- Animations ----- //
 
 
 

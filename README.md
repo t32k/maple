@@ -23,18 +23,27 @@ My boilerplate of HTML/CSS.
 ```
 ### Serial Number
 
- 1. alpha
- 2. beta
- 3. gamma
- 4. delta
- 5. epsilon
- 6. zeta
+ 1. a
+ 2. b
+ 3. c
+ 4. d
+ 5. e
+ 6. f
 
 * * *
 
  1. primary
  2. secondary
  3. tertiary
+
+* * *
+
+ 1. alpha
+ 2. beta
+ 3. gamma
+ 4. delta
+ 5. epsilon
+ 6. zeta
 
 ### Prefix
 
@@ -62,6 +71,7 @@ My boilerplate of HTML/CSS.
  + is-pressed(:hover.:avtive)
  + is-disabled
  + is-hidden(display:none)
+ + is-collapsed
 
 
 ## Resources
@@ -80,7 +90,7 @@ My boilerplate of HTML/CSS.
 
 ### Framework
 
- + [Sencha Touch](http://docs.sencha.com/touch/2-1/#!/api/Global_CSS)
+ + [Sencha Touch](http://docs.sencha.com/touch/2-2/#!/api/Global_CSS)
  + [twitter/bootstrap](https://github.com/twitter/bootstrap)
  + [jquery/jquery-mobile](https://github.com/jquery/jquery-mobile)
  + [zurb/foundation](https://github.com/zurb/foundation)
