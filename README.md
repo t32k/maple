@@ -3,13 +3,15 @@
 My boilerplate of HTML/CSS.
 
 
-## Naming conventions
+## Conventions
 
 ### Lint
 
  + Disallow IDs in selectors
+ + Disallow tags only in selectors
  + Disallow units for 0 values
  + Require shorthand properties
+
 
 ### Comments
 ```
@@ -21,7 +23,14 @@ My boilerplate of HTML/CSS.
 
 // Third Level
 ```
+
 ### Serial Number
+
+ 1. primary
+ 2. secondary
+ 3. tertiary
+
+* * *
 
  1. a
  2. b
@@ -29,12 +38,6 @@ My boilerplate of HTML/CSS.
  4. d
  5. e
  6. f
-
-* * *
-
- 1. primary
- 2. secondary
- 3. tertiary
 
 * * *
 
@@ -76,11 +79,6 @@ My boilerplate of HTML/CSS.
 
 ## Resources
 
-### Apps
-
- + [ImageOptim — make websites and apps load faster](http://imageoptim.com/)
- + [ImageAlpha — lossy compression for 24-bit PNG images](http://pngmini.com/)
-
 ### Tips
 
  + [stubbornella/csslint · GitHub](https://github.com/stubbornella/csslint)
@@ -91,9 +89,17 @@ My boilerplate of HTML/CSS.
 ### Framework
 
  + [Sencha Touch](http://docs.sencha.com/touch/2-2/#!/api/Global_CSS)
- + [twitter/bootstrap](https://github.com/twitter/bootstrap)
  + [jquery/jquery-mobile](https://github.com/jquery/jquery-mobile)
+ + [twitter/bootstrap](https://github.com/twitter/bootstrap)
  + [zurb/foundation](https://github.com/zurb/foundation)
  + [stubbornella/oocss · GitHub](https://github.com/stubbornella/oocss)
  + [csswizardry/inuit.css](https://github.com/csswizardry/inuit.css)
  + [mvcss/mvcss](https://github.com/mvcss/mvcss)
+
+ ### Apps
+
+ + [Font Custom](http://fontcustom.com/)
+ + [ImageOptim — make websites and apps load faster](http://imageoptim.com/)
+ + [ImageAlpha — lossy compression for 24-bit PNG images](http://pngmini.com/)
+
+
