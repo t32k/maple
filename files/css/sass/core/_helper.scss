@@ -26,8 +26,9 @@
 .fr { float: right; }
 
 .full  { width: 100%; }
-.half  { width: 50%;  }
-.third { width: 33.3%;  }
+.half  { width: 50%;  }-
+.third { width: 33.3%; }
+.quater { width: 25%; }
 
 .ref { position: relative; }
 .abs { position: absolute; }
@@ -137,11 +138,11 @@
 .f10 { font-size: $font-size-10; }
 
 .v0 { vertical-align: 0; }
-.v1 { vertical-align: 1px; }
-.v2 { vertical-align: 2px; }
-.v3 { vertical-align: 3px; }
-.v4 { vertical-align: 4px; }
-.v5 { vertical-align: 5px; }
+.v1 { vertical-align: -1px; }
+.v2 { vertical-align: -2px; }
+.v3 { vertical-align: -3px; }
+.v4 { vertical-align: -4px; }
+.v5 { vertical-align: -5px; }
 .vt { vertical-align: top; }
 .vm { vertical-align: middle; }
 .vb { vertical-align: bottom; }
