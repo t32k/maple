@@ -2,13 +2,13 @@
 //  Helper Classes
 //-------------------------------------
 // Clearfix
-.cf:before,
-.cf:after { 
+.gp:before,
+.gp:after { 
 	content: "";
 	display:
 	table !important;
 }
-.cf:after { clear: both; }
+.gp:after { clear: both; }
 // Image Replacement
 .ir {
 	overflow: hidden;
@@ -26,9 +26,10 @@
 .fr { float: right; }
 
 .full  { width: 100%; }
-.half  { width: 50%;  }-
+.half  { width: 50%; }
 .third { width: 33.3%; }
 .quater { width: 25%; }
+.fifth { width: 20%; }
 
 .ref { position: relative; }
 .abs { position: absolute; }

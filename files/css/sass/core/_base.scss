@@ -4,10 +4,11 @@
 
 // ----- Second Level ----- //
 i {
-  display: inline-block;
+	display: inline-block;
 }
 a {
-  color: inherit;
+	display: block;
+	color: inherit;
 }
 em { font-style: normal }
 select, button, input, textarea { -webkit-appearance: none }
