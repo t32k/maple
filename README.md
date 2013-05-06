@@ -1,7 +1,6 @@
-# Boilerplate32
+# Boilerplate32 v1.0.0
 
 My boilerplate of HTML/CSS.
-
 
 ## Conventions
 
@@ -72,6 +71,7 @@ My boilerplate of HTML/CSS.
  + is-off
  + is-active (is-selected)
  + is-pressed (:hover.:avtive)
+ + is-animated
  + is-disabled
  + is-hidden (display:none)
  + is-collapsed
