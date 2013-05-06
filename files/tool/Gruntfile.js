@@ -72,6 +72,20 @@ module.exports = function(grunt) {
     // Run tasks whenever watched files change.
     watch: {
 
+    },
+    webfont: {
+      icons: {
+        src: '../font/svg/*.svg',
+        dest: '../font/',
+        destCss: '../font/',
+        options: {
+          font: 'petpic',
+          types: ['woff','ttf'],
+          stylesheet: 'scss',
+          htmlDemo: false,
+          syntax: 'bootstrap'
+        }
+      }
     }
   });
 
@@ -79,6 +93,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib');
   grunt.loadNpmTasks('grunt-regarde');
   grunt.loadNpmTasks('grunt-csso');
+  grunt.loadNpmTasks('grunt-webfont');
 
   // Default task.
   grunt.registerTask('default', ['']);

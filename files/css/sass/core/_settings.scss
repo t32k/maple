@@ -12,6 +12,7 @@ $color-d: #333;
 $color-e: #444;
 $color-f: #555;
 $color-g: #666;
+$color-h: #fff;
 
 // Spaces
 $space-base: 6px;
@@ -39,9 +40,14 @@ $font-size-9: $font-size-base + 4px;
 $font-size-10: $font-size-base + 5px;
 
 // Heights
-$height-base-button: 30px;
-$height-base-headline: 30px;
-$height-base-tab: 42px;
+$height-tap-1: 26px;
+$height-tap-2: 32px;
+$height-tap-3: 42px;
+
+// Border Radius
+$radius-1: 4px;
+$radius-2: 8px;
+$radius-3: 16px;
 
 // Font Settings
 $font-family-body: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;

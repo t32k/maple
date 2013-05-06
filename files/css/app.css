@@ -18,17 +18,19 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section,
 
 html { line-height: 1; }
 
-i { display: inline-block; }
+a { display: block; color: inherit; text-decoration: none; }
 
-a { color: inherit; }
+b { font-weight: bold; }
+
+i { display: inline-block; }
 
 em { font-style: normal; }
 
 select, button, input, textarea { -webkit-appearance: none; }
 
-.cf:before, .cf:after { content: ""; display: table !important; }
+.gp:before, .gp:after { content: ""; display: table !important; }
 
-.cf:after { clear: both; }
+.gp:after { clear: both; }
 
 .ir { overflow: hidden; white-space: nowrap; text-indent: 100%; }
 
@@ -44,23 +46,27 @@ select, button, input, textarea { -webkit-appearance: none; }
 
 .third { width: 33.3%; }
 
+.quater { width: 25%; }
+
+.fifth { width: 20%; }
+
 .ref { position: relative; }
 
 .abs { position: absolute; }
 
 .invisible { visibility: hidden; }
 
-.is-hidden { display: none; }
+.is-hidden { display: none !important; }
 
-.is-block { display: block; }
+.is-block { display: block !important; }
 
-.is-inline { display: inline; }
+.is-inline { display: inline !important; }
 
-.is-solid { display: inline-block; }
+.is-solid { display: inline-block !important; }
 
-.is-table { display: table; }
+.is-table { display: table !important; }
 
-.is-cell { display: table-cell; }
+.is-cell { display: table-cell !important; vertical-align: top; }
 
 .mod { margin: 12px; }
 
@@ -154,11 +160,11 @@ select, button, input, textarea { -webkit-appearance: none; }
 
 .rn { border-radius: 0 !important; }
 
-.rs { border-radius: 5px !important; }
+.rs { border-radius: 4px; }
 
-.rm { border-radius: 10px !important; }
+.rm { border-radius: 8px; }
 
-.rl { border-radius: 20px !important; }
+.rl { border-radius: 16px; }
 
 .l { text-align: left !important; }
 
@@ -172,17 +178,21 @@ select, button, input, textarea { -webkit-appearance: none; }
 
 ._ { text-decoration: underline !important; }
 
-.ca { color: black; }
+.ca { color: black !important; }
 
-.cb { color: black; }
+.cb { color: #111111 !important; }
 
-.cc { color: black; }
+.cc { color: #222222 !important; }
 
-.cd { color: black; }
+.cd { color: #333333 !important; }
 
-.ce { color: black; }
+.ce { color: #444444 !important; }
 
-.cf { color: black; }
+.cf { color: #555555 !important; }
+
+.cg { color: #666666 !important; }
+
+.ch { color: white !important; }
 
 .f1 { font-size: 9px; }
 
@@ -208,18 +218,20 @@ select, button, input, textarea { -webkit-appearance: none; }
 
 .v0 { vertical-align: 0; }
 
-.v1 { vertical-align: 1px; }
+.v1 { vertical-align: -1px; }
 
-.v2 { vertical-align: 2px; }
+.v2 { vertical-align: -2px; }
 
-.v3 { vertical-align: 3px; }
+.v3 { vertical-align: -3px; }
 
-.v4 { vertical-align: 4px; }
+.v4 { vertical-align: -4px; }
 
-.v5 { vertical-align: 5px; }
+.v5 { vertical-align: -5px; }
 
 .vt { vertical-align: top; }
 
 .vm { vertical-align: middle; }
 
 .vb { vertical-align: bottom; }
+
+.cover { background-size: cover; }

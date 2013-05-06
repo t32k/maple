@@ -1,12 +1,11 @@
 //-------------------------------------
 //  Helper Classes
 //-------------------------------------
-// Clearfix
+// Clearfix (.group)
 .gp:before,
 .gp:after { 
 	content: "";
-	display:
-	table !important;
+	display: table !important;
 }
 .gp:after { clear: both; }
 // Image Replacement
@@ -39,12 +38,12 @@
 
 .invisible { visibility: hidden; }
 
-.is-hidden { display: none; }
-.is-block  { display: block; }
-.is-inline { display: inline; }
-.is-solid  { display: inline-block; }
-.is-table  { display: table; }
-.is-cell   { display: table-cell; }
+.is-hidden { display: none !important;  }
+.is-block  { display: block !important;  }
+.is-inline { display: inline !important;  }
+.is-solid  { display: inline-block !important;  }
+.is-table  { display: table !important; }
+.is-cell   { display: table-cell !important; vertical-align: top; }
 
 
 // ----- Spacing Classes ----- //
@@ -103,9 +102,9 @@
 // ----- Border Radius ----- //
 
 .rn { border-radius: 0 !important; }
-.rs { border-radius: 5px !important; }
-.rm { border-radius: 10px !important; }
-.rl { border-radius: 20px !important; }
+.rs { border-radius: $radius-1; }
+.rm { border-radius: $radius-2; }
+.rl { border-radius: $radius-3; }
 
 // ----- Text Decorative Classes ----- //
 
@@ -119,12 +118,14 @@
 // .loud .quiet .bare .positive .negative .firm .contrast .sharp .opaque .neutral 
 // .main .secondary .alert .success .highlight .shiny .dark
 
-.ca { color: $color-a; }
-.cb { color: $color-b; }
-.cc { color: $color-c; }
-.cd { color: $color-d; }
-.ce { color: $color-e; }
-.cf { color: $color-f; }
+.ca { color: $color-a !important; }
+.cb { color: $color-b !important; }
+.cc { color: $color-c !important; }
+.cd { color: $color-d !important; }
+.ce { color: $color-e !important; }
+.cf { color: $color-f !important; }
+.cg { color: $color-g !important; }
+.ch { color: $color-h !important; }
 
 .f1 { font-size: $font-size-1; }
 .f2 { font-size: $font-size-2; }
@@ -147,3 +148,5 @@
 .vt { vertical-align: top; }
 .vm { vertical-align: middle; }
 .vb { vertical-align: bottom; }
+
+.cover { background-size: cover; }
