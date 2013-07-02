@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Kaede::VERSION
   spec.authors       = ["t32k"]
   spec.email         = ["ijok.ijok@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = "Sass-based CSS framework, but it's empty."
+  spec.summary       = "Sass-based CSS framework."
+  spec.homepage      = "https://github.com/t32k/maple.css"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
