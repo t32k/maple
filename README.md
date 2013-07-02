@@ -1,6 +1,6 @@
-# Boilerplate32 v1.0.0
+# Maple.css
 
-My boilerplate of HTML/CSS.
+v0.1
 
 ## Conventions
 
