@@ -66,8 +66,6 @@ v0.1
  + __bar-*__ - bar
  + __bnr-*__ - banner
  + __nav-*__ - navigation
- + __mod-*__ - module
- + __line-*__ - line/rule/hr
 
 ### States
 
@@ -80,30 +78,35 @@ v0.1
  + is-hidden (display:none)
  + is-collapsed
 
+### Grunt
+
++ [grunt-contrib](https://github.com/gruntjs/grunt-contrib)
++ [grunt-csso](https://github.com/t32k/grunt-csso)
++ [grunt-webfont](https://github.com/sapegin/grunt-webfont)
 
 ## Resources
 
 ### Tips
 
- + [stubbornella/csslint · GitHub](https://github.com/stubbornella/csslint)
- + [Scalable and Modular Architecture for CSS](http://smacss.com/)
- + [necolas/idiomatic-css · GitHub ](https://github.com/necolas/idiomatic-css/)
- + [About HTML semantics and front-end architecture – Nicolas Gallagher](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
++ [stubbornella/csslint · GitHub](https://github.com/stubbornella/csslint)
++ [necolas/idiomatic-css · GitHub ](https://github.com/necolas/idiomatic-css/)
++ [Scalable and Modular Architecture for CSS](http://smacss.com/)
++ [About HTML semantics and front-end architecture – Nicolas Gallagher](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
 
 ### Framework
 
- + [Sencha Touch](http://docs.sencha.com/touch/2-2/#!/api/Global_CSS)
- + [jquery/jquery-mobile](https://github.com/jquery/jquery-mobile)
- + [twitter/bootstrap](https://github.com/twitter/bootstrap)
- + [zurb/foundation](https://github.com/zurb/foundation)
- + [stubbornella/oocss · GitHub](https://github.com/stubbornella/oocss)
- + [csswizardry/inuit.css](https://github.com/csswizardry/inuit.css)
- + [mvcss/mvcss](https://github.com/mvcss/mvcss)
++ [Sencha Touch](http://docs.sencha.com/touch/2-2/#!/api/Global_CSS)
++ [jquery/jquery-mobile](https://github.com/jquery/jquery-mobile)
++ [twitter/bootstrap](https://github.com/twitter/bootstrap)
++ [zurb/foundation](https://github.com/zurb/foundation)
++ [stubbornella/oocss · GitHub](https://github.com/stubbornella/oocss)
++ [csswizardry/inuit.css](https://github.com/csswizardry/inuit.css)
++ [mvcss/mvcss](https://github.com/mvcss/mvcss)
++ [BEM: Methodology of Effective Site Development](http://bem.info/)
 
- ### Apps
+### Apps
 
- + [Font Custom](http://fontcustom.com/)
- + [ImageOptim — make websites and apps load faster](http://imageoptim.com/)
- + [ImageAlpha — lossy compression for 24-bit PNG images](http://pngmini.com/)
++ [ImageOptim — make websites and apps load faster](http://imageoptim.com/)
++ [ImageAlpha — lossy compression for 24-bit PNG images](http://pngmini.com/)
 
 
