@@ -18,11 +18,12 @@ v0.1
 
 ### Comments
 ```
-//-------------------------------------
+//-------------------------------------//
 //  First Level
-//-------------------------------------
+//-------------------------------------//
 
-// ----- Second Level ----- //
+//  Second Level
+//-------------------------------------
 
 // Third Level
 ```
@@ -71,12 +72,6 @@ v0.1
  + is-disabled
  + is-collapsed
 
-### Grunt
-
-+ [grunt-contrib](https://github.com/gruntjs/grunt-contrib)
-+ [grunt-csso](https://github.com/t32k/grunt-csso)
-+ [grunt-webfont](https://github.com/sapegin/grunt-webfont)
-
 ## Resources
 
 ### Tips
@@ -102,4 +97,9 @@ v0.1
 + [ImageOptim — make websites and apps load faster](http://imageoptim.com/)
 + [ImageAlpha — lossy compression for 24-bit PNG images](http://pngmini.com/)
 
+### Grunt
+
++ [grunt-contrib](https://github.com/gruntjs/grunt-contrib)
++ [grunt-csso](https://github.com/t32k/grunt-csso)
++ [grunt-webfont](https://github.com/sapegin/grunt-webfont)
 
