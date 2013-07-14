@@ -1,10 +1,6 @@
 ![maple.css](https://raw.github.com/t32k/maple.css/master/files/img/logo.png)
 
-# Maple.css
-
-
-
-v0.1
+# Maple.css - v0.1
 
 ## Conventions
 
@@ -102,4 +98,8 @@ v0.1
 + [grunt-contrib](https://github.com/gruntjs/grunt-contrib)
 + [grunt-csso](https://github.com/t32k/grunt-csso)
 + [grunt-webfont](https://github.com/sapegin/grunt-webfont)
+
+## License
+
+Maple.css is licensed under the MIT License.
 
