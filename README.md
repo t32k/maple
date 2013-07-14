@@ -29,27 +29,21 @@ v0.1
 
 ### Serial Number
 
- 1. primary
- 2. secondary
- 3. tertiary
+ 1. first......a
+ 2. second.....b
+ 3. third.....c
+ 4. fourth.....d
+ 5. fifth.....e
+ 6. sixth.....f
+ 7. seventh.....g
+ 8. eighth.....h
+ 9. ninth.....i
+ 10. tenth.....j
 
 * * *
-
- 1. a
- 2. b
- 3. c
- 4. d
- 5. e
- 6. f
-
-* * *
-
- 1. alpha
- 2. beta
- 3. gamma
- 4. delta
- 5. epsilon
- 6. zeta
+ primary, secondary, tertiary, quaternary, quinary, senary, septenary, octonary, novenary, decenary
+ 
+ alph, beta, gamma, delta, epsilon, zeta, eta, theta, iota, kappa
 
 ### Prefix
 
@@ -61,7 +55,7 @@ v0.1
  + __bg-*__ - background
  + __btn-*__ - button
  + __fig-*__ - figure
- + __icn-*__ - icon
+ + __icon-*__ - icon
  + __tab-*__ - tab
  + __bar-*__ - bar
  + __bnr-*__ - banner
@@ -69,13 +63,12 @@ v0.1
 
 ### States
 
- + is-on
- + is-off
+ + is-on, is-off
  + is-active (is-selected)
  + is-pressed (:hover.:avtive)
+ + is-hidden (display:none)
  + is-animated
  + is-disabled
- + is-hidden (display:none)
  + is-collapsed
 
 ### Grunt
