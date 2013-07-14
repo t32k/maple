@@ -1,6 +1,6 @@
 ![maple.css](https://raw.github.com/t32k/maple.css/master/files/img/logo.png)
 
-# Maple.css - v0.1
+# Maple.css – v0.1.0
 
 ## Conventions
 
@@ -21,7 +21,7 @@
 //  Second Level
 //-------------------------------------
 
-// Third Level
+//  Third Level
 ```
 
 ### Serial Number
