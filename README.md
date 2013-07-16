@@ -72,7 +72,7 @@
 
 <table>
   <tr>
-    <th>a</th><th> - </th>
+    <td>a</td><td> - </td>
   </tr>
   <tr>
     <td>b</td><td>font-weight:bold</td>
