@@ -70,9 +70,65 @@
 
 ### Helper
 
-|a| |
-|b|`font-weight:bold`|
-|c|`text-align:center`|
+<table>
+  <tr>
+    <th>a</th><th> - </th>
+  </tr>
+  <tr>
+    <td>b</td><td>`font-weight:bold`</td>
+  </tr>
+  <tr>
+    <td>c</td><td>`text-align:center`</td>
+  </tr>
+  <tr>
+    <td>d</td><td> - </td>
+  </tr>
+  <tr>
+    <td>e</td><td> - </td>
+  </tr>
+  <tr>
+    <td>f</td><td>font-size: {number}</td>
+  </tr>
+  <tr>
+    <td>g</td><td> - </td>
+  </tr>
+  <tr>
+    <td>h</td><td> - </td>
+  </tr>
+  <tr>
+    <td>i</td><td> - </td>
+  </tr>
+  <tr>
+    <td>j</td><td> - </td>
+  </tr>
+  <tr>
+    <td>k</td><td> - </td>
+  </tr>
+  <tr>
+    <td>l</td><td>`text-align:left`</td>
+  </tr>
+  <tr>
+    <td>m</td><td>margin-{direction}: {size} </td>
+  </tr>
+  <tr>
+    <td>n</td><td>`font-weight:normal`</td>
+  </tr>
+  <tr>
+    <td>o</td><td> - </td>
+  </tr>
+  <tr>
+    <td>p</td><td>padding-{direction}: {size} </td>
+  </tr>
+  <tr>
+    <td>q</td><td> - </td>
+  </tr>
+  <tr>
+    <td>r</td><td>`text-align:right`</td>
+  </tr>
+  <tr>
+    <td>s</td><td> - </td>
+  </tr>
+</table>
 
 ## Resources
 
