@@ -75,10 +75,10 @@
     <th>a</th><th> - </th>
   </tr>
   <tr>
-    <td>b</td><td>`font-weight:bold`</td>
+    <td>b</td><td>font-weight:bold</td>
   </tr>
   <tr>
-    <td>c</td><td>`text-align:center`</td>
+    <td>c</td><td>text-align:center</td>
   </tr>
   <tr>
     <td>d</td><td> - </td>
@@ -105,13 +105,13 @@
     <td>k</td><td> - </td>
   </tr>
   <tr>
-    <td>l</td><td>`text-align:left`</td>
+    <td>l</td><td>text-align:left</td>
   </tr>
   <tr>
     <td>m</td><td>margin-{direction}: {size} </td>
   </tr>
   <tr>
-    <td>n</td><td>`font-weight:normal`</td>
+    <td>n</td><td>font-weight:normal</td>
   </tr>
   <tr>
     <td>o</td><td> - </td>
@@ -123,10 +123,31 @@
     <td>q</td><td> - </td>
   </tr>
   <tr>
-    <td>r</td><td>`text-align:right`</td>
+    <td>r</td><td>text-align:right</td>
   </tr>
   <tr>
     <td>s</td><td> - </td>
+  </tr>
+  <tr>
+    <td>t</td><td> - </td>
+  </tr>
+  <tr>
+    <td>u</td><td> text-decoration:underline </td>
+  </tr>
+  <tr>
+    <td>v</td><td>vertical-align: {size}</td>
+  </tr>
+  <tr>
+    <td>w</td><td> - </td>
+  </tr>
+  <tr>
+    <td>x</td><td> - </td>
+  </tr>
+  <tr>
+    <td>y</td><td> - </td>
+  </tr>
+  <tr>
+    <td>z</td><td> - </td>
   </tr>
 </table>
 
