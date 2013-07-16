@@ -1,12 +1,5 @@
-'use strict';
-var path = require('path');
-var lrSnippet = require('grunt-contrib/node_modules/grunt-contrib-livereload/lib/utils').livereloadSnippet;
-
-var folderMount = function folderMount(connect, point) {
-  return connect.static(path.resolve(point));
-};
-
 module.exports = function(grunt) {
+  'use strict';
 
   // Project configuration.
   grunt.initConfig({
@@ -91,7 +84,6 @@ module.exports = function(grunt) {
 
   // Load the plugins.
   grunt.loadNpmTasks('grunt-contrib');
-  grunt.loadNpmTasks('grunt-regarde');
   grunt.loadNpmTasks('grunt-csso');
   grunt.loadNpmTasks('grunt-webfont');
 
@@ -99,6 +91,6 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['']);
 
   // Indivisual Tasks.
-  grunt.registerTask('develop', ['livereload-start', 'connect', 'regarde']);
+  grunt.registerTask('develop', ['livereload-start', 'connect', 'watch']);
   grunt.registerTask('minify', ['compass', 'copy:css', 'csso']);
 };
