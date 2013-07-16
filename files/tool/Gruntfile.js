@@ -56,7 +56,7 @@ module.exports = function(grunt) {
     copy: {
       css: {
         files: [
-          {src: ['../css/app.css'], dest: '../css/app.min.css'}
+          {src: ['../css/maple.css'], dest: '../css/maple.min.css'}
         ]
       },
       js: {

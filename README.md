@@ -78,16 +78,16 @@
     <td>b</td><td>font-weight:bold</td>
   </tr>
   <tr>
-    <td>c</td><td>text-align:center</td>
+    <td>c(n)</td><td>text-align:center</td>
   </tr>
   <tr>
-    <td>d</td><td> - </td>
+    <td>d(n)</td><td>display: {value}</td>
   </tr>
   <tr>
     <td>e</td><td> - </td>
   </tr>
   <tr>
-    <td>f</td><td>font-size: {number}</td>
+    <td>f(n)</td><td>font-size: {number}</td>
   </tr>
   <tr>
     <td>g</td><td> - </td>
@@ -108,7 +108,7 @@
     <td>l</td><td>text-align:left</td>
   </tr>
   <tr>
-    <td>m</td><td>margin-{direction}: {size} </td>
+    <td>m(n)(n)</td><td>margin-{direction}: {size} </td>
   </tr>
   <tr>
     <td>n</td><td>font-weight:normal</td>
@@ -117,7 +117,7 @@
     <td>o</td><td> - </td>
   </tr>
   <tr>
-    <td>p</td><td>padding-{direction}: {size} </td>
+    <td>p(n)(n)</td><td>padding-{direction}: {size} </td>
   </tr>
   <tr>
     <td>q</td><td> - </td>
@@ -132,10 +132,10 @@
     <td>t</td><td> - </td>
   </tr>
   <tr>
-    <td>u</td><td> text-decoration:underline </td>
+    <td>u</td><td>text-decoration:underline </td>
   </tr>
   <tr>
-    <td>v</td><td>vertical-align: {size}</td>
+    <td>v(n)</td><td>vertical-align: {size}</td>
   </tr>
   <tr>
     <td>w</td><td> - </td>

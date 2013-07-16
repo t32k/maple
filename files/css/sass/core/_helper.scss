@@ -24,11 +24,11 @@
 .fl { float: left; }
 .fr { float: right; }
 
-.full  { width: 100%; }
-.half  { width: 50%; }
-.third { width: 33.3%; }
+.full   { width: 100%; }
+.half   { width: 50%; }
+.third  { width: 33.3%; }
 .quater { width: 25%; }
-.fifth { width: 20%; }
+.fifth  { width: 20%; }
 
 .ref { position: relative; }
 .abs { position: absolute; }
@@ -38,12 +38,12 @@
 
 .invisible { visibility: hidden; }
 
-.is-hidden { display: none !important;  }
-.is-block  { display: block !important;  }
-.is-inline { display: inline !important;  }
-.is-solid  { display: inline-block !important;  }
-.is-table  { display: table !important; }
-.is-cell   { display: table-cell !important; vertical-align: top; }
+.dn { display: none !important;  }
+.db { display: block !important;  }
+.di { display: inline !important;  }
+.ds { display: inline-block !important;  }
+.dt { display: table !important; }
+.dc { display: table-cell !important; vertical-align: top; }
 
 
 // ----- Spacing Classes ----- //
