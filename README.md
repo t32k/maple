@@ -68,6 +68,12 @@
  + is-disabled
  + is-collapsed
 
+### Helper
+
+|a| |
+|b|`font-weight:bold`|
+|c|`text-align:center`|
+
 ## Resources
 
 ### Tips
