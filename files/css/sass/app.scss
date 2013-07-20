@@ -1,17 +1,17 @@
-//-------------------------------------
-//  main app
-//-------------------------------------
+//-------------------------------------//
+//  Output 
+//-------------------------------------//
 
-// ----- Compass Variables ----- //
+
+//  Compass settings
+//-------------------------------------
 $experimental-support-for-opera: false;
 $experimental-support-for-mozilla: false;
 $experimental-support-for-microsoft: false;
 @import "compass";
 
-// ----- @import ----- //
+
+//  @import files
+//-------------------------------------
 @import "core";
 @import "modules";
-
-
-// For JavaScript Engineer
-// @import "4jser";

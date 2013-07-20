@@ -13,6 +13,8 @@ $color-e: #444;
 $color-f: #555;
 $color-g: #666;
 $color-h: #fff;
+$color-i: #666;
+$color-j: #666;
 
 // Spaces
 $space-base: 6px;
@@ -83,7 +85,7 @@ $font-family-body: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-%cancell-border {
+%cancel-border {
 	border: 0 !important;
 	-webkit-box-shadow: none !important;
 	box-shadow: none !important;
