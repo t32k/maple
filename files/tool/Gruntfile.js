@@ -9,17 +9,8 @@ module.exports = function(grunt) {
       livereload: {
         options: {
           port: 8000,
-          middleware: function(connect, options) {
-            return [lrSnippet, folderMount(connect, '../../')]
-          }
+          base: '../../'
         }
-      }
-    },
-    // Configuration to be run (and then tested)
-    regarde: {
-      fred: {
-        files: ['../css/**/*.scss'],
-        tasks: ['compass','livereload']
       }
     },
     // Compile Compass to CSS. 
@@ -33,7 +24,7 @@ module.exports = function(grunt) {
     csso: {
       app: {
         files: [
-          {src: ['../css/app.min.css'], dest: '../css/app.min.css'}
+          {src: ['../css/maple.css'], dest: '../css/maple.min.css'}
         ]
       }
     },
@@ -47,11 +38,6 @@ module.exports = function(grunt) {
     },
     // Copy files and folders.
     copy: {
-      css: {
-        files: [
-          {src: ['../css/maple.css'], dest: '../css/maple.min.css'}
-        ]
-      },
       js: {
         files: [
           {src: ['../js/app.js'], dest: '../js/app.min.js'}
@@ -64,7 +50,10 @@ module.exports = function(grunt) {
     },
     // Run tasks whenever watched files change.
     watch: {
-
+      css: {
+        files: ['../css/**/*.scss'],
+        tasks: ['compass', 'csso']
+      }
     },
     webfont: {
       icons: {
@@ -91,6 +80,6 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['']);
 
   // Indivisual Tasks.
-  grunt.registerTask('develop', ['livereload-start', 'connect', 'watch']);
+  grunt.registerTask('develop', ['connect', 'watch']);
   grunt.registerTask('minify', ['compass', 'copy:css', 'csso']);
 };
