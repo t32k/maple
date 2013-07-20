@@ -1,6 +1,7 @@
 //-------------------------------------
 //  Helper Classes
 //-------------------------------------
+
 // Clearfix (.group)
 .gp:before,
 .gp:after { 
@@ -8,12 +9,14 @@
 	display: table !important;
 }
 .gp:after { clear: both; }
+
 // Image Replacement
 .ir {
 	overflow: hidden;
 	white-space: nowrap;
 	text-indent: 100%;
 }
+
 // Ellipsis
 .elps {  
 	overflow: hidden;
@@ -33,8 +36,8 @@
 .ref { position: relative; }
 .abs { position: absolute; }
 
-
-// ----- State Classes ----- //
+//  State Classes
+//-------------------------------------
 
 .invisible { visibility: hidden; }
 
@@ -47,6 +50,7 @@
 
 
 // ----- Spacing Classes ----- //
+
 
 .mod { margin: $space-2; }
 
