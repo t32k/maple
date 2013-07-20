@@ -43,7 +43,7 @@
 .di { display: inline !important;  }
 .ds { display: inline-block !important;  }
 .dt { display: table !important; }
-.dc { display: table-cell !important; vertical-align: top; }
+.dc { display: table-cell !important;}
 
 
 // ----- Spacing Classes ----- //
@@ -148,5 +148,3 @@
 .vt { vertical-align: top; }
 .vm { vertical-align: middle; }
 .vb { vertical-align: bottom; }
-
-.cover { background-size: cover; }

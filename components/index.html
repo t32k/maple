@@ -8,10 +8,14 @@
     </head>
     <body>
         <h1>Hello, World!</h1>
+
+
+
+        <script src="//code.jquery.com/jquery-2.0.2.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
+        <script id="js-gaq">
             var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+            (function(d,t){var g=d.createElement(t),s=d.getElementsById('js-gaq');g.async=1;
             g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
             s.parentNode.insertBefore(g,s)}(document,"script"));
         </script>
