@@ -4,7 +4,7 @@
 
 ## Components List
 
-```
+```sh
 $ cd /maple.css/files/tool
 $ npm install
 $ grunt develop
@@ -17,13 +17,13 @@ http://localhost:8000/components/
 
 http://nodejs.jp/
 
-```
+```sh
 npm install grunt-cli -g 
 ```
 
 ### Gems
 
-```
+```sh
 gem update --system
 gem install sass
 gem install compass
@@ -42,7 +42,8 @@ gem install css_parser
 
 
 ### Comments
-```
+
+```css
 //-------------------------------------//
 //  First Level
 //-------------------------------------//
