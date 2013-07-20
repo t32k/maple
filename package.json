@@ -1,0 +1,47 @@
+{
+  "name": "maplecss",
+  "description": "Realistic Sass-based CSS framework.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/t32k/maple.css",
+  "author": {
+    "name": "Koji Ishimoto",
+    "email": "ijok.ijok@gmail.com",
+    "url": "http://en.t32k.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/t32k/maple.css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/t32k/maple.css/issues"
+  },
+  "licenses": [{
+      "type": "MIT",
+      "url": "https://github.com/t32k/maple.css/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "csso": "~1.3.7",
+    "grunt-lib-contrib": "~0.6.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt": "~0.4.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+      "gruntplugin",
+      "grunt.js",
+      "csso"
+  ]
+}

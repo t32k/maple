@@ -2,7 +2,8 @@
 //  Headlines
 //-------------------------------------//
 
-.head-a {}
-.head-b {}
-.head-c {}
-.head-d {}
+.head {
+	&.head-a {}
+	&.head-b {}
+	&.head-c {}
+}
