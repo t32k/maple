@@ -4,7 +4,7 @@
 
 ## Components List
 
-```
+```sh
 $ cd /maple.css/files/tool
 $ npm install
 $ grunt develop
@@ -17,13 +17,13 @@ http://localhost:8000/components/
 
 http://nodejs.jp/
 
-```
+```sh
 npm install grunt-cli -g 
 ```
 
 ### Gems
 
-```
+```sh
 gem update --system
 gem install sass
 gem install compass
@@ -42,7 +42,8 @@ gem install css_parser
 
 
 ### Comments
-```
+
+```css
 //-------------------------------------//
 //  First Level
 //-------------------------------------//
@@ -99,86 +100,34 @@ gem install css_parser
 
 ### Helper
 
-<table>
-  <tr>
-    <td>a</td><td> - </td>
-  </tr>
-  <tr>
-    <td>b</td><td>font-weight:bold</td>
-  </tr>
-  <tr>
-    <td>c(n)</td><td>text-align:center</td>
-  </tr>
-  <tr>
-    <td>d(n)</td><td>display: {value}</td>
-  </tr>
-  <tr>
-    <td>e</td><td> - </td>
-  </tr>
-  <tr>
-    <td>f(n)</td><td>font-size: {number}</td>
-  </tr>
-  <tr>
-    <td>g</td><td> - </td>
-  </tr>
-  <tr>
-    <td>h</td><td> - </td>
-  </tr>
-  <tr>
-    <td>i</td><td> - </td>
-  </tr>
-  <tr>
-    <td>j</td><td> - </td>
-  </tr>
-  <tr>
-    <td>k</td><td> - </td>
-  </tr>
-  <tr>
-    <td>l</td><td>text-align:left</td>
-  </tr>
-  <tr>
-    <td>m(n)(n)</td><td>margin-{direction}: {size} </td>
-  </tr>
-  <tr>
-    <td>n</td><td>font-weight:normal</td>
-  </tr>
-  <tr>
-    <td>o</td><td> - </td>
-  </tr>
-  <tr>
-    <td>p(n)(n)</td><td>padding-{direction}: {size} </td>
-  </tr>
-  <tr>
-    <td>q</td><td> - </td>
-  </tr>
-  <tr>
-    <td>r</td><td>text-align:right</td>
-  </tr>
-  <tr>
-    <td>s</td><td> - </td>
-  </tr>
-  <tr>
-    <td>t</td><td> - </td>
-  </tr>
-  <tr>
-    <td>u</td><td>text-decoration:underline </td>
-  </tr>
-  <tr>
-    <td>v(n)</td><td>vertical-align: {size}</td>
-  </tr>
-  <tr>
-    <td>w</td><td> - </td>
-  </tr>
-  <tr>
-    <td>x</td><td> - </td>
-  </tr>
-  <tr>
-    <td>y</td><td> - </td>
-  </tr>
-  <tr>
-    <td>z</td><td> - </td>
-  </tr>
-</table>
+| Symbol | Property |
+| ------ | -------- |
+| a | - |
+| b | font-weight:bold |
+| c(n) | text-align:center |
+| d(n) | display: {value} |
+| e |  -  |
+| f(n) | font-size: {number} |
+| g |  -  |
+| h |  -  |
+| i |  -  |
+| j |  -  |
+| k |  -  |
+| l | text-align:left |
+| m(n)(n) | margin-{direction}: {size}  |
+| n | font-weight:normal |
+| o |  -  |
+| p(n)(n) | padding-{direction}: {size}  |
+| q |  -  |
+| r | text-align:right |
+| s |  -  |
+| t |  -  |
+| u | text-decoration:underline  |
+| v(n) | vertical-align: {size} |
+| w |  -  |
+| x |  -  |
+| y |  -  |
+| z |  -  |
 
 ## Resources
 
