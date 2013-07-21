@@ -1,6 +1,6 @@
 ![maple.css](https://raw.github.com/t32k/maple.css/master/files/img/logo.png)
 
-# Maple.css – v0.1.0
+# Maple.css – Alpha version
 
 ## Components List
 
@@ -9,26 +9,27 @@ $ cd /maple.css/files/tool
 $ npm install
 $ grunt develop
 ```
+
 http://localhost:8000/components/
 
 ## Requires
 
 ### NPM
 
-http://nodejs.jp/
+[node.js](http://nodejs.org/)
 
 ```sh
-npm install grunt-cli -g 
+$ npm install grunt-cli -g 
 ```
 
 ### Gems
 
 ```sh
-gem update --system
-gem install sass
-gem install compass
-gem install oily_png
-gem install css_parser
+$ gem update --system
+$ gem install sass
+$ gem install compass
+$ gem install oily_png
+$ gem install css_parser
 ```
 
 ## Conventions
@@ -72,6 +73,8 @@ gem install css_parser
  
  alph, beta, gamma, delta, epsilon, zeta, eta, theta, iota, kappa
 
+ loud, quiet, bare, positive, negative, firm, contrast, sharp, opaque, neutral, main, secondary, alert, success, highlight, shiny, dark
+
 ### Prefix
 
  + __hd-*__ - header
@@ -103,27 +106,27 @@ gem install css_parser
 | Symbol | Property |
 | ------ | -------- |
 | a | - |
-| b | font-weight:bold |
-| c(n) | text-align:center |
-| d(n) | display: {value} |
+| b | font-weight: **b**old |
+| c(s) | text-align:**c**enter, **c**olor: $color-{serial number} |
+| d(v) | **d**isplay: {value} |
 | e |  -  |
-| f(n) | font-size: {number} |
+| f(n) | **f**ont-size: {number} |
 | g |  -  |
 | h |  -  |
 | i |  -  |
 | j |  -  |
 | k |  -  |
-| l | text-align:left |
-| m(n)(n) | margin-{direction}: {size}  |
-| n | font-weight:normal |
+| l | text-align: **l**eft |
+| m(d)(s) | **m**argin-{direction}: {size}  |
+| n | font-weight: **n**ormal |
 | o |  -  |
-| p(n)(n) | padding-{direction}: {size}  |
+| p(d)(s) | **p**adding-{direction}: {size}  |
 | q |  -  |
-| r | text-align:right |
+| r | text-align: **r**ight |
 | s |  -  |
 | t |  -  |
-| u | text-decoration:underline  |
-| v(n) | vertical-align: {size} |
+| u | text-decoration: **u**nderline  |
+| v(n) | **v**ertical-align: {size} |
 | w |  -  |
 | x |  -  |
 | y |  -  |
@@ -160,9 +163,12 @@ gem install css_parser
 + [grunt-csso](https://github.com/t32k/grunt-csso)
 + [grunt-webfont](https://github.com/sapegin/grunt-webfont)
 
-## License
+## Contributors
 
-Maple.css is licensed under the MIT License.
++ [hiloki](https://github.com/hiloki)
++ [Layzie](https://github.com/Layzie)
+
+## License MIT
 
 Copyright (c) 2013 Koji Ishimoto
 

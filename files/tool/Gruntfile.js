@@ -21,11 +21,15 @@ module.exports = function(grunt) {
         }
       }
     },
+    // 
     csso: {
       app: {
-        files: [
-          {src: ['../css/maple.css'], dest: '../css/maple.min.css'}
-        ]
+        options: {
+          banner: '/*\n * Maple.css\n *\n * Copyright 2013 Koji Ishimoto\n * Licensed under the MIT License\n *\n * Designed by @t32k\n */\n'
+        },
+        files: {
+          '../css/maple.min.css': ['../css/maple.css']
+        }
       }
     },
     // Validate files with JSHint.
