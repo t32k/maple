@@ -19,7 +19,8 @@ http://localhost:8000/components/
 [node.js](http://nodejs.org/)
 
 ```sh
-$ npm install grunt-cli -g 
+$ npm install -g grunt-cli
+$ npm install -g grunt-init
 ```
 
 ### Gems
@@ -157,11 +158,21 @@ $ gem install css_parser
 + [ImageOptim — make websites and apps load faster](http://imageoptim.com/)
 + [ImageAlpha — lossy compression for 24-bit PNG images](http://pngmini.com/)
 
+### Web font
+
++ [cognitom/symbols](https://github.com/cognitom/symbols)
++ [iconmonstr - Free simple icons for your next project](http://iconmonstr.com/)
+
+```sh
+$ grunt webfont
+```
+
 ### Grunt
 
 + [grunt-contrib](https://github.com/gruntjs/grunt-contrib)
 + [grunt-csso](https://github.com/t32k/grunt-csso)
 + [grunt-webfont](https://github.com/sapegin/grunt-webfont)
++ [grunt-init](https://github.com/gruntjs/grunt-init)
 
 ## Contributors
 
