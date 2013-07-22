@@ -1,6 +1,6 @@
-//-------------------------------------
+//-------------------------------------//
 //  Helper Classes
-//-------------------------------------
+//-------------------------------------//
 
 // Clearfix (.group)
 .gp:before,
@@ -49,8 +49,8 @@
 .dc { display: table-cell !important;}
 
 
-// ----- Spacing Classes ----- //
-
+//  Spacing Classes
+//-------------------------------------
 
 .mod { margin: $space-2; }
 
@@ -103,14 +103,17 @@
 .prx { padding-right: $space-6  !important; }
 
 
-// ----- Border Radius ----- //
+//  Border Radius
+//-------------------------------------
 
 .rn { border-radius: 0 !important; }
 .rs { border-radius: $radius-1; }
 .rm { border-radius: $radius-2; }
 .rl { border-radius: $radius-3; }
 
-// ----- Text Decorative Classes ----- //
+
+//  Text Decorative Classes
+//-------------------------------------
 
 .l { text-align: left !important; }
 .c { text-align: center !important; }

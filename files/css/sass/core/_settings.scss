@@ -1,8 +1,9 @@
-//-------------------------------------
+//-------------------------------------//
 //  Settings
-//-------------------------------------
+//-------------------------------------//
 
-// ----- Variables ----- //
+//  Variables
+//-------------------------------------
 
 // Colors
 $color-a: #000;
@@ -55,7 +56,8 @@ $radius-3: 16px;
 $font-family-body: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 
-// ----- Mixins ----- //
+//  Mixins
+//-------------------------------------
 
 // - @mixin  CSS Sprite 
 // - @param  $map {Glob} the first parameter is a glob
@@ -76,7 +78,8 @@ $font-family-body: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 
-// ----- Extends ----- //
+//  Extends
+//-------------------------------------
 
 %debug {
 	background-color: pink !important; 
@@ -92,5 +95,6 @@ $font-family-body: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 
-// ----- Animations ----- //
+//  Animations
+//-------------------------------------
 

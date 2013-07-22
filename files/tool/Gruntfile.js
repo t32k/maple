@@ -21,7 +21,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    // 
+    // Minify CSS files with CSSO.
     csso: {
       app: {
         options: {
@@ -40,14 +40,6 @@ module.exports = function(grunt) {
     concat: {
 
     },
-    // Copy files and folders.
-    copy: {
-      js: {
-        files: [
-          {src: ['../js/app.js'], dest: '../js/app.min.js'}
-        ]
-      }
-    },
     // Minify files with UglifyJS.
     uglify: {
 
@@ -65,7 +57,7 @@ module.exports = function(grunt) {
         dest: '../font/',
         destCss: '../font/',
         options: {
-          font: 'petpic',
+          font: 'maple',
           types: ['woff','ttf'],
           stylesheet: 'scss',
           htmlDemo: false,
@@ -85,5 +77,5 @@ module.exports = function(grunt) {
 
   // Indivisual Tasks.
   grunt.registerTask('develop', ['connect', 'watch']);
-  grunt.registerTask('minify', ['compass', 'copy:css', 'csso']);
+  grunt.registerTask('minify', ['compass', 'csso']);
 };
