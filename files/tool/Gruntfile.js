@@ -55,13 +55,14 @@ module.exports = function(grunt) {
       dist: {
         src: '../font/svg/*.svg',
         dest: '../font/',
-        destCss: '../font/',
+        destCss: '../css/sass/core/',
         options: {
-          font: 'maple',
+          font: 'myfont',
           types: ['woff','ttf'],
           stylesheet: 'scss',
           htmlDemo: false,
-          syntax: 'bootstrap'
+          syntax: 'bootstrap',
+          relativeFontPath: '/files/font/'
         }
       }
     }
@@ -71,6 +72,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-csso');
   grunt.loadNpmTasks('grunt-webfont');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
@@ -79,5 +81,5 @@ module.exports = function(grunt) {
 
   // Indivisual Tasks.
   grunt.registerTask('develop', ['connect', 'watch']);
-  grunt.registerTask('minify', ['compass', 'csso']);
+  grunt.registerTask('minify', ['csslint', 'compass', 'csso']);
 };
