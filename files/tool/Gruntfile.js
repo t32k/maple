@@ -81,5 +81,5 @@ module.exports = function(grunt) {
 
   // Indivisual Tasks.
   grunt.registerTask('develop', ['connect', 'watch']);
-  grunt.registerTask('minify', ['csslint', 'compass', 'csso']);
+  grunt.registerTask('build', ['csslint', 'compass', 'csso']);
 };
