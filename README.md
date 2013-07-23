@@ -10,7 +10,7 @@ $ npm install
 $ grunt develop
 ```
 
-http://localhost:8000/components/
+http://localhost:8080/components/
 
 ## Requires
 
@@ -37,11 +37,13 @@ $ gem install css_parser
 
 ### Lint
 
- + Disallow IDs in selectors
- + Disallow tags only in selectors
- + Disallow units for 0 values
- + Require shorthand properties
++ [gruntjs/grunt-contrib-csslint](https://github.com/gruntjs/grunt-contrib-csslint)
 
+#### Lint turn off
+
++ Disallow !important
++ Require compatible vendor prefixes
++ Don't use too many font sizes
 
 ### Comments
 
@@ -160,6 +162,7 @@ $ gem install css_parser
 
 ### Web font
 
++ [grunt-webfont](https://github.com/sapegin/grunt-webfont)
 + [cognitom/symbols](https://github.com/cognitom/symbols)
 + [iconmonstr - Free simple icons for your next project](http://iconmonstr.com/)
 
@@ -169,10 +172,10 @@ $ grunt webfont
 
 ### Grunt
 
-+ [grunt-contrib](https://github.com/gruntjs/grunt-contrib)
++ [grunt-init](https://github.com/gruntjs/grunt-init)
 + [grunt-csso](https://github.com/t32k/grunt-csso)
 + [grunt-webfont](https://github.com/sapegin/grunt-webfont)
-+ [grunt-init](https://github.com/gruntjs/grunt-init)
+
 
 ## Contributors
 
