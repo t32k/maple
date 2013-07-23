@@ -16,6 +16,8 @@ http://localhost:8080/components/
 
 ### NPM
 
+**Requires Node.js 0.10**
+
 [node.js](http://nodejs.org/)
 
 ```sh
@@ -30,7 +32,6 @@ $ gem update --system
 $ gem install sass
 $ gem install compass
 $ gem install oily_png
-$ gem install css_parser
 ```
 
 ## Conventions
@@ -170,6 +171,8 @@ $ gem install css_parser
 + [cognitom/symbols](https://github.com/cognitom/symbols)
 + [iconmonstr - Free simple icons for your next project](http://iconmonstr.com/)
 
+**Requires fontforge, ttfautohint**
+
 ```sh
 $ brew install fontforge ttfautohint
 $ brew install https://raw.github.com/sapegin/grunt-webfont/master/Formula/sfnt2woff.rb
@@ -182,6 +185,7 @@ $ grunt webfont
 ### Grunt
 
 + [grunt-init](https://github.com/gruntjs/grunt-init)
++ [grunt-init-maple](https://github.com/t32k/grunt-init-maple)
 + [grunt-csso](https://github.com/t32k/grunt-csso)
 + [grunt-webfont](https://github.com/sapegin/grunt-webfont)
 + [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect)
