@@ -420,30 +420,6 @@ select, button, input, textarea {
   border-radius: 16px;
 }
 
-.l {
-  text-align: left !important;
-}
-
-.c {
-  text-align: center !important;
-}
-
-.r {
-  text-align: right !important;
-}
-
-.b {
-  font-weight: bold !important;
-}
-
-.n {
-  font-weight: normal !important;
-}
-
-.u {
-  text-decoration: underline !important;
-}
-
 .ca {
   color: black !important;
 }
@@ -476,8 +452,32 @@ select, button, input, textarea {
   color: white !important;
 }
 
+.n {
+  font-weight: normal !important;
+}
+
+.b {
+  font-weight: bold !important;
+}
+
+.l {
+  text-align: left !important;
+}
+
+.c {
+  text-align: center !important;
+}
+
+.r {
+  text-align: right !important;
+}
+
+.u {
+  text-decoration: underline !important;
+}
+
 .f1 {
-  font-size: 9px;
+  font-size: 8px;
 }
 
 .f2 {
@@ -485,39 +485,23 @@ select, button, input, textarea {
 }
 
 .f3 {
-  font-size: 11px;
-}
-
-.f4 {
   font-size: 12px;
-}
-
-.f5 {
-  font-size: 13px;
 }
 
 .fn {
   font-size: 14px !important;
 }
 
-.f6 {
-  font-size: 15px;
-}
-
-.f7 {
+.f4 {
   font-size: 16px;
 }
 
-.f8 {
-  font-size: 17px;
-}
-
-.f9 {
+.f5 {
   font-size: 18px;
 }
 
-.f10 {
-  font-size: 19px;
+.f6 {
+  font-size: 20px;
 }
 
 .v0 {

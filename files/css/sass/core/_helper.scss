@@ -115,13 +115,6 @@
 //  Text Decorative Classes
 //-------------------------------------
 
-.l { text-align: left !important; }
-.c { text-align: center !important; }
-.r { text-align: right !important; }
-.b { font-weight: bold !important; }
-.n { font-weight: normal !important; }
-.u { text-decoration: underline !important; }
-
 .ca { color: $color-a !important; }
 .cb { color: $color-b !important; }
 .cc { color: $color-c !important; }
@@ -131,17 +124,20 @@
 .cg { color: $color-g !important; }
 .ch { color: $color-h !important; }
 
+.n { font-weight: normal !important; }
+.b { font-weight: bold !important; }
+.l { text-align: left !important; }
+.c { text-align: center !important; }
+.r { text-align: right !important; }
+.u { text-decoration: underline !important; }
+
 .f1 { font-size: $font-size-1; }
 .f2 { font-size: $font-size-2; }
 .f3 { font-size: $font-size-3; }
+.fn { font-size: $font-size-base !important; } 
 .f4 { font-size: $font-size-4; }
 .f5 { font-size: $font-size-5; }
-.fn { font-size: $font-size-base !important; } 
 .f6 { font-size: $font-size-6; }
-.f7 { font-size: $font-size-7; }
-.f8 { font-size: $font-size-8; }
-.f9 { font-size: $font-size-9; }
-.f10 { font-size: $font-size-10; }
 
 .v0 { vertical-align: 0; }
 .v1 { vertical-align: -1px; }

@@ -41,9 +41,11 @@ $ gem install css_parser
 
 #### Lint turn off
 
-+ Disallow !important
-+ Require compatible vendor prefixes
-+ Don't use too many font sizes
++ Bulletproof font face (Compatibility)
++ Require compatible vendor prefixes (Compatibility)
++ Disallow !important (Maintainability & Duplication)
++ Disallow selectors that look like regular expressions (Performance)
++ Disallow unqualified attribute selectors (Performance)
 
 ### Comments
 

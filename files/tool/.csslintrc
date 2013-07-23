@@ -1,5 +1,7 @@
 {
-  "important": false,
+  "bulletproof-font-face": false,
   "compatible-vendor-prefixes": false,
-  "font-sizes": false
+  "important": false,
+  "regex-selectors": false,
+  "unqualified-attributes": false
 }
