@@ -145,6 +145,7 @@ $ gem install css_parser
 + [necolas/idiomatic-css · GitHub ](https://github.com/necolas/idiomatic-css/)
 + [Scalable and Modular Architecture for CSS](http://smacss.com/)
 + [About HTML semantics and front-end architecture – Nicolas Gallagher](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
++ [csswizardry/CSS-Guidelines](https://github.com/csswizardry/CSS-Guidelines)
 
 ### Framework
 
@@ -156,6 +157,7 @@ $ gem install css_parser
 + [csswizardry/inuit.css](https://github.com/csswizardry/inuit.css)
 + [mvcss/mvcss](https://github.com/mvcss/mvcss)
 + [BEM: Methodology of Effective Site Development](http://bem.info/)
++ [suitcss](https://github.com/suitcss)
 
 ### Apps
 
@@ -182,12 +184,10 @@ $ grunt webfont
 + [grunt-init](https://github.com/gruntjs/grunt-init)
 + [grunt-csso](https://github.com/t32k/grunt-csso)
 + [grunt-webfont](https://github.com/sapegin/grunt-webfont)
++ [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect)
++ [grunt-contrib-compass](https://github.com/gruntjs/grunt-contrib-compass)
 + [grunt-contrib-csslint](https://github.com/gruntjs/grunt-contrib-csslint)
-
-## Contributors
-
-+ [hiloki](https://github.com/hiloki)
-+ [Layzie](https://github.com/Layzie)
++ [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
 
 ## License MIT
 
