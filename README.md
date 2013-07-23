@@ -37,7 +37,7 @@ $ gem install css_parser
 
 ### Lint
 
-+ [gruntjs/grunt-contrib-csslint](https://github.com/gruntjs/grunt-contrib-csslint)
++ [Rules · stubbornella/csslint Wiki](https://github.com/stubbornella/csslint/wiki/Rules)
 
 #### Lint turn off
 
@@ -167,6 +167,11 @@ $ gem install css_parser
 + [iconmonstr - Free simple icons for your next project](http://iconmonstr.com/)
 
 ```sh
+$ brew install fontforge ttfautohint
+$ brew install https://raw.github.com/sapegin/grunt-webfont/master/Formula/sfnt2woff.rb
+```
+
+```sh
 $ grunt webfont
 ```
 
@@ -175,7 +180,7 @@ $ grunt webfont
 + [grunt-init](https://github.com/gruntjs/grunt-init)
 + [grunt-csso](https://github.com/t32k/grunt-csso)
 + [grunt-webfont](https://github.com/sapegin/grunt-webfont)
-
++ [grunt-contrib-csslint](https://github.com/gruntjs/grunt-contrib-csslint)
 
 ## Contributors
 
