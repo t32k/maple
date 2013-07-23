@@ -77,6 +77,66 @@ select, button, input, textarea {
   -webkit-appearance: none;
 }
 
+@font-face {
+  font-family: "myfont";
+  src: url("/files/font/myfont-165a1ce8bfb947828896adcacf58555f.woff") format("woff"), url("/files/font/myfont-165a1ce8bfb947828896adcacf58555f.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "myfont";
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
+
+.icon-arrow-b:before {
+  content: "\f100";
+}
+
+.icon-arrow-l:before {
+  content: "\f101";
+}
+
+.icon-arrow-r:before {
+  content: "\f102";
+}
+
+.icon-arrow-t:before {
+  content: "\f103";
+}
+
+.icon-check:before {
+  content: "\f104";
+}
+
+.icon-leaf-h:before {
+  content: "\f105";
+}
+
+.icon-leaf-p:before {
+  content: "\f106";
+}
+
+.icon-maple:before {
+  content: "\f107";
+}
+
+.icon-minus:before {
+  content: "\f108";
+}
+
+.icon-plus:before {
+  content: "\f109";
+}
+
+.icon-star:before {
+  content: "\f10a";
+}
+
 .gp:before,
 .gp:after {
   content: "";
@@ -494,4 +554,11 @@ select, button, input, textarea {
 
 .vb {
   vertical-align: bottom;
+}
+
+.bar-nav {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 42px;
 }
