@@ -541,8 +541,13 @@ select, button, input, textarea {
 }
 
 .bar-nav {
-  background: #000;
-  color: #fff;
+  border-bottom: 1px #ccc solid;
+  color: #333;
   text-align: center;
   line-height: 42px;
+}
+
+.box-foot {
+  padding: 2em;
+  border-top: 1px #ccc solid;
 }

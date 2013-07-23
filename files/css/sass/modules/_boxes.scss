@@ -2,8 +2,11 @@
 //  Boxes
 //-------------------------------------//
 
-.box-nav {}
+.box-nav { }
 
-.box-tool {}
+.box-tool { }
 
-.box-srch {}
+.box-foot {
+	padding: 2em;
+	border-top: 1px #ccc solid;
+}
