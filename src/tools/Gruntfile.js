@@ -11,7 +11,7 @@ module.exports = function(grunt) {
       livereload: {
         options: {
           port: 8080,
-          base: '../../'
+          base: '../'
         }
       }
     },
@@ -29,7 +29,7 @@ module.exports = function(grunt) {
         options: {
           csslintrc: '.csslintrc'
         },
-        src: ['../css/maple.css']
+        src: ['../files/css/maple.css']
       }
     },
     // Minify CSS files with CSSO.
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
           banner: '/*\n * Maple.css\n *\n * Copyright 2013 Koji Ishimoto\n * Licensed under the MIT License\n *\n * Designed by @t32k\n */\n'
         },
         files: {
-          '../css/maple.min.css': ['../css/maple.css']
+          '../files/css/maple.min.css': ['../files/css/maple.css']
         }
       }
     },
@@ -47,23 +47,23 @@ module.exports = function(grunt) {
     csscomb: {
       dist: {
         files: {
-          '../css/maple.resort.css': ['../css/maple.css']
+          '../files/css/maple.resort.css': ['../files/css/maple.css']
         }
       }
     },
     // Run tasks whenever watched files change.
     watch: {
       dist: {
-        files: ['../css/**/*.scss'],
+        files: ['../files/css/**/*.scss'],
         tasks: ['compass', 'csso']
       }
     },
     // SVG to webfont converter for Grunt.
     webfont: {
       dist: {
-        src: '../font/svg/*.svg',
-        dest: '../font/',
-        destCss: '../css/sass/core/',
+        src: '../files/font/svg/*.svg',
+        dest: '../files/font/',
+        destCss: '../files/css/sass/core/',
         options: {
           font: 'myfont',
           types: ['woff','ttf'],
