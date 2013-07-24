@@ -1,4 +1,4 @@
-![Maple](https://raw.github.com/t32k/maple.css/master/files/img/logo.png)
+![Maple](https://raw.github.com/t32k/maple.css/master/src/files/img/logo.png)
 
 # Maple – Alpha version
 
