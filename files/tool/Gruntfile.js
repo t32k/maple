@@ -43,6 +43,14 @@ module.exports = function(grunt) {
         }
       }
     },
+    // Sort CSS properties in specific order.
+    csscomb: {
+      dist: {
+        files: {
+          '../css/maple.resort.css': ['../css/maple.css']
+        }
+      }
+    },
     // Run tasks whenever watched files change.
     watch: {
       dist: {
@@ -70,6 +78,7 @@ module.exports = function(grunt) {
 
   // Load the plugins.
   grunt.loadNpmTasks('grunt-csso');
+  grunt.loadNpmTasks('grunt-csscomb');
   grunt.loadNpmTasks('grunt-webfont');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-compass');
