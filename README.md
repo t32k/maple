@@ -1,6 +1,6 @@
-![maple.css](https://raw.github.com/t32k/maple.css/master/files/img/logo.png)
+![Maple](https://raw.github.com/t32k/maple.css/master/files/img/logo.png)
 
-# Maple.css – Alpha version
+# Maple – Alpha version
 
 ## Components List
 
@@ -16,7 +16,7 @@ http://localhost:8080/components/
 
 ### NPM
 
-**Requires Node.js 0.10**
+Requires Node.js 0.8/0.10
 
 [node.js](http://nodejs.org/)
 
