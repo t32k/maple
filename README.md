@@ -1,24 +1,22 @@
 ![Maple](https://raw.github.com/t32k/maple.css/master/src/files/img/logo.png)
 
-# Maple – Alpha version
+# Maple
 
-## Components List
+This is alpha version yet.
 
-```sh
-$ cd /maple.css/files/tool
-$ npm install
-$ grunt develop
-```
 
-http://localhost:8080/components/
+## Features
 
-## Requires
++ __Writing Better CSS__
++ __High Performance__
++ __Rapid Prototyping__
+
+
+## Installation
 
 ### NPM
 
-Requires Node.js 0.8/0.10
-
-[node.js](http://nodejs.org/)
+Requires [Node.js](http://nodejs.org/)
 
 ```sh
 $ npm install -g grunt-cli
@@ -27,6 +25,8 @@ $ npm install -g grunt-init
 
 ### Gems
 
+Requires [Ruby](www.ruby-lang.org/)
+
 ```sh
 $ gem update --system
 $ gem install sass
@@ -34,19 +34,182 @@ $ gem install compass
 $ gem install oily_png
 ```
 
-## Conventions
 
-### Lint
+## Getting Started
+
+### Project Scaffolding
+
+```sh
+$ git clone https://github.com/t32k/grunt-init-maple.git ~/.grunt-init/maple --recursive
+```
++ [grunt-init-maple](https://github.com/t32k/grunt-init-maple)
+> Create a basic maple project with grunt-init. 
+
+### Components List
+
+```sh
+$ cd /path/to/maple_project/src/tools
+$ npm install
+$ grunt develop
+```
+
+and, open url.
+
+`http://localhost:8080/components/`
+
+---
+
+## Grunt Tasks
+
+### [grunt-csso](https://github.com/t32k/grunt-csso)
+
+> Minify CSS files with CSSO
+
+CSSO (CSS Optimizer) is a CSS minimizer unlike others. In addition to usual minification techniques it can perform structural optimization of CSS files, resulting in smaller file size compared to other minifiers.
+
++ [css/csso](https://github.com/css/csso)
+
+```sh
+$ grunt minify
+```
+
+### [grunt-webfont](https://github.com/sapegin/grunt-webfont)
+
+> SVG to webfont converter for Grunt
+
+Generate custom icon webfonts from SVG/EPS files via Grunt to reduce HTTP requests.
+
++ [cognitom/symbols](https://github.com/cognitom/symbols)
++ [iconmonstr - Free simple icons for your next project](http://iconmonstr.com/)
+
+__Requires fontforge, ttfautohint__
+
+```sh
+$ brew install fontforge ttfautohint
+$ brew install https://raw.github.com/sapegin/grunt-webfont/master/Formula/sfnt2woff.rb
+```
+
+```sh
+$ grunt webfont
+```
+
+### [grunt-contrib-csslint](https://github.com/gruntjs/grunt-contrib-csslint)
+
+> Lint CSS files.
+
+CSSLint is a tool to help point out problems with your CSS code. It does basic syntax checking as well as applying a set of rules to the code that look for problematic patterns or signs of inefficiency. 
 
 + [Rules · stubbornella/csslint Wiki](https://github.com/stubbornella/csslint/wiki/Rules)
 
-#### Lint turn off
+#### Lint turn off in Maple project
 
 + Bulletproof font face (Compatibility)
 + Require compatible vendor prefixes (Compatibility)
 + Disallow !important (Maintainability & Duplication)
 + Disallow selectors that look like regular expressions (Performance)
 + Disallow unqualified attribute selectors (Performance)
+
+
+### [grunt-contrib-compass](https://github.com/gruntjs/grunt-contrib-compass)
+
+> Compile Compass to CSS.
+
+Compass is an open-source CSS Authoring Framework.
+
++ [Compass](http://compass-style.org/)
+
+
+### [grunt-csscomb](https://github.com/t32k/grunt-csscomb)
+
+> The grunt plugin for sorting CSS properties in specific order.
+
+
+### [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect) / [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
+
+> Start a connect web server. Run predefined tasks whenever watched file patterns are added, changed or deleted.
+
+`livereload: true`
+
+A happy land where browsers don't need a Refresh button.
+
+```sh
+$ grunt develop
+```
+
+---
+
+### CSS
+
+### Module Prefix
+
++ __head-*__ - headline
++ __list-*__ - listview
++ __btn-*__ - button
++ __box-*__ - box/section
++ __icon-*__ - icon
++ __bar-*__ - bar
++ __nav-*__ - navigation
+
+### Serial Number Suffix
+
++ *-__a__ - alpha
++ *-__b__ - beta
++ *-__c__ - gamma
++ *-__d__ - delta
++ *-__e__ - epsilon
++ *-__f__ - zeta
++ *-__g__ - eta
++ *-__h__ - theta
++ *-__i__ - iota
++ *-__j__ - kappa
+
+EX.
+```CSS
+.btn-a { color: red }
+.btn-b { color: green }
+.btn-c { color: black }
+.btn-c { color: black }
+```
+
+### Helper Classses
+
+| Symbol | Property |
+| ------ | -------- |
+| a | - |
+| b | font-weight: __b__old |
+| c(s) | text-align:__c__enter, __c__olor: $color-{serial number} |
+| d(v) | __d__isplay: {value} |
+| e |  -  |
+| f(n) | __f__ont-size: {number} |
+| g |  -  |
+| h |  -  |
+| i |  -  |
+| j |  -  |
+| k |  -  |
+| l | text-align: __l__eft |
+| m(d)(s) | __m__argin-{direction}: {size}  |
+| n | font-weight: __n__ormal |
+| o |  -  |
+| p(d)(s) | __p__adding-{direction}: {size}  |
+| q |  -  |
+| r | text-align: __r__ight |
+| s |  -  |
+| t |  -  |
+| u | text-decoration: __u__nderline  |
+| v(n) | __v__ertical-align: {size} |
+| w |  -  |
+| x |  -  |
+| y |  -  |
+| z |  -  |
+
+
+### Class States
+
+ + is-active (is-selected)
+ + is-pressed (:hover.:avtive)
+ + is-hidden (display:none)
+ + is-animated
+ + is-disabled
 
 ### Comments
 
@@ -61,92 +224,8 @@ $ gem install oily_png
 //  Third Level
 ```
 
-### Serial Number
-
- 1. first......a
- 2. second.....b
- 3. third.....c
- 4. fourth.....d
- 5. fifth.....e
- 6. sixth.....f
- 7. seventh.....g
- 8. eighth.....h
- 9. ninth.....i
- 10. tenth.....j
-
-* * *
- primary, secondary, tertiary, quaternary, quinary, senary, septenary, octonary, novenary, decenary
- 
- alph, beta, gamma, delta, epsilon, zeta, eta, theta, iota, kappa
-
- loud, quiet, bare, positive, negative, firm, contrast, sharp, opaque, neutral, main, secondary, alert, success, highlight, shiny, dark
-
-### Prefix
-
- + __hd-*__ - header
- + __bd-*__ - body
- + __ft-*__ - footer
- + __hl-*__ - headline text
- + __bx-*__ - box/section
- + __bg-*__ - background
- + __btn-*__ - button
- + __fig-*__ - figure
- + __icon-*__ - icon
- + __tab-*__ - tab
- + __bar-*__ - bar
- + __bnr-*__ - banner
- + __nav-*__ - navigation
-
-### States
-
- + is-on, is-off
- + is-active (is-selected)
- + is-pressed (:hover.:avtive)
- + is-hidden (display:none)
- + is-animated
- + is-disabled
- + is-collapsed
-
-### Helper
-
-| Symbol | Property |
-| ------ | -------- |
-| a | - |
-| b | font-weight: **b**old |
-| c(s) | text-align:**c**enter, **c**olor: $color-{serial number} |
-| d(v) | **d**isplay: {value} |
-| e |  -  |
-| f(n) | **f**ont-size: {number} |
-| g |  -  |
-| h |  -  |
-| i |  -  |
-| j |  -  |
-| k |  -  |
-| l | text-align: **l**eft |
-| m(d)(s) | **m**argin-{direction}: {size}  |
-| n | font-weight: **n**ormal |
-| o |  -  |
-| p(d)(s) | **p**adding-{direction}: {size}  |
-| q |  -  |
-| r | text-align: **r**ight |
-| s |  -  |
-| t |  -  |
-| u | text-decoration: **u**nderline  |
-| v(n) | **v**ertical-align: {size} |
-| w |  -  |
-| x |  -  |
-| y |  -  |
-| z |  -  |
 
 ## Resources
-
-### Tips
-
-+ [stubbornella/csslint · GitHub](https://github.com/stubbornella/csslint)
-+ [necolas/idiomatic-css · GitHub ](https://github.com/necolas/idiomatic-css/)
-+ [Scalable and Modular Architecture for CSS](http://smacss.com/)
-+ [About HTML semantics and front-end architecture – Nicolas Gallagher](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
-+ [csswizardry/CSS-Guidelines](https://github.com/csswizardry/CSS-Guidelines)
 
 ### Framework
 
@@ -160,40 +239,22 @@ $ gem install oily_png
 + [BEM: Methodology of Effective Site Development](http://bem.info/)
 + [suitcss](https://github.com/suitcss)
 
+### Tips
+
++ [stubbornella/csslint · GitHub](https://github.com/stubbornella/csslint)
++ [necolas/idiomatic-css · GitHub ](https://github.com/necolas/idiomatic-css/)
++ [Scalable and Modular Architecture for CSS](http://smacss.com/)
++ [About HTML semantics and front-end architecture – Nicolas Gallagher](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
++ [csswizardry/CSS-Guidelines](https://github.com/csswizardry/CSS-Guidelines)
+
 ### Apps
 
 + [ImageOptim — make websites and apps load faster](http://imageoptim.com/)
 + [ImageAlpha — lossy compression for 24-bit PNG images](http://pngmini.com/)
 
-### Web font
+---
 
-+ [grunt-webfont](https://github.com/sapegin/grunt-webfont)
-+ [cognitom/symbols](https://github.com/cognitom/symbols)
-+ [iconmonstr - Free simple icons for your next project](http://iconmonstr.com/)
-
-**Requires fontforge, ttfautohint**
-
-```sh
-$ brew install fontforge ttfautohint
-$ brew install https://raw.github.com/sapegin/grunt-webfont/master/Formula/sfnt2woff.rb
-```
-
-```sh
-$ grunt webfont
-```
-
-### Grunt
-
-+ [grunt-init](https://github.com/gruntjs/grunt-init)
-+ [grunt-init-maple](https://github.com/t32k/grunt-init-maple)
-+ [grunt-csso](https://github.com/t32k/grunt-csso)
-+ [grunt-webfont](https://github.com/sapegin/grunt-webfont)
-+ [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect)
-+ [grunt-contrib-compass](https://github.com/gruntjs/grunt-contrib-compass)
-+ [grunt-contrib-csslint](https://github.com/gruntjs/grunt-contrib-csslint)
-+ [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
-
-## License MIT
+## MIT License
 
 Copyright (c) 2013 Koji Ishimoto
 
