@@ -154,16 +154,16 @@ $ grunt develop
 
 ### Serial Number Suffix
 
-+ *-__a__ - alpha
-+ *-__b__ - beta
-+ *-__c__ - gamma
-+ *-__d__ - delta
-+ *-__e__ - epsilon
-+ *-__f__ - zeta
-+ *-__g__ - eta
-+ *-__h__ - theta
-+ *-__i__ - iota
-+ *-__j__ - kappa
++ *-a - alpha
++ *-b - beta
++ *-c - gamma
++ *-d - delta
++ *-e - epsilon
++ *-f - zeta
++ *-g - eta
++ *-h - theta
++ *-i - iota
++ *-j - kappa
 
 EX.
 ```CSS
@@ -256,7 +256,7 @@ EX.
 
 ---
 
-## MIT License
+## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) License MIT
 
 Copyright (c) 2013 Koji Ishimoto
 
