@@ -1,6 +1,6 @@
-![Maple](https://raw.github.com/t32k/maple.css/master/src/files/img/logo.png)
-
 # Maple
+
+![Maple](https://raw.github.com/t32k/maple.css/master/src/files/img/logo.png)
 
 This is alpha version, yet.
 
@@ -54,13 +54,56 @@ $ npm install
 $ grunt develop
 ```
 
-and, open url.
+and, open URL.
 
 `http://localhost:8080/components/`
 
----
 
 ## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) Grunt Tasks
+
+### [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect) / [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
+
+> Start a connect web server. Run predefined tasks whenever watched file patterns are added, changed or deleted.
+
+`livereload: true`
+
+A happy land where browsers don't need a Refresh button.
+
+```sh
+$ grunt develop
+```
+
+### [grunt-contrib-compass](https://github.com/gruntjs/grunt-contrib-compass)
+
+> Compile Compass to CSS.
+
+Compass is an open-source CSS Authoring Framework.
+
++ [Compass](http://compass-style.org/)
+
+```sh
+$ grunt develop
+```
+
+### [grunt-contrib-csslint](https://github.com/gruntjs/grunt-contrib-csslint)
+
+> Lint CSS files.
+
+CSSLint is a tool to help point out problems with your CSS code. It does basic syntax checking as well as applying a set of rules to the code that look for problematic patterns or signs of inefficiency. 
+
++ [Rules · stubbornella/csslint Wiki](https://github.com/stubbornella/csslint/wiki/Rules)
+
+#### Lint turn off in Maple project
+
++ Bulletproof font face (Compatibility)
++ Require compatible vendor prefixes (Compatibility)
++ Disallow !important (Maintainability & Duplication)
++ Disallow selectors that look like regular expressions (Performance)
++ Disallow unqualified attribute selectors (Performance)
+
+```sh
+$ grunt minify
+```
 
 ### [grunt-csso](https://github.com/t32k/grunt-csso)
 
@@ -72,6 +115,16 @@ CSSO (CSS Optimizer) is a CSS minimizer unlike others. In addition to usual mini
 
 ```sh
 $ grunt minify
+```
+
+### [grunt-csscomb](https://github.com/t32k/grunt-csscomb)
+
+> The grunt plugin for sorting CSS properties in specific order.
+
++ [The Greatest tool for sorting CSS properties in specific order](http://csscomb.com/)
+
+```sh
+$ grunt csscomb
 ```
 
 ### [grunt-webfont](https://github.com/sapegin/grunt-webfont)
@@ -93,53 +146,6 @@ $ brew install https://raw.github.com/sapegin/grunt-webfont/master/Formula/sfnt2
 ```sh
 $ grunt webfont
 ```
-
-### [grunt-contrib-csslint](https://github.com/gruntjs/grunt-contrib-csslint)
-
-> Lint CSS files.
-
-CSSLint is a tool to help point out problems with your CSS code. It does basic syntax checking as well as applying a set of rules to the code that look for problematic patterns or signs of inefficiency. 
-
-+ [Rules · stubbornella/csslint Wiki](https://github.com/stubbornella/csslint/wiki/Rules)
-
-#### Lint turn off in Maple project
-
-+ Bulletproof font face (Compatibility)
-+ Require compatible vendor prefixes (Compatibility)
-+ Disallow !important (Maintainability & Duplication)
-+ Disallow selectors that look like regular expressions (Performance)
-+ Disallow unqualified attribute selectors (Performance)
-
-
-### [grunt-contrib-compass](https://github.com/gruntjs/grunt-contrib-compass)
-
-> Compile Compass to CSS.
-
-Compass is an open-source CSS Authoring Framework.
-
-+ [Compass](http://compass-style.org/)
-
-
-### [grunt-csscomb](https://github.com/t32k/grunt-csscomb)
-
-> The grunt plugin for sorting CSS properties in specific order.
-
-+ [The Greatest tool for sorting CSS properties in specific order](http://csscomb.com/)
-
-
-### [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect) / [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
-
-> Start a connect web server. Run predefined tasks whenever watched file patterns are added, changed or deleted.
-
-`livereload: true`
-
-A happy land where browsers don't need a Refresh button.
-
-```sh
-$ grunt develop
-```
-
----
 
 ## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) CSS
 
@@ -255,7 +261,6 @@ EX.
 + [ImageOptim — make websites and apps load faster](http://imageoptim.com/)
 + [ImageAlpha — lossy compression for 24-bit PNG images](http://pngmini.com/)
 
----
 
 ## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) License MIT
 
