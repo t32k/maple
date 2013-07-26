@@ -193,7 +193,7 @@ EX.
 | ------ | -------- |
 | a | - |
 | b | font-weight: __b__old |
-| c(s) | text-align:__c__enter, color: $color-{serial number} |
+| c(s) | text-align: __c__enter, __c__olor: $color-{serial number} |
 | d(v) | __d__isplay: {value} |
 | e |  -  |
 | f(n) | __f__ont-size: {number} |
