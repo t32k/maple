@@ -39,12 +39,19 @@ $ gem install oily_png
 
 ### Project Scaffolding
 
-```sh
-$ git clone https://github.com/t32k/grunt-init-maple.git ~/.grunt-init/maple --recursive
-```
 + [grunt-init-maple](https://github.com/t32k/grunt-init-maple)
 
 > Create a basic maple project with grunt-init. 
+
+Installation
+```sh
+$ git clone https://github.com/t32k/grunt-init-maple.git ~/.grunt-init/maple --recursive
+```
+
+Usage
+```sh
+$ git-init maple
+```
 
 ### Components List
 
