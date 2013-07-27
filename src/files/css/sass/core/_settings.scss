@@ -54,24 +54,45 @@ $font-family-body: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 //  Mixins
 //-------------------------------------
 
-// - @mixin  CSS Sprite 
-// - @param  $map {Glob} the first parameter is a glob
+// - @mixin  CSS Sprite for Retina Display
+// - @param  $isParent {String} the first parameter is a string(parent or child)
+// - @param  $map {Glob} the second parameter is a glob
 // - @param  $map-item {Glob} the second parameter is a glob
-// - @param  $isCommon {Boolean} this one is a boolean
-// - @usage  @include sprites($map-tabs, common, true)
-@mixin sprites($map, $map-item, $isCommon:false) {
-	@if $isCommon {
-		background-image: sprite-url($map);
-		background-size: round(image-width(sprite-path($map)) / 2) round(image-height(sprite-path($map)) / 2);
-		background-repeat: no-repeat;
+// - @param  $isSameChild {Boolean} default is false
+// - @usage  @include sprite(child, $map-tabs, home)
+@mixin sprite($isParent, $map, $map-item: foo, $isSameChild: false) {
+	@if not $isSameChild {
+		@if $isParent == "parent" {
+			background-image: sprite-url($map);
+			background-repeat: no-repeat;
+			background-size: round(image-width(sprite-path($map)) / 2) round(image-height(sprite-path($map)) / 2);
+		} @else {
+			$position-x: round(nth(sprite-position($map, $map-item), 1) / 2);
+			width: round(image-width(sprite-file($map, $map-item)) / 2);
+			height: round(image-height(sprite-file($map, $map-item)) / 2);
+			background-position: $position-x 0;
+		}
 	} @else {
-		$pos-y: round(nth(sprite-position($map, $map-item), 2) / 2);
-		width: round(image-width(sprite-file($map, $map-item)) / 2);
-		height: round(image-height(sprite-file($map, $map-item)) / 2);
-		background-position: 0 $pos-y;
+		@if $isParent == "parent" {
+			width: round(image-width(sprite-file($map, $map-item)) / 2);
+			height: round(image-height(sprite-file($map, $map-item)) / 2);
+			background-image: sprite-url($map);
+			background-repeat: no-repeat;
+			background-size: round(image-width(sprite-path($map)) / 2) round(image-height(sprite-path($map)) / 2);
+		} @else {
+			$position-x: round(nth(sprite-position($map, $map-item), 1) / 2);
+			background-position: $position-x 0;
+		}
 	}
 }
 
+$map-tabs: sprite-map("/files/img/sprite/tabs/*.png", $layout: horizontal);
+
+.sprt-a { @include sprite(parent, $map-tabs); }
+.sprt-a-bird1 { @include sprite(child, $map-tabs, bird1); }
+.sprt-a-bird2 { @include sprite(child, $map-tabs, bird2); }
+.sprt-a-bird3 { @include sprite(child, $map-tabs, bird3); }
+.sprt-a-bird4 { @include sprite(child, $map-tabs, bird4); }
 
 //  Extends
 //-------------------------------------

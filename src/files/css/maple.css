@@ -137,6 +137,36 @@ select, button, input, textarea {
   content: "\f10a";
 }
 
+.sprt-a {
+  background-image: url(/files/img/sprite/tabs-s1351a6e122.png);
+  background-repeat: no-repeat;
+  background-size: 120px 25px;
+}
+
+.sprt-a-bird1 {
+  width: 30px;
+  height: 25px;
+  background-position: 0 0;
+}
+
+.sprt-a-bird2 {
+  width: 30px;
+  height: 25px;
+  background-position: -30px 0;
+}
+
+.sprt-a-bird3 {
+  width: 30px;
+  height: 25px;
+  background-position: -60px 0;
+}
+
+.sprt-a-bird4 {
+  width: 30px;
+  height: 25px;
+  background-position: -90px 0;
+}
+
 .gp:before,
 .gp:after {
   content: "";

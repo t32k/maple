@@ -162,7 +162,7 @@ $ grunt webfont
 + __box-*__ - box/section
 + __icon-*__ - icon
 + __bar-*__ - bar
-+ __nav-*__ - navigation
++ __sprt-*__ - sprite
 
 ### Serial Number Suffix
 
@@ -179,10 +179,10 @@ $ grunt webfont
 
 EX.
 ```CSS
-.btn-a { color: red }
-.btn-b { color: green }
+.btn-a { color: green }
+.btn-b { color: red }
 .btn-c { color: black }
-.btn-c { color: black }
+.btn-d { color: white }
 ```
 
 ### Helper Classses
@@ -239,6 +239,46 @@ EX.
 ```
 
 
+## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) Getting Started
+
+### Mixins
+
+#### CSS Sprite for Retina Display
+
+```scss
+// - @mixin  CSS Sprite for Retina Display
+// - @param  $isParent {String} the first parameter is a string(parent or child)
+// - @param  $map {Glob} the second parameter is a glob
+// - @param  $map-item {Glob} the second parameter is a glob
+// - @param  $isSameChild {Boolean} default is false
+// - @usage  @include sprite(child, $map-tabs, home)
+@mixin sprite($isParent, $map, $map-item: foo, $isSameChild: false) {
+	@if not $isSameChild {
+		@if $isParent == "parent" {
+			background-image: sprite-url($map);
+			background-repeat: no-repeat;
+			background-size: round(image-width(sprite-path($map)) / 2) round(image-height(sprite-path($map)) / 2);
+		} @else {
+			$position-x: round(nth(sprite-position($map, $map-item), 1) / 2);
+			width: round(image-width(sprite-file($map, $map-item)) / 2);
+			height: round(image-height(sprite-file($map, $map-item)) / 2);
+			background-position: $position-x 0;
+		}
+	} @else {
+		@if $isParent == "parent" {
+			width: round(image-width(sprite-file($map, $map-item)) / 2);
+			height: round(image-height(sprite-file($map, $map-item)) / 2);
+			background-image: sprite-url($map);
+			background-repeat: no-repeat;
+			background-size: round(image-width(sprite-path($map)) / 2) round(image-height(sprite-path($map)) / 2);
+		} @else {
+			$position-x: round(nth(sprite-position($map, $map-item), 1) / 2);
+			background-position: $position-x 0;
+		}
+	}
+}
+
+```
 ## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) Resources
 
 ### Framework
