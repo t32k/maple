@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     // Start a static web server. 
     connect: {
       // Reload assets live in the browser
-      livereload: {
+      dist: {
         options: {
           port: 8080,
           base: '../'
@@ -53,8 +53,11 @@ module.exports = function(grunt) {
     },
     // Run tasks whenever watched files change.
     watch: {
+      options: {
+        livereload: true
+      },
       dist: {
-        files: ['../files/css/**/*.scss'],
+        files: ['../files/css/**/*.scss','../components/*.html'],
         tasks: ['compass', 'csso']
       }
     },

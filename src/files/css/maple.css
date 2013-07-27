@@ -574,7 +574,7 @@ select, button, input, textarea {
   border-bottom: 1px #ccc solid;
   color: #333;
   text-align: center;
-  line-height: 42px;
+  line-height: 80px;
 }
 
 .box-foot {
