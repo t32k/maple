@@ -59,23 +59,23 @@
 .mtn { margin-top: 0 !important; }
 .mts { margin-top: $space-base !important; }
 .mtm { margin-top: $space-2 !important; }
-.mtl { margin-top: $space-4 !important; }
-.mtx { margin-top: $space-6  !important; }
+.mtl { margin-top: $space-3 !important; }
+.mtx { margin-top: $space-4  !important; }
 .mbn { margin-bottom: 0 !important; }
 .mbs { margin-bottom: $space-base !important; }
 .mbm { margin-bottom: $space-2 !important; }
-.mbl { margin-bottom: $space-4 !important; }
-.mbx { margin-bottom: $space-6  !important; }
+.mbl { margin-bottom: $space-3 !important; }
+.mbx { margin-bottom: $space-4  !important; }
 .mln { margin-left: 0 !important; }
 .mls { margin-left: $space-base !important; }
 .mlm { margin-left: $space-2 !important; }
-.mll { margin-left: $space-4 !important; }
-.mlx { margin-left: $space-6  !important; }
+.mll { margin-left: $space-3 !important; }
+.mlx { margin-left: $space-4  !important; }
 .mrn { margin-right: 0 !important; }
 .mrs { margin-right: $space-base !important; }
 .mrm { margin-right: $space-2 !important; }
-.mrl { margin-right: $space-4 !important; }
-.mrx { margin-right: $space-6  !important; }
+.mrl { margin-right: $space-3 !important; }
+.mrx { margin-right: $space-4  !important; }
 
 .mra { margin-right: auto !important; }
 .mla { margin-left: auto !important; }
@@ -84,30 +84,30 @@
 .ptn { padding-top: 0 !important; }
 .pts { padding-top: $space-base !important; }
 .ptm { padding-top: $space-2 !important; }
-.ptl { padding-top: $space-4 !important; }
-.ptx { padding-top: $space-6  !important; }
+.ptl { padding-top: $space-3 !important; }
+.ptx { padding-top: $space-4  !important; }
 .pbn { padding-bottom: 0 !important; }
 .pbs { padding-bottom: $space-base !important; }
 .pbm { padding-bottom: $space-2 !important; }
-.pbl { padding-bottom: $space-4 !important; }
-.pbx { padding-bottom: $space-6  !important; }
+.pbl { padding-bottom: $space-3 !important; }
+.pbx { padding-bottom: $space-4  !important; }
 .pln { padding-left: 0 !important; }
 .pls { padding-left: $space-base !important; }
 .plm { padding-left: $space-2 !important; }
-.pll { padding-left: $space-4 !important; }
-.plx { padding-left: $space-6  !important; }
+.pll { padding-left: $space-3 !important; }
+.plx { padding-left: $space-4  !important; }
 .prn { padding-right: 0 !important; }
 .prs { padding-right: $space-base !important; }
 .prm { padding-right: $space-2 !important; }
-.prl { padding-right: $space-4 !important; }
-.prx { padding-right: $space-6  !important; }
+.prl { padding-right: $space-3 !important; }
+.prx { padding-right: $space-4  !important; }
 
 
 //  Border Radius
 //-------------------------------------
 
 .rn { border-radius: 0 !important; }
-.rs { border-radius: $radius-1; }
+.rs { border-radius: $radius-base; }
 .rm { border-radius: $radius-2; }
 .rl { border-radius: $radius-3; }
 

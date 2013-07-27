@@ -13,21 +13,15 @@ $color-d: #333;
 $color-e: #444;
 $color-f: #555;
 $color-g: #666;
-$color-h: #fff;
-$color-i: #666;
-$color-j: #666;
+$color-h: #777;
+$color-i: #888;
+$color-j: #999;
 
 // Spaces
 $space-base: 6px;
 $space-2: $space-base * 2;
-$space-3: $space-base * 3;
-$space-4: $space-base * 4;
-$space-5: $space-base * 5;
-$space-6: $space-base * 6;
-$space-7: $space-base * 7;
-$space-8: $space-base * 8;
-$space-9: $space-base * 9;
-$space-10: $space-base * 10;
+$space-3: $space-base * 4;
+$space-4: $space-base * 6;
 
 // Font Size
 $font-size-base: 14px;
@@ -44,9 +38,9 @@ $height-tap-2: 32px;
 $height-tap-3: 42px;
 
 // Border Radius
-$radius-1: 4px;
-$radius-2: 8px;
-$radius-3: 16px;
+$radius-base: 4px;
+$radius-2: $radius-base * 2;
+$radius-3: $radius-base * 4;
 
 // Font Settings
 $font-family-body: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -84,10 +78,6 @@ $font-family-body: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 %debug {
 	background-color: pink !important; 
-}
-%border-box {  
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
 }
 %cancel-border {
 	border: 0 !important;
