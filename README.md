@@ -239,7 +239,35 @@ EX.
 ```
 
 
-## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) Getting Started
+## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) Sass
+
+### Directory structure
+
+```sh
+├── css
+│   ├── maple.css
+│   └── sass
+│       ├── maple.scss
+│       ├── _core.scss
+│       ├── _modules.scss
+│       ├── core
+│       │   ├── _base.scss
+│       │   ├── _helper.scss
+│       │   ├── _layout.scss
+│       │   ├── _reset.scss
+│       │   └── _settings.scss
+│       ├── modules
+│       │   ├── _bars.scss
+│       │   ├── _boxes.scss
+│       │   ├── _buttons.scss
+│       │   ├── _forms.scss
+│       │   ├── _headlines.scss
+│       │   ├── _listviews.scss
+│       │   ├── _misc.scss
+│       │   └── _navigation.scss
+│       └── vendors
+│           └── _myfont.scss
+```
 
 ### Mixins
 
@@ -277,7 +305,6 @@ EX.
 		}
 	}
 }
-
 ```
 ## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) Resources
 

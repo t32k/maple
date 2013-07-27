@@ -94,6 +94,9 @@ $map-tabs: sprite-map("/files/img/sprite/tabs/*.png", $layout: horizontal);
 .sprt-a-bird3 { @include sprite(child, $map-tabs, bird3); }
 .sprt-a-bird4 { @include sprite(child, $map-tabs, bird4); }
 
+//.sprt-a { @include sprite(parent, $map-tabs, bird1, true); }
+//.sprt-a-bird1 { @include sprite(child, $map-tabs, bird1, true); }
+
 //  Extends
 //-------------------------------------
 
