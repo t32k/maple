@@ -122,7 +122,7 @@ CSSO (CSS Optimizer) is a CSS minimizer unlike others. In addition to usual mini
 $ grunt minify
 ```
 
-### [grunt-csscomb](https://github.com/t32k/grunt-csscomb)
+### [grunt-csscomb](https://github.com/csscomb/grunt-csscomb)
 
 > The grunt plugin for sorting CSS properties in specific order.
 
@@ -271,8 +271,6 @@ EX.
 ```
 
 ### Mixins
-
-#### CSS Sprite for Retina Display
 
 ```scss
 // - @mixin  CSS Sprite for Retina Display
