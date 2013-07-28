@@ -147,6 +147,7 @@ __Requires fontforge, ttfautohint__
 $ brew install fontforge ttfautohint
 $ brew install https://raw.github.com/sapegin/grunt-webfont/master/Formula/sfnt2woff.rb
 ```
+You can create glyph SVG from this [glyph.ai](https://raw.github.com/t32k/maple.css/master/src/files/ai/glyph.ai), and put it into `/files/font/svg` folder.
 
 ```sh
 $ grunt webfont
