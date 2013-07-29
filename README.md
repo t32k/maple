@@ -23,7 +23,7 @@ $ npm install -g grunt-init
 
 ### Gems
 
-Requires [Ruby](www.ruby-lang.org/)
+Requires [Ruby](http://www.ruby-lang.org/)
 
 ```sh
 $ gem update --system
