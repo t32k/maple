@@ -186,7 +186,7 @@ EX.
 .btn-d { color: white }
 ```
 
-### Helper Classses
+### Helper Classes
 
 | Symbol | Property |
 | ------ | -------- |
