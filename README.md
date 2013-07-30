@@ -157,7 +157,7 @@ $ grunt webfont
 
 ### Module Prefix
 
-| Prefix | Definition |
+| Prefix | Module name |
 | ------ | ---------- |
 | head-\* | headline |
 | list-\* | listview |
@@ -169,7 +169,7 @@ $ grunt webfont
 
 ### Serial Number Suffix
 
-| Suffix | Number |
+| Suffix | Serial Number |
 | ------ | ---------- |
 | \*-a | alpha |
 | \*-b | beta |
