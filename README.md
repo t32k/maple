@@ -276,7 +276,7 @@ EX.
 
 ### Mixins
 
-```sass
+```scss
 // - @mixin  CSS Sprite for Retina Display
 // - @param  $isParent {String} the first parameter is a string(parent or child)
 // - @param  $map {Glob} the second parameter is a glob
