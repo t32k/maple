@@ -5,9 +5,9 @@ This is alpha version, yet.
 
 ## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) Features
 
-+ __Writing Better CSS__
-+ __High Performance__
-+ __Rapid Prototyping__
++ **Writing Better CSS**
++ **High Performance**
++ **Rapid Prototyping**
 
 
 ## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) Installation
@@ -141,7 +141,7 @@ Generate custom icon webfonts from SVG/EPS files via Grunt to reduce HTTP reques
 + [cognitom/symbols](https://github.com/cognitom/symbols)
 + [iconmonstr - Free simple icons for your next project](http://iconmonstr.com/)
 
-__Requires fontforge, ttfautohint__
+**Requires fontforge, ttfautohint**
 
 ```sh
 $ brew install fontforge ttfautohint
@@ -157,29 +157,33 @@ $ grunt webfont
 
 ### Module Prefix
 
-+ __head-*__ - headline
-+ __list-*__ - listview
-+ __btn-*__ - button
-+ __box-*__ - box/section
-+ __icon-*__ - icon
-+ __bar-*__ - bar
-+ __sprt-*__ - sprite
+| Prefix | Module name |
+| ------ | ---------- |
+| head-\* | headline |
+| list-\* | listview |
+| btn-\* | button |
+| box-\* | box/section |
+| icon-\* | icon |
+| bar-\* | bar |
+| sprt-\* | sprite |
 
 ### Serial Number Suffix
 
-+ *-a - alpha
-+ *-b - beta
-+ *-c - gamma
-+ *-d - delta
-+ *-e - epsilon
-+ *-f - zeta
-+ *-g - eta
-+ *-h - theta
-+ *-i - iota
-+ *-j - kappa
+| Suffix | Serial Number |
+| ------ | ---------- |
+| \*-a | alpha |
+| \*-b | beta |
+| \*-c | gamma |
+| \*-d | delta |
+| \*-e | epsilon |
+| \*-f | zeta |
+| \*-g | eta |
+| \*-h | theta |
+| \*-i | iota |
+| \*-j | kappa |
 
 EX.
-```CSS
+```css
 .btn-a { color: green }
 .btn-b { color: red }
 .btn-c { color: black }
@@ -191,27 +195,27 @@ EX.
 | Symbol | Property |
 | ------ | -------- |
 | a | - |
-| b | font-weight: __b__old |
-| c(s) | text-align: __c__enter, __c__olor: $color-{serial number} |
-| d(v) | __d__isplay: {value} |
+| b | font-weight: **b**old |
+| c(s) | text-align: **c**enter, **c**olor: $color-{serial number} |
+| d(v) | **d**isplay: {value} |
 | e |  -  |
-| f(n) | __f__ont-size: {number} |
+| f(n) | **f**ont-size: {number} |
 | g |  -  |
 | h |  -  |
 | i |  -  |
 | j |  -  |
 | k |  -  |
-| l | text-align: __l__eft |
-| m(d)(s) | __m__argin-{direction}: {size}  |
-| n | font-weight: __n__ormal |
+| l | text-align: **l**eft |
+| m(d)(s) | **m**argin-{direction}: {size}  |
+| n | font-weight: **n**ormal |
 | o |  -  |
-| p(d)(s) | __p__adding-{direction}: {size}  |
+| p(d)(s) | **p**adding-{direction}: {size}  |
 | q |  -  |
-| r | text-align: __r__ight |
+| r | text-align: **r**ight |
 | s |  -  |
 | t |  -  |
-| u | text-decoration: __u__nderline  |
-| v(n) | __v__ertical-align: {size} |
+| u | text-decoration: **u**nderline  |
+| v(n) | **v**ertical-align: {size} |
 | w |  -  |
 | x |  -  |
 | y |  -  |
