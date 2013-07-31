@@ -347,11 +347,6 @@ EX.
 + [About HTML semantics and front-end architecture – Nicolas Gallagher](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
 + [csswizardry/CSS-Guidelines](https://github.com/csswizardry/CSS-Guidelines)
 
-### Apps
-
-+ [ImageOptim — make websites and apps load faster](http://imageoptim.com/)
-+ [ImageAlpha — lossy compression for 24-bit PNG images](http://pngmini.com/)
-
 
 ## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) License MIT
 
