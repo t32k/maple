@@ -7,6 +7,7 @@
     "grunt-csso": "~0.5.0",
     "grunt-csscomb": "~0.4.0",
     "grunt-webfont": "~0.1.5",
+    "grunt-imageoptim": "~1.2.6",
     "grunt-contrib-csslint": "~0.1.2",
     "grunt-contrib-connect": "~0.3.0",
     "grunt-contrib-compass": "~0.4.0",

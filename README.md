@@ -107,7 +107,7 @@ CSSLint is a tool to help point out problems with your CSS code. It does basic s
 + Disallow unqualified attribute selectors (Performance)
 
 ```sh
-$ grunt minify
+$ grunt build
 ```
 
 ### [grunt-csso](https://github.com/t32k/grunt-csso)
@@ -119,7 +119,7 @@ CSSO (CSS Optimizer) is a CSS minimizer unlike others. In addition to usual mini
 + [css/csso](https://github.com/css/csso)
 
 ```sh
-$ grunt minify
+$ grunt build
 ```
 
 ### [grunt-csscomb](https://github.com/csscomb/grunt-csscomb)
@@ -152,6 +152,22 @@ You can create glyph SVG from this [glyph.ai](https://raw.github.com/t32k/maple.
 ```sh
 $ grunt webfont
 ```
+
+### [grunt-imageoptim](https://github.com/JamieMason/grunt-imageoptim)
+
+> Make ImageOptim, ImageAlpha and JPEGmini part of your automated build process.
+
+**Requires Apps**
+
++ [ImageOptim — make websites and apps load faster (Mac app)](http://imageoptim.com/)
++ [ImageAlpha — heavy compression for PNG images (like JPEG with alpha channel!)](http://pngmini.com/)
++ [JPEGmini - Your Photos on a Diet!](http://jpegmini.com/)
+
+
+```sh
+$ grunt build
+```
+
 
 ## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) CSS
 

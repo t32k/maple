@@ -51,6 +51,20 @@ module.exports = function(grunt) {
         }
       }
     },
+    // Make ImageOptim, ImageAlpha and JPEGmini part of your automated build process
+    imageoptim: {
+      options: {
+        // also run images through ImageAlpha.app before ImageOptim.app
+        imageAlpha: false,
+        // also run images through JPEGmini.app after ImageOptim.app
+        jpegMini: false,
+        // quit all apps after optimisation
+        quitAfter: true
+      },
+      files: [
+        '../files/img/sprite/'
+      ],
+    },
     // Run tasks whenever watched files change.
     watch: {
       options: {
@@ -83,6 +97,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-csso');
   grunt.loadNpmTasks('grunt-csscomb');
   grunt.loadNpmTasks('grunt-webfont');
+  grunt.loadNpmTasks('grunt-imageoptim');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-csslint');
@@ -93,5 +108,5 @@ module.exports = function(grunt) {
 
   // Indivisual Tasks.
   grunt.registerTask('develop', ['connect', 'watch']);
-  grunt.registerTask('build', ['csslint', 'compass', 'csso']);
+  grunt.registerTask('build', ['csslint', 'compass', 'csso', 'imageoptim']);
 };
