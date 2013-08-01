@@ -1,6 +1,10 @@
 //-------------------------------------//
 //  User's Base Style
 //-------------------------------------//
+body {
+	color: $color-d;
+	font-size: 14px;
+}
 a {
 	display: block;
 	color: inherit;
@@ -16,6 +20,8 @@ i {
 em { 
 	font-style: normal;
 }
-select, button, input, textarea { 
-	-webkit-appearance: none
+select, button, input, textarea {
+	display: block;
+	width: 100%;
+	-webkit-appearance: none;
 }

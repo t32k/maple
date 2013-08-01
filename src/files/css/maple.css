@@ -6,77 +6,6 @@
  *
  * Designed by @t32k
  */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-a {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-}
-
-b {
-  font-weight: bold;
-}
-
-i {
-  display: inline-block;
-}
-
-em {
-  font-style: normal;
-}
-
-select, button, input, textarea {
-  -webkit-appearance: none;
-}
-
 @font-face {
   font-family: "myfont";
   src: url("/files/font/myfont-165a1ce8bfb947828896adcacf58555f.woff") format("woff"), url("/files/font/myfont-165a1ce8bfb947828896adcacf58555f.ttf") format("truetype");
@@ -138,7 +67,7 @@ select, button, input, textarea {
 }
 
 .sprt-a {
-  background-image: url(/files/img/sprite/tabs-s8687a9c210.png);
+  background-image: url(/files/img/sprite/tabs-s3217a038c5.png);
   background-repeat: no-repeat;
   background-size: 120px 25px;
 }
@@ -165,6 +94,85 @@ select, button, input, textarea {
   width: 30px;
   height: 25px;
   background-position: -90px 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+select, button, input, textarea,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  color: #333333;
+  font-size: 14px;
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+b {
+  font-weight: bold;
+}
+
+i {
+  display: inline-block;
+}
+
+em {
+  font-style: normal;
+}
+
+select, button, input, textarea {
+  display: block;
+  width: 100%;
+  -webkit-appearance: none;
 }
 
 .gp:before,
@@ -451,15 +459,15 @@ select, button, input, textarea {
 }
 
 .ca {
-  color: black !important;
+  color: #157038 !important;
 }
 
 .cb {
-  color: #111111 !important;
+  color: #b3cf4d !important;
 }
 
 .cc {
-  color: #222222 !important;
+  color: gray !important;
 }
 
 .cd {
@@ -568,6 +576,32 @@ select, button, input, textarea {
 
 .vb {
   vertical-align: bottom;
+}
+
+.btn {
+  display: block;
+  border-radius: 4px;
+  padding: 0 1em;
+  background: #157038;
+  color: #fff;
+  text-align: center;
+  line-height: 44px;
+}
+.btn.is-pressed, .btn:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 2px 4px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.6) 0 2px 4px 0 inset;
+}
+.btn.is-disabled .btn:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 2px 4px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.6) 0 2px 4px 0 inset;
+}
+
+.btn-a {
+  background: #b3cf4d;
+}
+
+.btn-b {
+  background: gray;
 }
 
 .bar-nav {

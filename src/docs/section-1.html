@@ -1,0 +1,138 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Maple: Living Styleguide</title>
+  <meta name="viewport" content="width=device-width">
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="public/style.css">
+</head>
+<body><div id="kss-wrapper" class="kss-wrapper">
+  <div id="kss-nav">
+    <header id="kss-header">
+      <hgroup><h1 class="c"><img src="https://raw.github.com/t32k/maple.css/master/src/files/img/logo.png" width="160" alt=""><br>Styleguide </h1></hgroup>
+    </header>
+    <aside>
+      <nav><ul>
+        <li><a href="index.html">0.0: Overview</a></li>
+        
+          <li><a href="section-1.html">1.0: Buttons</a></li>
+        
+      </ul></nav>
+    </aside>
+  </div>
+  <div role="main" id="kss-main">
+    <article id="kss-content">
+      
+
+        
+        
+          
+            <h1 class="kss-title"><span class="kss-ref">1.0</span> - Buttons</h1>
+          
+            
+                <div class="kss-box"><p>Buttons can and should be clicked.</p>
+</div>
+                <table class="kss-mod-list">
+                  <tr class="kss-mod-desc-group">
+                    <td class="kss-mod-desc"><p>Default styling</p></td>
+                    <td class="kss-mod-name"></td>
+                  </tr>
+                  <tr class="kss-mod-example">
+                    <td colspan="2"><a href="#" class="btn {$modifiers} mbm">button</a>
+<button class="btn {$modifiers} mbm">button</button>
+<input type="button" class="btn {$modifiers} mbm" value="button"></td>
+                  </tr>
+                
+                  <tr class="kss-mod-desc-group">
+                    <td class="kss-mod-desc"><p>TypeA</p>
+</td>
+                    <td class="kss-mod-name"><p>.btn-a</p></td>
+                  </tr>
+                  <tr class="kss-mod-example">
+                    <td colspan="2"><a href="#" class="btn btn-a mbm">button</a>
+<button class="btn btn-a mbm">button</button>
+<input type="button" class="btn btn-a mbm" value="button"></td>
+                  </tr>
+                
+                  <tr class="kss-mod-desc-group">
+                    <td class="kss-mod-desc"><p>TypeB</p>
+</td>
+                    <td class="kss-mod-name"><p>.btn-b</p></td>
+                  </tr>
+                  <tr class="kss-mod-example">
+                    <td colspan="2"><a href="#" class="btn btn-b mbm">button</a>
+<button class="btn btn-b mbm">button</button>
+<input type="button" class="btn btn-b mbm" value="button"></td>
+                  </tr>
+                
+                  <tr class="kss-mod-desc-group">
+                    <td class="kss-mod-desc"><p>Highlight the button when hovered.</p>
+</td>
+                    <td class="kss-mod-name"><p>.is-pressed.btn-a</p></td>
+                  </tr>
+                  <tr class="kss-mod-example">
+                    <td colspan="2"><a href="#" class="btn is-pressed btn-a mbm">button</a>
+<button class="btn is-pressed btn-a mbm">button</button>
+<input type="button" class="btn is-pressed btn-a mbm" value="button"></td>
+                  </tr>
+                
+                  <tr class="kss-mod-desc-group">
+                    <td class="kss-mod-desc"><p>Highlight the button when hovered.</p>
+</td>
+                    <td class="kss-mod-name"><p>:active</p></td>
+                  </tr>
+                  <tr class="kss-mod-example">
+                    <td colspan="2"><a href="#" class="btn pseudo-class-active mbm">button</a>
+<button class="btn pseudo-class-active mbm">button</button>
+<input type="button" class="btn pseudo-class-active mbm" value="button"></td>
+                  </tr>
+                
+                </table>
+                <div class="kss-markup">
+                  <pre class="prettyprint lang-html">&lt;a href=&quot;#&quot; class=&quot;btn {$modifiers} mbm&quot;&gt;button&lt;/a&gt;
+&lt;button class=&quot;btn {$modifiers} mbm&quot;&gt;button&lt;/button&gt;
+&lt;input type=&quot;button&quot; class=&quot;btn {$modifiers} mbm&quot; value=&quot;button&quot;&gt;</pre>
+                </div>
+            
+           
+        
+      
+    </article>
+  </div>
+  <footer>
+    
+  </footer>
+  <!-- SCRIPTS -->
+  <script src="public/kss.js"></script>
+  <script src="public/prettify.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      var sidebarAdjust = function() {
+        // Match footer/body height
+        var height = Math.max($(window).height(), $('#kss-main').height());
+
+        if ($(window).width() <= 768) {
+          $('#kss-main, #kss-nav').height('auto');
+        } else {
+          $('#kss-main, #kss-nav').height(height);
+        }
+      };
+
+      $(window).resize(sidebarAdjust);
+      $(window).scroll(sidebarAdjust);
+      sidebarAdjust();
+
+      // Ensure code blocks are highlighted properly...
+      $('pre>code').addClass('prettyprint');
+      prettyPrint();
+
+    });
+  </script>
+
+  
+  
+</div></body>
+</html>

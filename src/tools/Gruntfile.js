@@ -65,6 +65,20 @@ module.exports = function(grunt) {
         '../files/img/sprite/'
       ],
     },
+    // KSS styleguide generator for grunt.
+    kss: {
+      options: {
+        includeType: 'css',
+        includePath: '../files/css/maple.css',
+        template: '../docs/template'
+      },
+      dist: {
+        files: {
+          // dest : src
+          '../docs/': ['../files/css/sass']
+        }
+      }
+    },
     // Run tasks whenever watched files change.
     watch: {
       options: {
@@ -96,6 +110,7 @@ module.exports = function(grunt) {
   // Load the plugins.
   grunt.loadNpmTasks('grunt-csso');
   grunt.loadNpmTasks('grunt-csscomb');
+  grunt.loadNpmTasks('grunt-kss');
   grunt.loadNpmTasks('grunt-webfont');
   grunt.loadNpmTasks('grunt-imageoptim');
   grunt.loadNpmTasks('grunt-contrib-connect');
