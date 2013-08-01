@@ -101,6 +101,7 @@ CSSLint is a tool to help point out problems with your CSS code. It does basic s
 #### Lint turn off in Maple project
 
 + Bulletproof font face (Compatibility)
++ Disallow adjoining classes (Compatibility)
 + Require compatible vendor prefixes (Compatibility)
 + Disallow !important (Maintainability & Duplication)
 + Disallow selectors that look like regular expressions (Performance)
@@ -167,6 +168,26 @@ $ grunt webfont
 ```sh
 $ grunt build
 ```
+
+### [grunt-kss](https://github.com/t32k/grunt-kss)
+
+> KSS styleguide generator for grunt..
+
+**Require**
+
+```sh
+$ npm install kss -g
+```
+A NodeJS Implementation of KSS: a methodology for documenting CSS and generating styleguides
+
++ [hughsk/kss-node](https://github.com/hughsk/kss-node)
+
+```sh
+$ grunt publish
+```
+and, open URL.
+
+`http://localhost:8080/docs/`
 
 
 ## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) CSS
@@ -284,8 +305,7 @@ EX.
 │       │   ├── _forms.scss
 │       │   ├── _headlines.scss
 │       │   ├── _listviews.scss
-│       │   ├── _misc.scss
-│       │   └── _navigation.scss
+│       │   └── _misc.scss
 │       └── vendors
 │           └── _myfont.scss
 ```
