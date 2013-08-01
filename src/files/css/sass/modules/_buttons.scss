@@ -2,14 +2,14 @@
 //
 // Buttons can and should be clicked.
 //
-// Markup: <a href="#" class="btn {$modifiers} mbm">button</a>
-// <button class="btn {$modifiers} mbm">button</button>
-// <input type="button" class="btn {$modifiers} mbm" value="button">
+// Markup: <a href="#" class="btn {$modifiers} mbm">Button</a>
+// <button class="btn {$modifiers} mbm">Button</button>
+// <input type="button" class="btn {$modifiers} mbm" value="Button">
 //
 // .btn-a - TypeA
 // .btn-b - TypeB
-// .is-pressed.btn-a - Highlight the button when hovered.
-// :active - Highlight the button when hovered.
+// .is-pressed - 
+// .is-disabled - 
 //
 // Styleguide 1.0
 
@@ -20,13 +20,13 @@
 	background: $color-a;
 	color: #fff;
 	text-align: center;
-	line-height: 44px;
+	line-height: 42px;
 	// State
-	&.is-pressed, &:hover {
+	&.is-pressed {
 		@include box-shadow(rgba(0,0,0,0.6) 0 2px 4px 0 inset);
 	}
-	&.is-disabled &:hover {
-		@include box-shadow(rgba(0,0,0,0.6) 0 2px 4px 0 inset);
+	&.is-disabled {
+		opacity: 0.5;
 	}
 }
 .btn-a {

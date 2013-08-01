@@ -86,7 +86,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: ['../files/css/**/*.scss','../components/*.html'],
-        tasks: ['compass', 'csso']
+        tasks: ['compass', 'csso', 'kss']
       }
     },
     // SVG to webfont converter for Grunt.

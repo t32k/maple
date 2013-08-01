@@ -1,9 +1,19 @@
-//-------------------------------------//
-//  Headlines
-//-------------------------------------//
+// Headlines
+//
+// Headlines can and should be clicked.
+//
+// Markup: <a href="#" class="btn {$modifiers} mbm">button</a>
+// <button class="btn {$modifiers} mbm">button</button>
+// <input type="button" class="btn {$modifiers} mbm" value="button">
+//
+// .btn-a - TypeA
+// .btn-b - TypeB
+// .is-pressed.btn-a - Highlight the button when hovered.
+// :active - Highlight the button when hovered.
+//
+// Styleguide 2.0
 
 .head {
-	&.head-a {}
-	&.head-b {}
-	&.head-c {}
+
 }
+

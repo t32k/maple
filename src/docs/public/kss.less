@@ -1,6 +1,6 @@
 @import 'markdown';
 
-#kss-nav {
+.kss-nav {
 	width:20%;
 	background-color:#eee;
 
@@ -14,19 +14,19 @@
 	box-shadow: inset -15px 0px 15px -15px rgba(45, 45, 45, 0.25);
 }
 
-#kss-header h1 {
+.kss-header h1 {
   font-size:1.5em;
   margin-top:5/3em;
   margin-left:4/3em;
 }
 
-#kss-main, #kss-nav {
+.kss-main, .kss-nav {
 	position:absolute;
 	top:0;
 	left:0;
 }
 
-#kss-main {
+.kss-main {
 	padding-left:2.5%;
 	width:77.5%;
 	max-width:48em;
@@ -121,14 +121,14 @@ li.L9 { background: #eee }
 //   @group Mobile/Tablet Styling
 // ------------------------------------------------------------------------------
 @media screen and (max-width: 768px) {
-  #kss-main {
+  .kss-main {
     position:static;
     width:90%;
     margin:0 auto;
     padding-left:0;
   }
 
-  #kss-nav {
+  .kss-nav {
     position:static;
     display:block;
     width:auto;
@@ -147,14 +147,14 @@ li.L9 { background: #eee }
     }
   }
 
-  #kss-header>hgroup>h1 {
+  .kss-header>hgroup>h1 {
     margin-top:0;
     margin-bottom:0;
   }
 }
 
 @media screen and (max-width: 640px) {
-  #kss-github {
+  .kss-github {
     display:none;
   }
 }
