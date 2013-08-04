@@ -48,7 +48,7 @@ $ git clone https://github.com/t32k/grunt-init-maple.git ~/.grunt-init/maple --r
 
 Usage
 ```sh
-$ git-init maple
+$ grunt-init maple
 ```
 
 ### Components List
