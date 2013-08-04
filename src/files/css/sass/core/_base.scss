@@ -4,6 +4,8 @@
 body {
 	color: $color-d;
 	font-size: 14px;
+	font-family: $font-family-body;
+	-webkit-text-size-adjust: 100%;
 }
 a {
 	display: block;

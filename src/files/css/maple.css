@@ -96,6 +96,12 @@
   background-position: -90px 0;
 }
 
+.list > li:last-child {
+  border: 0 !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -149,6 +155,8 @@ table {
 body {
   color: #333333;
   font-size: 14px;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
 }
 
 a {
@@ -490,6 +498,38 @@ select, button, input, textarea {
   color: #777777 !important;
 }
 
+.ba {
+  background-color: #157038 !important;
+}
+
+.bb {
+  background-color: #b3cf4d !important;
+}
+
+.bc {
+  background-color: gray !important;
+}
+
+.bd {
+  background-color: #333333 !important;
+}
+
+.be {
+  background-color: #444444 !important;
+}
+
+.bf {
+  background-color: #555555 !important;
+}
+
+.bg {
+  background-color: #666666 !important;
+}
+
+.bh {
+  background-color: #777777 !important;
+}
+
 .n {
   font-weight: normal !important;
 }
@@ -576,6 +616,13 @@ select, button, input, textarea {
 
 .vb {
   vertical-align: bottom;
+}
+
+.list > li {
+  padding: 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0;
+  box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0;
 }
 
 .btn {
