@@ -1,11 +1,13 @@
 // Listviews
-//
-// Markup: <a href="#" class="btn {$modifiers} mbm">Button</a>
-// <button class="btn {$modifiers} mbm">Button</button>
-// <input type="button" class="btn {$modifiers} mbm" value="Button">
-//
-//
-// Styleguide 3.0
+// 
+// A description.
+// 
+// Markup: <some markup with a specific {$modifier} like class or a pseudo class >
+// 
+// .class      - description of the class state
+// :pseudo     - description of the pseudo state
+// 
+// Styleguide 6 (digit number to increment eg chapter)
 
 .list {
 

@@ -1,17 +1,13 @@
 // Buttons
-//
-// Buttons can and should be clicked.
-//
-// Markup: <a href="#" class="btn {$modifiers} mbm">Button</a>
-// <button class="btn {$modifiers} mbm">Button</button>
-// <input type="button" class="btn {$modifiers} mbm" value="Button">
-//
-// .btn-a - TypeA
-// .btn-b - TypeB
-// .is-pressed - 
-// .is-disabled - 
-//
-// Styleguide 1.0
+// 
+// A description.
+// 
+// Markup: <some markup with a specific {$modifier} like class or a pseudo class >
+// 
+// .class      - description of the class state
+// :pseudo     - description of the pseudo state
+// 
+// Styleguide 3 (digit number to increment eg chapter)
 
 .btn {
 	display: block;

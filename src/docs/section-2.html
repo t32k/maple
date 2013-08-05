@@ -11,15 +11,25 @@
 <body><div class="kss-wrapper">
   <div id="kss-nav" class="kss-nav">
     <header class="kss-header">
-      <hgroup><h1 class="c"><img src="https://raw.github.com/t32k/maple.css/master/src/files/img/logo.png" width="160" alt="Maple"></h1></hgroup>
+      <h1 class="c"><img src="https://raw.github.com/t32k/maple.css/master/src/files/img/logo.png" width="160" alt="Maple"></h1>
     </header>
     <aside>
       <nav><ul>
         <li class="mbm"><a href="index.html">0.0: Overview</a></li>
         
-          <li class="mbm"><a href="section-1.html">1.0: Buttons</a></li>
+          <li class="mbm"><a href="section-1.html">1.0: Bars</a></li>
         
-          <li class="mbm"><a href="section-2.html">2.0: Headlines</a></li>
+          <li class="mbm"><a href="section-2.html">2.0: Boxes</a></li>
+        
+          <li class="mbm"><a href="section-3.html">3.0: Buttons</a></li>
+        
+          <li class="mbm"><a href="section-4.html">4.0: Forms</a></li>
+        
+          <li class="mbm"><a href="section-5.html">5.0: Headings</a></li>
+        
+          <li class="mbm"><a href="section-6.html">6.0: Listviews</a></li>
+        
+          <li class="mbm"><a href="section-7.html">7.0: Misc.</a></li>
         
       </ul></nav>
     </aside>
@@ -30,10 +40,10 @@
         
         
           
-            <h1 class="kss-title"><span class="kss-ref">2.0</span> - Headlines</h1>
+            <h1 class="kss-title"><span class="kss-ref">2.0</span> - Boxes</h1>
           
             
-                <div class="kss-box"><p>Headlines can and should be clicked.</p>
+                <div class="kss-box"><p>A description.</p>
 </div>
                 <table class="kss-mod-list">
                   <tr class="kss-mod-desc-group">
@@ -41,60 +51,30 @@
                     <td class="kss-mod-name"></td>
                   </tr>
                   <tr class="kss-mod-example">
-                    <td colspan="2"><a href="#" class="btn {$modifiers} mbm">button</a>
-<button class="btn {$modifiers} mbm">button</button>
-<input type="button" class="btn {$modifiers} mbm" value="button"></td>
+                    <td colspan="2"><some markup with a specific {$modifier} like class or a pseudo class ></td>
                   </tr>
                 
                   <tr class="kss-mod-desc-group">
-                    <td class="kss-mod-desc"><p>TypeA</p>
+                    <td class="kss-mod-desc"><p>description of the class state</p>
 </td>
-                    <td class="kss-mod-name"><p>.btn-a</p></td>
+                    <td class="kss-mod-name"><p>.class</p></td>
                   </tr>
                   <tr class="kss-mod-example">
-                    <td colspan="2"><a href="#" class="btn btn-a mbm">button</a>
-<button class="btn btn-a mbm">button</button>
-<input type="button" class="btn btn-a mbm" value="button"></td>
+                    <td colspan="2"><some markup with a specific {$modifier} like class or a pseudo class ></td>
                   </tr>
                 
                   <tr class="kss-mod-desc-group">
-                    <td class="kss-mod-desc"><p>TypeB</p>
+                    <td class="kss-mod-desc"><p>description of the pseudo state</p>
 </td>
-                    <td class="kss-mod-name"><p>.btn-b</p></td>
+                    <td class="kss-mod-name"><p>:pseudo</p></td>
                   </tr>
                   <tr class="kss-mod-example">
-                    <td colspan="2"><a href="#" class="btn btn-b mbm">button</a>
-<button class="btn btn-b mbm">button</button>
-<input type="button" class="btn btn-b mbm" value="button"></td>
-                  </tr>
-                
-                  <tr class="kss-mod-desc-group">
-                    <td class="kss-mod-desc"><p>Highlight the button when hovered.</p>
-</td>
-                    <td class="kss-mod-name"><p>.is-pressed.btn-a</p></td>
-                  </tr>
-                  <tr class="kss-mod-example">
-                    <td colspan="2"><a href="#" class="btn is-pressed btn-a mbm">button</a>
-<button class="btn is-pressed btn-a mbm">button</button>
-<input type="button" class="btn is-pressed btn-a mbm" value="button"></td>
-                  </tr>
-                
-                  <tr class="kss-mod-desc-group">
-                    <td class="kss-mod-desc"><p>Highlight the button when hovered.</p>
-</td>
-                    <td class="kss-mod-name"><p>:active</p></td>
-                  </tr>
-                  <tr class="kss-mod-example">
-                    <td colspan="2"><a href="#" class="btn pseudo-class-active mbm">button</a>
-<button class="btn pseudo-class-active mbm">button</button>
-<input type="button" class="btn pseudo-class-active mbm" value="button"></td>
+                    <td colspan="2"><some markup with a specific {$modifier} like class or a pseudo class ></td>
                   </tr>
                 
                 </table>
                 <div class="kss-markup">
-                  <pre class="prettyprint lang-html">&lt;a href=&quot;#&quot; class=&quot;btn {$modifiers} mbm&quot;&gt;button&lt;/a&gt;
-&lt;button class=&quot;btn {$modifiers} mbm&quot;&gt;button&lt;/button&gt;
-&lt;input type=&quot;button&quot; class=&quot;btn {$modifiers} mbm&quot; value=&quot;button&quot;&gt;</pre>
+                  <pre class="prettyprint lang-html">&lt;some markup with a specific {$modifier} like class or a pseudo class &gt;</pre>
                 </div>
             
            
@@ -108,7 +88,7 @@
   <!-- SCRIPTS -->
   <script src="public/kss.js"></script>
   <script src="public/prettify.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
       var sidebarAdjust = function() {
@@ -129,10 +109,8 @@
       // Ensure code blocks are highlighted properly...
       $('pre>code').addClass('prettyprint');
       prettyPrint();
-
     });
   </script>
-
   
 </div></body>
 </html>
