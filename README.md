@@ -176,7 +176,7 @@ $ grunt build
 **Require**
 
 ```sh
-$ npm install kss -g
+$ npm install -g kss
 ```
 A NodeJS Implementation of KSS: a methodology for documenting CSS and generating styleguides
 
