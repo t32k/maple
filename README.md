@@ -353,19 +353,21 @@ EX.
 + [jquery/jquery-mobile](https://github.com/jquery/jquery-mobile)
 + [twitter/bootstrap](https://github.com/twitter/bootstrap)
 + [zurb/foundation](https://github.com/zurb/foundation)
-+ [stubbornella/oocss · GitHub](https://github.com/stubbornella/oocss)
++ [stubbornella/oocss](https://github.com/stubbornella/oocss)
 + [csswizardry/inuit.css](https://github.com/csswizardry/inuit.css)
 + [mvcss/mvcss](https://github.com/mvcss/mvcss)
-+ [BEM: Methodology of Effective Site Development](http://bem.info/)
 + [suitcss](https://github.com/suitcss)
+
 
 ### Tips
 
-+ [stubbornella/csslint · GitHub](https://github.com/stubbornella/csslint)
-+ [necolas/idiomatic-css · GitHub ](https://github.com/necolas/idiomatic-css/)
 + [Scalable and Modular Architecture for CSS](http://smacss.com/)
-+ [About HTML semantics and front-end architecture – Nicolas Gallagher](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
++ [BEM: Methodology of Effective Site Development](http://bem.info/)
++ [SOLID CSS | Miller Medeiros](http://blog.millermedeiros.com/solid-css/)
++ [About HTML semantics and front-end architecture](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
 + [csswizardry/CSS-Guidelines](https://github.com/csswizardry/CSS-Guidelines)
++ [necolas/idiomatic-css](https://github.com/necolas/idiomatic-css/)
++ [stubbornella/csslint](https://github.com/stubbornella/csslint)
 
 
 ## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) License MIT
