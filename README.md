@@ -3,14 +3,14 @@
 This is alpha version, yet.
 
 
-## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) Features
+## ![][leaf] Features
 
 + **Writing Better CSS**
 + **High Performance**
 + **Rapid Prototyping**
 
 
-## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) Installation
+## ![][leaf] Installation
 
 ### NPM
 
@@ -33,7 +33,7 @@ $ gem install oily_png
 ```
 
 
-## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) Getting Started
+## ![][leaf] Getting Started
 
 ### Project Scaffolding
 
@@ -64,7 +64,7 @@ and, open URL.
 `http://localhost:8080/components/`
 
 
-## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) Grunt Tasks
+## ![][leaf] Grunt Tasks
 
 ### [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect) / [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
 
@@ -190,7 +190,7 @@ and, open URL.
 `http://localhost:8080/docs/`
 
 
-## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) CSS
+## ![][leaf] CSS
 
 ### Module Prefix
 
@@ -281,7 +281,7 @@ EX.
 ```
 
 
-## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) Sass
+## ![][leaf] Sass
 
 ### Directory structure
 
@@ -345,7 +345,7 @@ EX.
 	}
 }
 ```
-## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) Resources
+## ![][leaf] Resources
 
 ### Framework
 
@@ -370,7 +370,7 @@ EX.
 + [stubbornella/csslint](https://github.com/stubbornella/csslint)
 
 
-## ![](https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png) License MIT
+## ![][leaf] License MIT
 
 Copyright (c) 2013 Koji Ishimoto
 
@@ -394,3 +394,5 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
+
+[leaf]: https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png
