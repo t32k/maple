@@ -151,7 +151,7 @@ $ brew install https://raw.github.com/sapegin/grunt-webfont/master/Formula/sfnt2
 You can create glyph SVG from this [glyph.ai](https://raw.github.com/t32k/maple.css/master/src/files/ai/glyph.ai), and put it into `/files/font/svg` folder.
 
 ```sh
-$ grunt webfont
+$ grunt typeset
 ```
 
 ### [grunt-imageoptim](https://github.com/JamieMason/grunt-imageoptim)

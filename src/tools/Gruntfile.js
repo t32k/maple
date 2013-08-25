@@ -123,6 +123,7 @@ module.exports = function(grunt) {
 
   // Indivisual Tasks.
   grunt.registerTask('develop', ['connect', 'watch']);
+  grunt.registerTask('typeset', ['webfont', 'compass']);
   grunt.registerTask('publish', ['csslint', 'compass', 'kss']);
   grunt.registerTask('build', ['csslint', 'compass', 'csso', 'imageoptim']);
 };
