@@ -8,12 +8,16 @@
 // :pseudo     - description of the pseudo state
 // 
 // Styleguide 1 (digit number to increment eg chapter)
-
-.bar-nav {
-	border-bottom: 1px #ccc solid;
+.bar-head {
+	border-bottom: 1px #bbb solid;
+	background: image-url('/files/img/logo.png') center center no-repeat;
+	background-size: 160px 40px;
 	color: #333;
 	text-align: center;
 	line-height: 80px;
+}
+.bar-nav {
+
 }
 
 .bar-tool { }

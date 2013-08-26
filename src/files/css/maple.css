@@ -650,8 +650,10 @@ select, button, input, textarea {
   background: gray;
 }
 
-.bar-nav {
-  border-bottom: 1px #ccc solid;
+.bar-head {
+  border-bottom: 1px #bbb solid;
+  background: url(/files/img/logo.png) center center no-repeat;
+  background-size: 160px 40px;
   color: #333;
   text-align: center;
   line-height: 80px;
