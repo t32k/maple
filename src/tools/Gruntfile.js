@@ -94,7 +94,7 @@ module.exports = function(grunt) {
       dist: {
         src: '../files/font/svg/*.svg',
         dest: '../files/font/',
-        destCss: '../files/css/sass/vendors/',
+        destCss: '../files/css/sass/libs/',
         options: {
           font: 'myfont',
           types: ['woff','ttf'],
