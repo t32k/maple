@@ -1,6 +1,8 @@
 module.exports = function(grunt) {
   'use strict';
-  var os = require('os');
+  var os = require('os'),
+      isWindows = os.platform().indexOf('win'),
+      tasks;
 
   // Project configuration.
   grunt.initConfig({
@@ -130,12 +132,10 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['develop']);
 
   // Indivisual Tasks.
-  if (!os.platform().indexOf('win')) {
-    // Delete `shell` task when you use on Windows OS.
-    grunt.registerTask('develop', ['connect', 'watch']);
-  } else {
-    grunt.registerTask('develop', ['connect', 'shell:open', 'watch']);
-  }
+  // Delete `shell` task when you use on Windows OS.
+  tasks = (!isWindows) ? ['connect', 'watch'] : ['connect', 'shell:open', 'watch'];
+
+  grunt.registerTask('develop', tasks);
   grunt.registerTask('typeset', ['webfont', 'compass']);
   grunt.registerTask('publish', ['csslint', 'compass', 'kss']);
   grunt.registerTask('build', ['csslint', 'compass', 'csso', 'imageoptim']);
