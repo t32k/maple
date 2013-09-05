@@ -171,7 +171,7 @@ $ grunt build
 
 ### [grunt-kss](https://github.com/t32k/grunt-kss)
 
-> KSS styleguide generator for grunt..
+> KSS styleguide generator for grunt.
 
 **Require**
 
@@ -179,6 +179,9 @@ $ grunt build
 $ npm install -g kss
 ```
 A NodeJS Implementation of KSS: a methodology for documenting CSS and generating styleguides
+
+`http://localhost:8080/docs/`
+
 
 + [hughsk/kss-node](https://github.com/hughsk/kss-node)
 
