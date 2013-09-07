@@ -5,9 +5,7 @@ This is alpha version, yet.
 
 ## ![][leaf] Features
 
-+ **Writing Better CSS**
-+ **High Performance**
-+ **Rapid Prototyping**
+![Features](https://raw.github.com/t32k/maple.css/master/src/files/img/feature.png)
 
 
 ## ![][leaf] Installation
@@ -375,7 +373,7 @@ EX.
 
 ## ![][leaf] License MIT
 
-Copyright (c) 2013 Koji Ishimoto
+© 2013 Koji Ishimoto
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
