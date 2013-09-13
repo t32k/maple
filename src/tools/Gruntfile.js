@@ -1,8 +1,5 @@
 module.exports = function(grunt) {
   'use strict';
-  var os = require('os'),
-      isWindows = os.platform().indexOf('win'),
-      tasks;
 
   // Project configuration.
   grunt.initConfig({
