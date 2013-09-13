@@ -14,7 +14,8 @@ module.exports = function(grunt) {
       dist: {
         options: {
           port: 8080,
-          base: '../'
+          base: '../',
+          open: 'http://localhost:8080/components/'
         }
       }
     },
@@ -82,12 +83,6 @@ module.exports = function(grunt) {
         }
       }
     },
-    // Run shell commands.
-    shell: {
-      open: {
-        command: 'open http://localhost:8080/components/'
-      }
-    },
     // Run tasks whenever watched files change.
     watch: {
       options: {
@@ -119,7 +114,6 @@ module.exports = function(grunt) {
   // Load the plugins.
   grunt.loadNpmTasks('grunt-kss');
   grunt.loadNpmTasks('grunt-csso');
-  grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-csscomb');
   grunt.loadNpmTasks('grunt-webfont');
   grunt.loadNpmTasks('grunt-imageoptim');
@@ -131,11 +125,7 @@ module.exports = function(grunt) {
   // Default task.
   grunt.registerTask('default', ['develop']);
 
-  // Indivisual Tasks.
-  // Delete `shell` task when you use on Windows OS.
-  tasks = (!isWindows) ? ['connect', 'watch'] : ['connect', 'shell:open', 'watch'];
-
-  grunt.registerTask('develop', tasks);
+  grunt.registerTask('develop', ['connect', 'watch']);
   grunt.registerTask('typeset', ['webfont', 'compass']);
   grunt.registerTask('publish', ['csslint', 'compass', 'kss']);
   grunt.registerTask('build', ['csslint', 'compass', 'csso', 'imageoptim']);
