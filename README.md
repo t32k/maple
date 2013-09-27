@@ -307,7 +307,7 @@ EX.
 │       │   ├── _headlines.scss
 │       │   ├── _listviews.scss
 │       │   └── _misc.scss
-│       └── vendors
+│       └── libs
 │           └── _myfont.scss
 ```
 
