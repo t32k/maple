@@ -6,6 +6,14 @@ module.exports = function(grunt) {
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
     // Start a static web server. 
+    autoprefixer: {
+      options: {
+        browsers: ['ios >= 5', 'android >= 2.3']
+      },
+      dist: {
+        src: '../files/css/maple.css'
+      },
+    },
     connect: {
       // Reload assets live in the browser
       dist: {
@@ -105,7 +113,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: ['../files/css/**/*.scss','../components/*.html'],
-        tasks: ['compass', 'csso']
+        tasks: ['compass', 'autoprefixer', 'csso']
       }
     },
     // SVG to webfont converter for Grunt.
@@ -133,6 +141,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-webfont');
   grunt.loadNpmTasks('grunt-imageoptim');
   grunt.loadNpmTasks('grunt-spritesmith');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-csslint');
@@ -142,7 +151,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['develop']);
 
   grunt.registerTask('develop', ['connect', 'watch']);
-  grunt.registerTask('typeset', ['webfont', 'compass']);
-  grunt.registerTask('publish', ['csslint', 'compass', 'kss']);
-  grunt.registerTask('build', ['csslint', 'compass', 'csso', 'imageoptim']);
+  grunt.registerTask('typeset', ['webfont', 'compass', 'autoprefixer']);
+  grunt.registerTask('publish', ['csslint', 'compass', 'autoprefixer', 'kss']);
+  grunt.registerTask('build', ['csslint', 'compass', 'autoprefixer', 'csso', 'imageoptim']);
 };
