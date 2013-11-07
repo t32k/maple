@@ -104,10 +104,16 @@ CSSLint is a tool to help point out problems with your CSS code. It does basic s
 + Disallow !important (Maintainability & Duplication)
 + Disallow selectors that look like regular expressions (Performance)
 + Disallow unqualified attribute selectors (Performance)
++ Disallow units for zero values (Performance)
 
 ```sh
 $ grunt build
 ```
+
+### [grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer)
+
+> Parse CSS and add vendor-prefixed CSS properties using the Can I Use database. Based on Autoprefixer.
+
 
 ### [grunt-csso](https://github.com/t32k/grunt-csso)
 

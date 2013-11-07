@@ -14,7 +14,7 @@
 	> li {
 		padding: 1em;
 		border-bottom: 1px solid rgba(0,0,0, 0.1);
-		@include box-shadow(rgba(255,255,255, 0.4) 0 1px 0);
+		box-shadow: rgba(255,255,255, 0.4) 0 1px 0;
 		&:last-child {
 			@extend %cancel-border;
 		}

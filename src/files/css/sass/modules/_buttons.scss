@@ -19,7 +19,7 @@
 	line-height: 42px;
 	// State
 	&.is-pressed {
-		@include box-shadow(rgba(0,0,0,0.6) 0 2px 4px 0 inset);
+		box-shadow: rgba(0, 0, 0, 0.6) 0 2px 4px 0 inset;
 	}
 	&.is-disabled {
 		opacity: 0.5;
