@@ -24,14 +24,6 @@ module.exports = function(grunt) {
         }
       }
     },
-    // Compile Compass to CSS. 
-    compass: {
-      dist: {
-        options: {
-          config: 'config.rb'
-        }
-      }
-    },
     // Lint CSS files.
     csslint: {
       dist: {
@@ -88,6 +80,14 @@ module.exports = function(grunt) {
         }
       }
     },
+    // Grunt task to compile Sass SCSS to CSS
+    sass: {
+      dist: {
+          files: {
+              '../files/css/maple.css': '../files/css/sass/maple.scss'
+          }
+      },
+    },
     // Grunt task for creating spritesheets and their coordinates
     sprite: {
       dist: {
@@ -113,7 +113,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: ['../files/css/**/*.scss','../components/*.html'],
-        tasks: ['compass', 'autoprefixer', 'csso']
+        tasks: ['sass', 'autoprefixer', 'csso']
       }
     },
     // SVG to webfont converter for Grunt.
@@ -136,6 +136,7 @@ module.exports = function(grunt) {
 
   // Load the plugins.
   grunt.loadNpmTasks('grunt-kss');
+  grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-csso');
   grunt.loadNpmTasks('grunt-csscomb');
   grunt.loadNpmTasks('grunt-webfont');
@@ -143,7 +144,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-spritesmith');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
@@ -151,7 +151,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['develop']);
 
   grunt.registerTask('develop', ['connect', 'watch']);
-  grunt.registerTask('typeset', ['webfont', 'compass', 'autoprefixer']);
-  grunt.registerTask('publish', ['csslint', 'compass', 'autoprefixer', 'kss']);
-  grunt.registerTask('build', ['csslint', 'compass', 'autoprefixer', 'csso', 'imageoptim']);
+  grunt.registerTask('typeset', ['webfont', 'sass', 'autoprefixer']);
+  grunt.registerTask('publish', ['csslint', 'sass', 'autoprefixer', 'kss']);
+  grunt.registerTask('build', ['csslint', 'sass', 'autoprefixer', 'csso', 'imageoptim']);
 };

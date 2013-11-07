@@ -19,18 +19,6 @@ $ npm install -g grunt-cli
 $ npm install -g grunt-init
 ```
 
-### Gems
-
-Requires [Ruby](http://www.ruby-lang.org/)
-
-```sh
-$ gem update --system
-$ gem install sass
-$ gem install compass
-$ gem install oily_png
-```
-
-
 ## ![][leaf] Getting Started
 
 ### Project Scaffolding
@@ -76,13 +64,9 @@ A happy land where browsers don't need a Refresh button.
 $ grunt develop
 ```
 
-### [grunt-contrib-compass](https://github.com/gruntjs/grunt-contrib-compass)
+### [grunt-sass](https://github.com/sindresorhus/grunt-sass)
 
-> Compile Compass to CSS.
-
-Compass is an open-source CSS Authoring Framework.
-
-+ [Compass](http://compass-style.org/)
+> Grunt task to compile Sass SCSS to CSS
 
 ```sh
 $ grunt develop
