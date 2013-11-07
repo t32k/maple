@@ -53,49 +53,13 @@ $font-family-body: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 //  Mixins
 //-------------------------------------
+@import "../libs/sprite";
 
-// - @mixin  CSS Sprite for Retina Display
-// - @param  $isParent {String} the first parameter is a string(parent or child)
-// - @param  $map {Glob} the second parameter is a glob
-// - @param  $map-item {Glob} the second parameter is a glob
-// - @param  $isSameChild {Boolean} default is false
-// - @usage  @include sprite(child, $map-tabs, home)
-@mixin sprite($isParent, $map, $map-item: foo, $isSameChild: false) {
-	@if not $isSameChild {
-		@if $isParent == "parent" {
-			background-image: sprite-url($map);
-			background-repeat: no-repeat;
-			background-size: round(image-width(sprite-path($map)) / 2) round(image-height(sprite-path($map)) / 2);
-		} @else {
-			$position-x: round(nth(sprite-position($map, $map-item), 1) / 2);
-			width: round(image-width(sprite-file($map, $map-item)) / 2);
-			height: round(image-height(sprite-file($map, $map-item)) / 2);
-			background-position: $position-x 0;
-		}
-	} @else {
-		@if $isParent == "parent" {
-			width: round(image-width(sprite-file($map, $map-item)) / 2);
-			height: round(image-height(sprite-file($map, $map-item)) / 2);
-			background-image: sprite-url($map);
-			background-repeat: no-repeat;
-			background-size: round(image-width(sprite-path($map)) / 2) round(image-height(sprite-path($map)) / 2);
-		} @else {
-			$position-x: round(nth(sprite-position($map, $map-item), 1) / 2);
-			background-position: $position-x 0;
-		}
-	}
-}
-
-$map-tabs: sprite-map("/files/img/sprite/tabs/*.png", $layout: horizontal);
-
-.sprt-a { @include sprite(parent, $map-tabs); }
-.sprt-a-bird1 { @include sprite(child, $map-tabs, bird1); }
-.sprt-a-bird2 { @include sprite(child, $map-tabs, bird2); }
-.sprt-a-bird3 { @include sprite(child, $map-tabs, bird3); }
-.sprt-a-bird4 { @include sprite(child, $map-tabs, bird4); }
-
-//.sprt-a { @include sprite(parent, $map-tabs, bird1, true); }
-//.sprt-a-bird1 { @include sprite(child, $map-tabs, bird1, true); }
+.sprt-a { @include sprite(parent, $_bird1); }
+.sprt-a__bird1 { @include sprite(child, $_bird1); }
+.sprt-a__bird2 { @include sprite(child, $_bird2); }
+.sprt-a__bird3 { @include sprite(child, $_bird3); }
+.sprt-a__bird4 { @include sprite(child, $_bird4); }
 
 //  Extends
 //-------------------------------------

@@ -167,6 +167,15 @@ $ grunt typeset
 $ grunt build
 ```
 
+### [grunt-spritesmith](https://github.com/Ensighten/grunt-spritesmith)
+
+> Grunt task for creating spritesheets and their coordinates
+
+```sh
+$ grunt sprite
+```
+
+
 ### [grunt-kss](https://github.com/t32k/grunt-kss)
 
 > KSS styleguide generator for grunt.
@@ -308,44 +317,31 @@ EX.
 │       │   ├── _listviews.scss
 │       │   └── _misc.scss
 │       └── libs
-│           └── _myfont.scss
+│           ├── _myfont.scss
+│           └── _sprites.scss
 ```
 
 ### Mixins
 
+#### CSS Sprite for Retina
+
+[Previous Verison](https://gist.github.com/t32k/e65534b5a8bb124e1cbe)
+
 ```scss
-// - @mixin  CSS Sprite for Retina Display
-// - @param  $isParent {String} the first parameter is a string(parent or child)
-// - @param  $map {Glob} the second parameter is a glob
-// - @param  $map-item {Glob} the second parameter is a glob
-// - @param  $isSameChild {Boolean} default is false
-// - @usage  @include sprite(child, $map-tabs, home)
-@mixin sprite($isParent, $map, $map-item: foo, $isSameChild: false) {
-	@if not $isSameChild {
-		@if $isParent == "parent" {
-			background-image: sprite-url($map);
-			background-repeat: no-repeat;
-			background-size: round(image-width(sprite-path($map)) / 2) round(image-height(sprite-path($map)) / 2);
-		} @else {
-			$position-x: round(nth(sprite-position($map, $map-item), 1) / 2);
-			width: round(image-width(sprite-file($map, $map-item)) / 2);
-			height: round(image-height(sprite-file($map, $map-item)) / 2);
-			background-position: $position-x 0;
-		}
-	} @else {
-		@if $isParent == "parent" {
-			width: round(image-width(sprite-file($map, $map-item)) / 2);
-			height: round(image-height(sprite-file($map, $map-item)) / 2);
-			background-image: sprite-url($map);
-			background-repeat: no-repeat;
-			background-size: round(image-width(sprite-path($map)) / 2) round(image-height(sprite-path($map)) / 2);
-		} @else {
-			$position-x: round(nth(sprite-position($map, $map-item), 1) / 2);
-			background-position: $position-x 0;
-		}
-	}
+// $list: <X> <Y> <Offset X> <Offset Y> <Width> <Height> <Total Width> <Total Height> <Image Path>
+@mixin sprite($isParent, $sprite) {
+  @if $isParent == "parent" {
+    background-image: url( unquote( nth($sprite, 9) ) );
+    background-repeat: no-repeat;
+    background-size: round( nth($sprite, 7) / 2 ) round( nth($sprite, 8) / 2 );
+  } @else {
+    width: round( nth($sprite, 5) / 2 );
+    height: round( nth($sprite, 6) / 2 );
+    background-position: round( nth($sprite, 3) / 2 ) round( nth($sprite, 4) / 2 );
+  }
 }
 ```
+
 ## ![][leaf] Resources
 
 ### Framework

@@ -67,33 +67,33 @@
 }
 
 .sprt-a {
-  background-image: url(/files/img/sprite/tabs-s3217a038c5.png);
+  background-image: url(/files/img/sprite/tabs.1383826639213.png);
   background-repeat: no-repeat;
-  background-size: 120px 25px;
+  background-size: 151px 99px;
 }
 
-.sprt-a-bird1 {
+.sprt-a__bird1 {
   width: 30px;
   height: 25px;
-  background-position: 0 0;
+  background-position: 0px -75px;
 }
 
-.sprt-a-bird2 {
-  width: 30px;
-  height: 25px;
-  background-position: -30px 0;
+.sprt-a__bird2 {
+  width: 90px;
+  height: 74px;
+  background-position: 0px 0px;
 }
 
-.sprt-a-bird3 {
-  width: 30px;
-  height: 25px;
-  background-position: -60px 0;
+.sprt-a__bird3 {
+  width: 60px;
+  height: 49px;
+  background-position: -91px 0px;
 }
 
-.sprt-a-bird4 {
+.sprt-a__bird4 {
   width: 30px;
   height: 25px;
-  background-position: -90px 0;
+  background-position: -31px -75px;
 }
 
 .list > li:last-child {
@@ -642,11 +642,11 @@ select, button, input, textarea {
   opacity: 0.5;
 }
 
-.btn-a {
+.btn--a {
   background: #b3cf4d;
 }
 
-.btn-b {
+.btn--b {
   background: gray;
 }
 

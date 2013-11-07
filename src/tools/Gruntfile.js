@@ -62,9 +62,9 @@ module.exports = function(grunt) {
         // quit all apps after optimisation
         quitAfter: true
       },
-      files: [
-        '../files/img/sprite/'
-      ],
+      dist: {
+        src: ['../files/img/sprite']
+      }
     },
     // KSS styleguide generator for grunt.
     kss: {
@@ -80,10 +80,28 @@ module.exports = function(grunt) {
         }
       }
     },
+    // Grunt task for creating spritesheets and their coordinates
+    sprite: {
+      dist: {
+        dt: '<%= Date.now() %>',
+        src: '../files/img/sprite/tabs/*.png',
+        destImg: '../files/img/sprite/tabs.<%= sprite.dist.dt %>.png',
+        imgPath: '/files/img/sprite/tabs.<%= sprite.dist.dt %>.png',
+        destCSS: '../files/css/sass/libs/_sprite.scss',
+        algorithm: 'binary-tree',
+        padding: 2,
+        cssTemplate: 'spritesmith.mustache',
+        // cssOpts: { functions: false }
+      }
+    },
     // Run tasks whenever watched files change.
     watch: {
       options: {
         livereload: true
+      },
+      sprite: {
+        files: ['../files/img/sprite/*/*.png'],
+        tasks: ['sprite']
       },
       dist: {
         files: ['../files/css/**/*.scss','../components/*.html'],
@@ -114,6 +132,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-csscomb');
   grunt.loadNpmTasks('grunt-webfont');
   grunt.loadNpmTasks('grunt-imageoptim');
+  grunt.loadNpmTasks('grunt-spritesmith');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-csslint');
