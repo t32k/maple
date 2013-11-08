@@ -8,7 +8,7 @@
 // Colors
 $color-a: #157038; // Green
 $color-b: #b3cf4d; // Yellowish Green 
-$color-c: #808080; // Alminium Gray
+$color-c: #818181; // Alminium Gray
 $color-d: #333; // Off Black
 $color-e: #444;
 $color-f: #555;
@@ -54,6 +54,7 @@ $font-family-body: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 //  Mixins
 //-------------------------------------
 @import "../libs/sprite";
+
 
 .sprt-a { @include sprite(parent, $_bird1); }
 .sprt-a__bird1 { @include sprite(child, $_bird1); }

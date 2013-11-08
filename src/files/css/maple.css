@@ -1,12 +1,3 @@
-/*
- * Maple.css
- *
- * Copyright 2013 Koji Ishimoto
- * Licensed under the MIT License
- *
- * Designed by @t32k
- */
-
 @font-face {
   font-family: "myfont";
   src: url("/files/font/myfont-165a1ce8bfb947828896adcacf58555f.woff") format("woff"), url("/files/font/myfont-165a1ce8bfb947828896adcacf58555f.ttf") format("truetype");
@@ -564,7 +555,7 @@ textarea {
 }
 
 .cc {
-  color: grey !important;
+  color: #818181 !important;
 }
 
 .cd {
@@ -596,7 +587,7 @@ textarea {
 }
 
 .bc {
-  background-color: grey !important;
+  background-color: #818181 !important;
 }
 
 .bd {
@@ -738,7 +729,7 @@ textarea {
 }
 
 .btn--b {
-  background: grey;
+  background: #818181;
 }
 
 .bar-head {
