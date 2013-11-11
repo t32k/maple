@@ -1,11 +1,11 @@
-![Maple](https://raw.github.com/t32k/maple.css/master/src/files/img/head.png)
+![Maple](src/files/img/head.png)
 
 This is alpha version, yet.
 
 
 ## ![][leaf] Features
 
-![Features](https://raw.github.com/t32k/maple.css/master/src/files/img/feature.png)
+![](src/files/img/feature.png)
 
 
 ## ![][leaf] Installation
@@ -52,21 +52,35 @@ and, open URL.
 
 ## ![][leaf] Grunt Tasks
 
-### [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect) / [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
+### [grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer)
 
-> Start a connect web server. Run predefined tasks whenever watched file patterns are added, changed or deleted.
+> Parse CSS and add vendor-prefixed CSS properties using the Can I Use database. Based on Autoprefixer.
 
-`livereload: true`
+### [grunt-csscomb](https://github.com/csscomb/grunt-csscomb)
 
-A happy land where browsers don't need a Refresh button.
+> The grunt plugin for sorting CSS properties in specific order.
+
++ [The Greatest tool for sorting CSS properties in specific order](http://csscomb.com/)
 
 ```sh
-$ grunt develop
+$ grunt csscomb
 ```
 
-### [grunt-sass](https://github.com/sindresorhus/grunt-sass)
+### [grunt-csso](https://github.com/t32k/grunt-csso)
 
-> Grunt task to compile Sass SCSS to CSS
+> Minify CSS files with CSSO
+
+CSSO (CSS Optimizer) is a CSS minimizer unlike others. In addition to usual minification techniques it can perform structural optimization of CSS files, resulting in smaller file size compared to other minifiers.
+
++ [css/csso](https://github.com/css/csso)
+
+```sh
+$ grunt build
+```
+
+### [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect) 
+
+> Start a connect web server.
 
 ```sh
 $ grunt develop
@@ -94,31 +108,68 @@ CSSLint is a tool to help point out problems with your CSS code. It does basic s
 $ grunt build
 ```
 
-### [grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer)
+### [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
 
-> Parse CSS and add vendor-prefixed CSS properties using the Can I Use database. Based on Autoprefixer.
+> Run tasks whenever watched files change.
+
+`livereload: true`
+
+A happy land where browsers don't need a Refresh button.
+
++ [Chrome Extensions](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
 
 
-### [grunt-csso](https://github.com/t32k/grunt-csso)
+### [grunt-imageoptim](https://github.com/JamieMason/grunt-imageoptim)
 
-> Minify CSS files with CSSO
+> Make ImageOptim, ImageAlpha and JPEGmini part of your automated build process.
 
-CSSO (CSS Optimizer) is a CSS minimizer unlike others. In addition to usual minification techniques it can perform structural optimization of CSS files, resulting in smaller file size compared to other minifiers.
+**Requires Apps**
 
-+ [css/csso](https://github.com/css/csso)
++ [ImageOptim — make websites and apps load faster (Mac app)](http://imageoptim.com/)
++ [ImageAlpha — heavy compression for PNG images (like JPEG with alpha channel!)](http://pngmini.com/)
++ [JPEGmini - Your Photos on a Diet!](http://jpegmini.com/)
+
 
 ```sh
 $ grunt build
 ```
 
-### [grunt-csscomb](https://github.com/csscomb/grunt-csscomb)
+### [grunt-kss](https://github.com/t32k/grunt-kss)
 
-> The grunt plugin for sorting CSS properties in specific order.
+> KSS styleguide generator for grunt.
 
-+ [The Greatest tool for sorting CSS properties in specific order](http://csscomb.com/)
+**Require**
 
 ```sh
-$ grunt csscomb
+$ npm install -g kss
+```
+A NodeJS Implementation of KSS: a methodology for documenting CSS and generating styleguides
+
+`http://localhost:8080/docs/`
+
++ [hughsk/kss-node](https://github.com/hughsk/kss-node)
+
+```sh
+$ grunt publish
+```
+and, open URL.
+
+`http://localhost:8080/docs/`
+
+### [grunt-sass](https://github.com/sindresorhus/grunt-sass)
+
+> Grunt task to compile Sass SCSS to CSS
+
+```sh
+$ grunt develop
+```
+
+### [grunt-spritesmith](https://github.com/Ensighten/grunt-spritesmith)
+
+> Grunt task for creating spritesheets and their coordinates
+
+```sh
+$ grunt sprite
 ```
 
 ### [grunt-webfont](https://github.com/sapegin/grunt-webfont)
@@ -136,58 +187,12 @@ Generate custom icon webfonts from SVG/EPS files via Grunt to reduce HTTP reques
 $ brew install fontforge ttfautohint
 $ brew install https://raw.github.com/sapegin/grunt-webfont/master/Formula/sfnt2woff.rb
 ```
-You can create glyph SVG from this [glyph.ai](https://raw.github.com/t32k/maple.css/master/src/files/ai/glyph.ai), and put it into `/files/font/svg` folder.
+You can create glyph SVG from this [glyph.ai](src/files/ai/glyph.ai), and put it into `/files/font/svg` folder.
 
 ```sh
 $ grunt typeset
 ```
 
-### [grunt-imageoptim](https://github.com/JamieMason/grunt-imageoptim)
-
-> Make ImageOptim, ImageAlpha and JPEGmini part of your automated build process.
-
-**Requires Apps**
-
-+ [ImageOptim — make websites and apps load faster (Mac app)](http://imageoptim.com/)
-+ [ImageAlpha — heavy compression for PNG images (like JPEG with alpha channel!)](http://pngmini.com/)
-+ [JPEGmini - Your Photos on a Diet!](http://jpegmini.com/)
-
-
-```sh
-$ grunt build
-```
-
-### [grunt-spritesmith](https://github.com/Ensighten/grunt-spritesmith)
-
-> Grunt task for creating spritesheets and their coordinates
-
-```sh
-$ grunt sprite
-```
-
-
-### [grunt-kss](https://github.com/t32k/grunt-kss)
-
-> KSS styleguide generator for grunt.
-
-**Require**
-
-```sh
-$ npm install -g kss
-```
-A NodeJS Implementation of KSS: a methodology for documenting CSS and generating styleguides
-
-`http://localhost:8080/docs/`
-
-
-+ [hughsk/kss-node](https://github.com/hughsk/kss-node)
-
-```sh
-$ grunt publish
-```
-and, open URL.
-
-`http://localhost:8080/docs/`
 
 
 ## ![][leaf] CSS
@@ -287,7 +292,7 @@ EX.
 
 ```sh
 ├── css
-│   ├── maple.css
+│   ├── maple
 │   └── sass
 │       ├── maple.scss
 │       ├── _core.scss
@@ -313,7 +318,7 @@ EX.
 
 ### Mixins
 
-#### CSS Sprite for Retina
+#### CSS Sprite for Retina(Using Spritesmith)
 
 [Previous Verison](https://gist.github.com/t32k/e65534b5a8bb124e1cbe)
 
@@ -382,4 +387,4 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
-[leaf]: https://raw.github.com/t32k/maple.css/master/src/files/img/icon/leaf.png
+[leaf]: src/files/img/icon/leaf.png

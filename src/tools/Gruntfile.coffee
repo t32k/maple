@@ -130,16 +130,6 @@ module.exports = (grunt) ->
   # Tasks.
   grunt.registerTask 'default', ['develop']
   grunt.registerTask 'develop', ['connect', 'watch']
-  grunt.registerTask 'typeset', [
-    'webfont', 'sass'
-    'autoprefixer'
-  ]
-  grunt.registerTask 'publish', [
-    'sass', 'autoprefixer'
-    'csslint', 'kss'
-  ]
-  grunt.registerTask 'build', [
-    'csslint', 'sass'
-    'autoprefixer', 'csso'
-    'imageoptim'
-  ]
+  grunt.registerTask 'typeset', ['webfont', 'sass', 'autoprefixer']
+  grunt.registerTask 'publish', ['sass', 'autoprefixer', 'csslint', 'kss']
+  grunt.registerTask 'build', ['csslint', 'sass', 'autoprefixer', 'csso''imageoptim']
