@@ -138,11 +138,9 @@ $ grunt build
 
 > KSS styleguide generator for grunt.
 
-A NodeJS Implementation of KSS: a methodology for documenting CSS and generating styleguides
+[A NodeJS Implementation of KSS](https://github.com/hughsk/kss-node): a methodology for documenting CSS and generating styleguides
 
 `http://localhost:8080/docs/`
-
-+ [hughsk/kss-node](https://github.com/hughsk/kss-node)
 
 ```sh
 $ grunt publish
