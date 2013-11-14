@@ -145,9 +145,18 @@ $ grunt build
 ```sh
 $ grunt publish
 ```
-and, open URL.
 
-`http://localhost:8080/docs/`
+
+### [grunt-pagespeed](https://github.com/jrcryer/grunt-pagespeed)
+
+> Grunt plugin for running Google PageSpeed Insights
+
++ [Obtain Google API Key](https://developers.google.com/speed/docs/insights/v1/getting_started#auth)
+
+```sh
+$ grunt pagespeed
+```
+
 
 ### [grunt-sass](https://github.com/sindresorhus/grunt-sass)
 

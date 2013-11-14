@@ -70,6 +70,17 @@ module.exports = (grunt) ->
           # dest : src
           '../docs/': ['../files/css/sass']
 
+    # Grunt plugin to run Google PageSpeed Insights as part of CI
+    pagespeed:
+      options:
+        key: 'YOUR_API_KEY'
+        url: 'http://t32k.me'
+      dist:
+        paths: ['/', '/mol/']
+        locale: 'en_US'
+        strategy: 'mobile'
+        threshold: 80
+
     # Grunt task to compile Sass SCSS to CSS
     sass:
       dist:
@@ -120,6 +131,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-csso'
   grunt.loadNpmTasks 'grunt-csscomb'
   grunt.loadNpmTasks 'grunt-webfont'
+  grunt.loadNpmTasks 'grunt-pagespeed'
   grunt.loadNpmTasks 'grunt-imageoptim'
   grunt.loadNpmTasks 'grunt-spritesmith'
   grunt.loadNpmTasks 'grunt-autoprefixer'
@@ -132,4 +144,4 @@ module.exports = (grunt) ->
   grunt.registerTask 'develop', ['connect', 'watch']
   grunt.registerTask 'typeset', ['webfont', 'sass', 'autoprefixer']
   grunt.registerTask 'publish', ['sass', 'autoprefixer', 'csslint', 'kss']
-  grunt.registerTask 'build', ['csslint', 'sass', 'autoprefixer', 'csso''imageoptim']
+  grunt.registerTask 'build', ['csslint', 'sass', 'autoprefixer', 'csso', 'imageoptim']
