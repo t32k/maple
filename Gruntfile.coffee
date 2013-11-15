@@ -11,7 +11,7 @@ module.exports = (grunt) ->
       options:
         browsers: ['ios >= 5', 'android >= 2.3']
       dist:
-        src: '../files/css/maple.css'
+        src: 'files/css/maple.css'
 
     # Start a static web server.
     # Reload assets live in the browser
@@ -26,14 +26,14 @@ module.exports = (grunt) ->
     csscomb:
       dist:
         files:
-          '../files/css/maple.resort.css': ['../files/css/maple.css']
+          'files/css/maple.resort.css': ['files/css/maple.css']
 
     # Lint CSS files.
     csslint:
       dist:
         options:
           csslintrc: '.csslintrc'
-        src: ['../files/css/maple.css']
+        src: ['files/css/maple.css']
 
     # Minify CSS files with CSSO.
     csso:
@@ -48,7 +48,7 @@ module.exports = (grunt) ->
 
           """
         files:
-          '../files/css/maple.min.css': ['../files/css/maple.css']
+          'files/css/maple.min.css': ['files/css/maple.css']
 
     # Make ImageOptim, ImageAlpha and JPEGmini part of your automated build process
     imageoptim:
@@ -57,18 +57,18 @@ module.exports = (grunt) ->
         jpegMini: false
         quitAfter: true
       dist:
-        src: ['../files/img/sprite']
+        src: ['files/img/sprite']
 
     # KSS styleguide generator for grunt.
     kss:
       options:
         includeType: 'css'
-        includePath: '../files/css/maple.css'
+        includePath: 'files/css/maple.css'
         template: '../docs/template'
       dist:
         files:
           # dest : src
-          '../docs/': ['../files/css/sass']
+          '../docs/': ['files/css/sass']
 
     # Grunt plugin to run Google PageSpeed Insights as part of CI
     pagespeed:
@@ -85,16 +85,16 @@ module.exports = (grunt) ->
     sass:
       dist:
         files:
-          '../files/css/maple.css': '../files/css/sass/maple.scss'
+          'files/css/maple.css': 'files/css/sass/maple.scss'
 
     # Grunt task for creating spritesheets and their coordinates
     sprite:
       dist:
         dt: '<%= Date.now() %>'
-        src: '../files/img/sprite/tabs/*.png'
-        destImg: '../files/img/sprite/tabs.<%= sprite.dist.dt %>.png'
+        src: 'files/img/sprite/tabs/*.png'
+        destImg: 'files/img/sprite/tabs.<%= sprite.dist.dt %>.png'
         imgPath: '/files/img/sprite/tabs.<%= sprite.dist.dt %>.png'
-        destCSS: '../files/css/sass/libs/_sprite.scss'
+        destCSS: 'files/css/sass/libs/_sprite.scss'
         algorithm: 'binary-tree'
         padding: 2
         cssTemplate: 'spritesmith.mustache'
@@ -105,18 +105,18 @@ module.exports = (grunt) ->
       options:
         livereload: true
       css:
-        files: ['../files/css/**/*.scss', '../components/*.html']
+        files: ['files/css/**/*.scss', '../components/*.html']
         tasks: ['sass', 'autoprefixer', 'csso']
       sprite:
-        files: ['../files/img/sprite/*/*.png']
+        files: ['files/img/sprite/*/*.png']
         tasks: ['sprite']
 
     # SVG to webfont converter for Grunt.
     webfont:
       dist:
-        src: '../files/font/svg/*.svg'
-        dest: '../files/font/'
-        destCss: '../files/css/sass/libs/'
+        src: 'files/font/svg/*.svg'
+        dest: 'files/font/'
+        destCss: 'files/css/sass/libs/'
         options:
           font: 'myfont'
           types: ['woff', 'ttf']

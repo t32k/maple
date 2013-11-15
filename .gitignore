@@ -2,4 +2,4 @@
 maple.*.css
 node_modules
 npm-debug.log
-/src/files/js/libs/
+/files/js/libs/
