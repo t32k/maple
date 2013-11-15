@@ -1,11 +1,11 @@
-![Maple](src/files/img/head.png)
+![Maple](files/img/head.png)
 
 This is alpha version, yet.
 
 
 ## ![][leaf] Features
 
-![](src/files/img/feature.png)
+![](files/img/feature.png)
 
 
 ## ![][leaf] Installation
@@ -189,7 +189,7 @@ Generate custom icon webfonts from SVG/EPS files via Grunt to reduce HTTP reques
 $ brew install fontforge ttfautohint
 $ brew install https://raw.github.com/sapegin/grunt-webfont/master/Formula/sfnt2woff.rb
 ```
-You can create glyph SVG from this [glyph.ai](src/files/ai/glyph.ai), and put it into `/files/font/svg` folder.
+You can create glyph SVG from this [glyph.ai](files/ai/glyph.ai), and put it into `/files/font/svg` folder.
 
 ```sh
 $ grunt typeset
@@ -389,4 +389,4 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
-[leaf]: src/files/img/icon/leaf.png
+[leaf]: files/img/icon/leaf.png
