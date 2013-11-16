@@ -19,7 +19,6 @@ module.exports = (grunt) ->
       dist:
         options:
           port: 8080
-          base: '../'
           open: 'http://localhost:8080/components/'
 
     # Sort CSS properties in specific order.
@@ -64,11 +63,11 @@ module.exports = (grunt) ->
       options:
         includeType: 'css'
         includePath: 'files/css/maple.css'
-        template: '../docs/template'
+        template: 'docs/template'
       dist:
         files:
           # dest : src
-          '../docs/': ['files/css/sass']
+          'docs/': ['files/css/sass']
 
     # Grunt plugin to run Google PageSpeed Insights as part of CI
     pagespeed:
@@ -106,7 +105,7 @@ module.exports = (grunt) ->
         livereload: true
       css:
         files: ['files/css/**/*.scss', '../components/*.html']
-        tasks: ['sass', 'autoprefixer', 'csso']
+        tasks: ['sass', 'autoprefixer']
       sprite:
         files: ['files/img/sprite/*/*.png']
         tasks: ['sprite']
@@ -123,8 +122,8 @@ module.exports = (grunt) ->
           stylesheet: 'scss'
           htmlDemo: false
           syntax: 'bootstrap'
-          relativeFontPath: '/files/font/'
-
+          relativeFontPath: 'files/font/'
+          
   # Load the plugins.
   grunt.loadNpmTasks 'grunt-kss'
   grunt.loadNpmTasks 'grunt-sass'

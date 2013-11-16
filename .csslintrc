@@ -1,0 +1,10 @@
+{
+ "bulletproof-font-face": false,
+ "compatible-vendor-prefixes": false,
+ "important": false,
+ "regex-selectors": false,
+ "adjoining-classes": false,
+ "unqualified-attributes": false,
+ "fallback-colors": false,
+ "zero-units": false
+}
