@@ -2,4 +2,5 @@
 maple.*.css
 node_modules
 npm-debug.log
-files/js/libs/
+files/js/libs/*
+!files/js/libs/.gitkeep
