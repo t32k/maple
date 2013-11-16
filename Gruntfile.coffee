@@ -25,7 +25,7 @@ module.exports = (grunt) ->
     csscomb:
       dist:
         files:
-          'files/css/maple.resort.css': ['files/css/maple.css']
+          'files/css/maple.css': ['files/css/maple.css']
 
     # Lint CSS files.
     csslint:
@@ -105,7 +105,7 @@ module.exports = (grunt) ->
         livereload: true
       css:
         files: ['files/css/**/*.scss', '../components/*.html']
-        tasks: ['sass', 'autoprefixer']
+        tasks: ['stylesheet']
       sprite:
         files: ['files/img/sprite/*/*.png']
         tasks: ['sprite']
@@ -123,7 +123,7 @@ module.exports = (grunt) ->
           htmlDemo: false
           syntax: 'bootstrap'
           relativeFontPath: 'files/font/'
-          
+
   # Load the plugins.
   grunt.loadNpmTasks 'grunt-kss'
   grunt.loadNpmTasks 'grunt-sass'
@@ -140,7 +140,8 @@ module.exports = (grunt) ->
 
   # Tasks.
   grunt.registerTask 'default', ['develop']
+  grunt.registerTask 'stylesheet', ['sass', 'autoprefixer', 'csscomb', 'csslint']
   grunt.registerTask 'develop', ['connect', 'watch']
-  grunt.registerTask 'typeset', ['webfont', 'sass', 'autoprefixer']
-  grunt.registerTask 'publish', ['sass', 'autoprefixer', 'csslint', 'kss']
-  grunt.registerTask 'build', ['csslint', 'sass', 'autoprefixer', 'csso', 'imageoptim']
+  grunt.registerTask 'typeset', ['webfont', 'stylesheet']
+  grunt.registerTask 'publish', ['stylesheet', 'kss']
+  grunt.registerTask 'build', ['stylesheet', 'csso', 'imageoptim']
