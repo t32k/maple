@@ -57,11 +57,12 @@ $ grunt csscomb
 
 > Grunt task that runs CSSCSS, a CSS redundancy analyzer.
 
-**Requires CSSCSS
+**Requires CSSCSS**
 
 ```sh
 $ gem install csscss
 ```
+Task.
 
 ```sh
 $ grunt csscss
