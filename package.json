@@ -1,6 +1,7 @@
 {
   "name": "Maple",
   "version": "0.1.0",
+  "description": "The better HTML/CSS Project.",
   "author": "Koji Ishimoto",
   "devDependencies": {
     "grunt": "~0.4.1",
