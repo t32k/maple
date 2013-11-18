@@ -34,20 +34,8 @@ $ npm install -g generator-maple
 Usage
 ```sh
 $ yo maple
+$ grunt
 ```
-
-### Components List
-
-```sh
-$ cd /path/to/maple_project/src/tools
-$ npm install
-$ grunt develop
-```
-
-and, open URL.
-
-`http://localhost:8080/components/`
-
 
 ## ![][leaf] Grunt Tasks
 
