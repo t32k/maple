@@ -1,11 +1,11 @@
-![Maple](files/img/head.png)
+![Maple](files/img/readme/head.png)
 
 This is alpha version, yet.
 
 
 ## ![][leaf] Features
 
-![](files/img/feature.png)
+![](files/img/readme/feature.png)
 
 
 ## ![][leaf] Installation
