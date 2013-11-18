@@ -7,6 +7,7 @@
     "grunt-kss": "~0.2.1",
     "grunt-sass": "~0.8.0",
     "grunt-csso": "~0.5.0",
+    "grunt-csscss": "~0.6.1",
     "grunt-csscomb": "~1.0.0",
     "grunt-webfont": "~0.2.0",
     "grunt-pagespeed": "0.0.8",

@@ -21,6 +21,11 @@ module.exports = (grunt) ->
           port: 8080
           open: 'http://localhost:8080/components/'
 
+    # Grunt task that runs CSSCSS, a CSS redundancy analyzer.
+    csscss:
+      dist:
+        src: ['files/css/maple.css']
+
     # Sort CSS properties in specific order.
     csscomb:
       dist:
@@ -127,6 +132,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-kss'
   grunt.loadNpmTasks 'grunt-sass'
   grunt.loadNpmTasks 'grunt-csso'
+  grunt.loadNpmTasks 'grunt-csscss'
   grunt.loadNpmTasks 'grunt-csscomb'
   grunt.loadNpmTasks 'grunt-webfont'
   grunt.loadNpmTasks 'grunt-pagespeed'

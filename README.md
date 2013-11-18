@@ -53,6 +53,20 @@ $ grunt
 $ grunt csscomb
 ```
 
+### [grunt-csscss](https://github.com/peterkeating/grunt-csscss)
+
+> Grunt task that runs CSSCSS, a CSS redundancy analyzer.
+
+**Requires CSSCSS
+
+```sh
+$ gem install csscss
+```
+
+```sh
+$ grunt csscss
+```
+
 ### [grunt-csso](https://github.com/t32k/grunt-csso)
 
 > Minify CSS files with CSSO
@@ -176,7 +190,7 @@ Generate custom icon webfonts from SVG/EPS files via Grunt to reduce HTTP reques
 If Homebrew is not installed...
 
 ```sh
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+$ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 ```
 
 ```sh
