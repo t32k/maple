@@ -89,14 +89,13 @@ module.exports = (grunt) ->
     # Grunt task for creating spritesheets and their coordinates
     sprite:
       dist:
-        dt: '<%= Date.now() %>'
         src: 'files/img/sprite/tabs/*.png'
-        destImg: 'files/img/sprite/tabs.<%= sprite.dist.dt %>.png'
-        imgPath: '/files/img/sprite/tabs.<%= sprite.dist.dt %>.png'
+        destImg: 'files/img/sprite/tabs.png'
+        imgPath: '/files/img/sprite/tabs.png'
         destCSS: 'files/css/sass/libs/_sprite.scss'
         algorithm: 'binary-tree'
         padding: 2
-        cssTemplate: 'spritesmith.mustache'
+        cssTemplate: 'files/img/sprite/spritesmith.mustache'
         # cssOpts: { functions: false }
 
     # Run tasks whenever watched files change.
