@@ -15,26 +15,25 @@ This is alpha version, yet.
 Requires [Node.js](http://nodejs.org/)
 
 ```sh
-$ npm install -g grunt-cli
-$ npm install -g grunt-init
+$ npm install -g yo
 ```
 
 ## ![][leaf] Getting Started
 
 ### Project Scaffolding
 
-+ [grunt-init-maple](https://github.com/t32k/grunt-init-maple)
+[t32k/generator-maple](https://github.com/t32k/generator-maple)
 
-> Create a basic maple project with grunt-init. 
+> Create a basic maple project with Yeoman. 
 
 Installation
 ```sh
-$ git clone https://github.com/t32k/grunt-init-maple.git ~/.grunt-init/maple --recursive
+$ npm install -g generator-maple
 ```
 
 Usage
 ```sh
-$ grunt-init maple
+$ yo maple
 ```
 
 ### Components List

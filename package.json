@@ -1,7 +1,7 @@
 {
-  "name": "{%= project_name %}",
+  "name": "Maple",
   "version": "0.1.0",
-  "author": "{%= author_name %}",
+  "author": "Koji Ishimoto",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-kss": "~0.2.1",
