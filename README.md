@@ -170,7 +170,14 @@ Generate custom icon webfonts from SVG/EPS files via Grunt to reduce HTTP reques
 + [cognitom/symbols](https://github.com/cognitom/symbols)
 + [iconmonstr - Free simple icons for your next project](http://iconmonstr.com/)
 
+
 **Requires fontforge, ttfautohint**
+
+If Homebrew is not installed...
+
+```sh
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+```
 
 ```sh
 $ brew install fontforge ttfautohint
