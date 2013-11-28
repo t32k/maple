@@ -15,7 +15,7 @@ This is alpha version, yet.
 Requires [Node.js](http://nodejs.org/)
 
 ```sh
-$ npm install -g yo
+$ npm install yo -g
 ```
 
 ## ![][leaf] Getting Started
@@ -28,7 +28,7 @@ $ npm install -g yo
 
 Installation
 ```sh
-$ npm install -g generator-maple
+$ npm install generator-maple -g 
 ```
 
 Usage
