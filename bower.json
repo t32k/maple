@@ -1,6 +1,6 @@
 {
   "name": "Maple",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "The better HTML/CSS Project.",
   "dependencies": {
     "jquery": "~2.0.3"

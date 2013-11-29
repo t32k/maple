@@ -196,9 +196,9 @@ $ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 
 ```sh
 $ brew install fontforge ttfautohint
-$ brew install https://raw.github.com/sapegin/grunt-webfont/master/Formula/sfnt2woff.rb
 ```
-You can create glyph SVG from this [glyph.ai](files/ai/glyph.ai), and put it into `/files/font/svg` folder.
+
+You can create glyph SVG from this [glyph.ai](/files/ai/glyph.ai), and put it into `/files/font/svg` folder.
 
 ```sh
 $ grunt typeset
