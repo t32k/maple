@@ -6,5 +6,6 @@
  "adjoining-classes": false,
  "unqualified-attributes": false,
  "fallback-colors": false,
- "zero-units": false
+ "zero-units": false,
+ "box-sizing": false
 }

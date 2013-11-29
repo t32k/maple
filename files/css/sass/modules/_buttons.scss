@@ -1,13 +1,17 @@
 // Buttons
 // 
-// A description.
+// Buttons can and should be clicked.
 // 
-// Markup: <some markup with a specific {$modifier} like class or a pseudo class >
+// Markup: <button class="btn {$modifiers} mbm">Button of button</button>
+// <div class="btn {$modifiers} mbm">Button of div</div>
+// <a class="btn {$modifiers} mbm">Button of a</a>
+//
+// .btn--a - This button is A.
+// .btn--b - This button is B.
+// .is-pressed - This button is pressed.
+// .is-disabled - This button is disabled.
 // 
-// .class      - description of the class state
-// :pseudo     - description of the pseudo state
-// 
-// Styleguide 3 (digit number to increment eg chapter)
+// Styleguide 3
 
 .btn {
 	display: block;

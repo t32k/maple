@@ -1,17 +1,17 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Maple: Living Styleguide</title>
   <meta name="viewport" content="width=device-width">
-  <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet'>
   <link rel="stylesheet" href="public/kss.css">
   <link rel="stylesheet" href="public/style.css">
 </head>
 <body><div class="kss-wrapper">
   <div id="kss-nav" class="kss-nav">
     <header class="kss-header">
-      <h1 class="c"><img src="https://raw.github.com/t32k/maple.css/master/src/files/img/logo.png" width="160" alt="Maple"></h1>
+      <h1><img src="/files/img/readme/logo.png" width="140" alt="Maple"></h1>
     </header>
     <aside>
       <nav><ul>
@@ -43,7 +43,7 @@
             <h1 class="kss-title"><span class="kss-ref">{{ reference }}</span> - {{ header }}</h1>
           {{/whenDepth}}
             {{#ifAny markup modifiers}}
-                <div class="kss-box">{{html description}}</div>
+                <div class="kss-box mbm">{{html description}}</div>
                 <table class="kss-mod-list">
                   <tr class="kss-mod-desc-group">
                     <td class="kss-mod-desc"><p>Default styling</p></td>
@@ -83,7 +83,7 @@
   <!-- SCRIPTS -->
   <script src="public/kss.js"></script>
   <script src="public/prettify.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
       var sidebarAdjust = function() {

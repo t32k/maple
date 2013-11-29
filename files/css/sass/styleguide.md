@@ -1,4 +1,4 @@
-![Maple](https://raw.github.com/t32k/maple.css/master/src/files/img/head.png)
+![Maple](/files/img/readme/head.png)
 
 <h1 class="kss-title kss-title-main"> Overview </h1>
 
@@ -80,7 +80,6 @@ CSS rules that depend on specific HTML structures should describe those structur
 
 ```less
 // A feed of activity items. Within each <section.feed>, there should be many
-// <article>s which are the  feed items.
 ```
 
 To describe the status of a set of rules, you should prefix the description with **Experimental** or **Deprecated**.

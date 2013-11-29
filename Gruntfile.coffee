@@ -109,7 +109,7 @@ module.exports = (grunt) ->
         livereload: true
       css:
         files: ['files/css/**/*.scss', '../components/*.html']
-        tasks: ['stylesheet']
+        tasks: ['stylesheet','publish']
       sprite:
         files: ['files/img/sprite/*/*.png']
         tasks: ['sprite']

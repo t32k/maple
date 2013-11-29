@@ -1,17 +1,17 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Maple: Living Styleguide</title>
   <meta name="viewport" content="width=device-width">
-  <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet'>
   <link rel="stylesheet" href="public/kss.css">
   <link rel="stylesheet" href="public/style.css">
 </head>
 <body><div class="kss-wrapper">
   <div id="kss-nav" class="kss-nav">
     <header class="kss-header">
-      <h1 class="c"><img src="https://raw.github.com/t32k/maple.css/master/src/files/img/logo.png" width="160" alt="Maple"></h1>
+      <h1><img src="/files/img/readme/logo.png" width="140" alt="Maple"></h1>
     </header>
     <aside>
       <nav><ul>
@@ -43,7 +43,7 @@
             <h1 class="kss-title"><span class="kss-ref">3.0</span> - Buttons</h1>
           
             
-                <div class="kss-box"><p>A description.</p>
+                <div class="kss-box mbm"><p>Buttons can and should be clicked.</p>
 </div>
                 <table class="kss-mod-list">
                   <tr class="kss-mod-desc-group">
@@ -51,30 +51,60 @@
                     <td class="kss-mod-name"></td>
                   </tr>
                   <tr class="kss-mod-example">
-                    <td colspan="2"><some markup with a specific {$modifier} like class or a pseudo class ></td>
+                    <td colspan="2"><button class="btn {$modifiers} mbm">Button of button</button>
+<div class="btn {$modifiers} mbm">Button of div</div>
+<a class="btn {$modifiers} mbm">Button of a</a></td>
                   </tr>
                 
                   <tr class="kss-mod-desc-group">
-                    <td class="kss-mod-desc"><p>description of the class state</p>
+                    <td class="kss-mod-desc"><p>This button is A.</p>
 </td>
-                    <td class="kss-mod-name"><p>.class</p></td>
+                    <td class="kss-mod-name"><p>.btn--a</p></td>
                   </tr>
                   <tr class="kss-mod-example">
-                    <td colspan="2"><some markup with a specific {$modifier} like class or a pseudo class ></td>
+                    <td colspan="2"><button class="btn btn--a mbm">Button of button</button>
+<div class="btn btn--a mbm">Button of div</div>
+<a class="btn btn--a mbm">Button of a</a></td>
                   </tr>
                 
                   <tr class="kss-mod-desc-group">
-                    <td class="kss-mod-desc"><p>description of the pseudo state</p>
+                    <td class="kss-mod-desc"><p>This button is B.</p>
 </td>
-                    <td class="kss-mod-name"><p>:pseudo</p></td>
+                    <td class="kss-mod-name"><p>.btn--b</p></td>
                   </tr>
                   <tr class="kss-mod-example">
-                    <td colspan="2"><some markup with a specific {$modifier} like class or a pseudo class ></td>
+                    <td colspan="2"><button class="btn btn--b mbm">Button of button</button>
+<div class="btn btn--b mbm">Button of div</div>
+<a class="btn btn--b mbm">Button of a</a></td>
+                  </tr>
+                
+                  <tr class="kss-mod-desc-group">
+                    <td class="kss-mod-desc"><p>This button is pressed.</p>
+</td>
+                    <td class="kss-mod-name"><p>.is-pressed</p></td>
+                  </tr>
+                  <tr class="kss-mod-example">
+                    <td colspan="2"><button class="btn is-pressed mbm">Button of button</button>
+<div class="btn is-pressed mbm">Button of div</div>
+<a class="btn is-pressed mbm">Button of a</a></td>
+                  </tr>
+                
+                  <tr class="kss-mod-desc-group">
+                    <td class="kss-mod-desc"><p>This button is disabled.</p>
+</td>
+                    <td class="kss-mod-name"><p>.is-disabled</p></td>
+                  </tr>
+                  <tr class="kss-mod-example">
+                    <td colspan="2"><button class="btn is-disabled mbm">Button of button</button>
+<div class="btn is-disabled mbm">Button of div</div>
+<a class="btn is-disabled mbm">Button of a</a></td>
                   </tr>
                 
                 </table>
                 <div class="kss-markup">
-                  <pre class="prettyprint lang-html">&lt;some markup with a specific {$modifier} like class or a pseudo class &gt;</pre>
+                  <pre class="prettyprint lang-html">&lt;button class=&quot;btn {$modifiers} mbm&quot;&gt;Button of button&lt;/button&gt;
+&lt;div class=&quot;btn {$modifiers} mbm&quot;&gt;Button of div&lt;/div&gt;
+&lt;a class=&quot;btn {$modifiers} mbm&quot;&gt;Button of a&lt;/a&gt;</pre>
                 </div>
             
            
@@ -88,7 +118,7 @@
   <!-- SCRIPTS -->
   <script src="public/kss.js"></script>
   <script src="public/prettify.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
       var sidebarAdjust = function() {
