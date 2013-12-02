@@ -172,6 +172,18 @@ $ grunt develop
 
 > Grunt task for creating spritesheets and their coordinates
 
+**Requires Phantomjs(or canvas or gm)**
+
+If Homebrew is not installed...
+
+```sh
+$ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+```
+
+```sh
+$ brew install phantomjs
+```
+
 ```sh
 $ grunt sprite
 ```
@@ -187,12 +199,6 @@ Generate custom icon webfonts from SVG/EPS files via Grunt to reduce HTTP reques
 
 
 **Requires fontforge, ttfautohint**
-
-If Homebrew is not installed...
-
-```sh
-$ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
-```
 
 ```sh
 $ brew install fontforge ttfautohint
@@ -237,10 +243,10 @@ $ grunt typeset
 
 EX.
 ```css
-.btn-a { color: green }
-.btn-b { color: red }
-.btn-c { color: black }
-.btn-d { color: white }
+.btn--a { color: green }
+.btn--b { color: red }
+.btn--c { color: black }
+.btn--d { color: white }
 ```
 
 ### Helper Classes
