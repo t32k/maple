@@ -142,7 +142,7 @@ $ grunt build
 
 [A NodeJS Implementation of KSS](https://github.com/hughsk/kss-node): a methodology for documenting CSS and generating styleguides
 
-`http://localhost:8080/docs/`
+`http://localhost:8081/`
 
 ```sh
 $ grunt publish

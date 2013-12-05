@@ -97,12 +97,6 @@ module.exports = (grunt) ->
         files:
           'app/files/css/maple.css': 'app/files/css/sass/maple.scss'
 
-    # Grunt task to compile Sass SCSS to CSS
-    uncss:
-      dist:
-        files:
-          'app/files/css/dist/tidy.css': ['app/index.html']
-
     # Grunt task for creating spritesheets and their coordinates
     sprite:
       dist:
@@ -114,6 +108,12 @@ module.exports = (grunt) ->
         padding: 2
         cssTemplate: 'app/files/img/sprite/spritesmith.mustache'
         # cssOpts: { functions: false }
+
+    # A grunt task for removing unused CSS from your project builds
+    uncss:
+      dist:
+        files:
+          'app/files/css/tidy.css': ['app/index.html']
 
     # Run tasks whenever watched files change.
     watch:
