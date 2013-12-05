@@ -1,11 +1,11 @@
-![Maple](files/img/readme/head.png)
+![Maple](app/files/img/readme/head.png)
 
 This is alpha version, yet.
 
 
 ## ![][leaf] Features
 
-![](files/img/readme/feature.png)
+![](app/files/img/readme/feature.png)
 
 
 ## ![][leaf] Installation
@@ -204,7 +204,7 @@ Generate custom icon webfonts from SVG/EPS files via Grunt to reduce HTTP reques
 $ brew install fontforge ttfautohint
 ```
 
-You can create glyph SVG from this [glyph.ai](/files/ai/glyph.ai), and put it into `/files/font/svg` folder.
+You can create glyph SVG from this [glyph.ai](/app/files/ai/glyph.ai), and put it into `/app/files/font/svg` folder.
 
 ```sh
 $ grunt typeset
@@ -404,4 +404,4 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
-[leaf]: files/img/icon/leaf.png
+[leaf]: app/files/img/icon/leaf.png

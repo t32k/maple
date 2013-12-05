@@ -1,0 +1,207 @@
+@font-face {
+  font-family: "myfont";
+  src: url("/files/font/myfont-165a1ce8bfb947828896adcacf58555f.woff") format("woff"), url("/files/font/myfont-165a1ce8bfb947828896adcacf58555f.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before {
+  font-family: "myfont";
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.icon-check:before {
+  content: "\f104";
+}
+
+.icon-plus:before {
+  content: "\f109";
+}
+
+.icon-star:before {
+  content: "\f10a";
+}
+
+.sprt-a {
+  background-image: url("/files/img/sprite/tabs.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 151px 99px;
+  background-size: 151px 99px;
+}
+
+.sprt-a__bird1 {
+  width: 30px;
+  height: 25px;
+  background-position: 0 -74px;
+}
+
+.sprt-a__bird2 {
+  width: 90px;
+  height: 74px;
+  background-position: 0 0;
+}
+
+.sprt-a__bird3 {
+  width: 60px;
+  height: 49px;
+  background-position: -91px 0;
+}
+
+.sprt-a__bird4 {
+  width: 30px;
+  height: 25px;
+  background-position: -31px -74px;
+}
+
+.list > li:last-child {
+  border: 0 !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+html,
+body,
+h1,
+h2,
+p,
+a,
+small,
+i,
+button,
+input,
+ul,
+li,
+footer,
+header,
+section {
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+}
+
+footer,
+header,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+i {
+  display: inline-block;
+}
+
+button,
+input {
+  display: block;
+  width: 100%;
+  -webkit-appearance: none;
+}
+
+.ir {
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 100%;
+}
+
+.mod {
+  margin: 12px;
+}
+
+.mbm {
+  margin-bottom: 12px !important;
+}
+
+.ptx {
+  padding-top: 36px !important;
+}
+
+.pbm {
+  padding-bottom: 12px !important;
+}
+
+.bb {
+  background-color: #b3cf4d !important;
+}
+
+.l {
+  text-align: left !important;
+}
+
+.c {
+  text-align: center !important;
+}
+
+.f3 {
+  font-size: 12px;
+}
+
+.list > li {
+  padding: 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  -webkit-box-shadow: rgba(255, 255, 255, .4) 0 1px 0;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0;
+}
+
+.btn {
+  line-height: 42px;
+  display: block;
+  padding: 0 1em;
+  text-align: center;
+  color: white;
+  border-radius: 4px;
+  background: #157038;
+}
+
+.btn.is-pressed {
+  -webkit-box-shadow: rgba(0, 0, 0, .6) 0 2px 4px 0 inset;
+  box-shadow: rgba(0, 0, 0, .6) 0 2px 4px 0 inset;
+}
+
+.btn--a {
+  background: #b3cf4d;
+}
+
+.btn--b {
+  background: #818181;
+}
+
+.bar-head {
+  line-height: 80px;
+  text-align: center;
+  color: #333;
+  border-bottom: 1px #bbb solid;
+  background: url(/files/img/readme/logo.png) center center no-repeat;
+  -webkit-background-size: 160px 40px;
+  background-size: 160px 40px;
+}
+
+.box-foot {
+  padding: 2em;
+  border-top: 1px #ccc solid;
+}

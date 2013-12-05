@@ -11,33 +11,39 @@ module.exports = (grunt) ->
       options:
         browsers: ['ios >= 5', 'android >= 2.3']
       dist:
-        src: 'files/css/maple.css'
+        src: 'app/files/css/maple.css'
 
     # Start a static web server.
     # Reload assets live in the browser
     connect:
-      dist:
+      app:
         options:
           port: 8080
-          open: 'http://localhost:8080/components/'
+          base: 'app/'
+          open: 'http://localhost:8080/'
+      doc:
+        options:
+          port: 8081
+          base: 'doc/'
+          open: 'http://localhost:8081/'
 
     # Grunt task that runs CSSCSS, a CSS redundancy analyzer.
     csscss:
       dist:
-        src: ['files/css/maple.css']
+        src: ['app/files/css/maple.css']
 
     # Sort CSS properties in specific order.
     csscomb:
       dist:
         files:
-          'files/css/maple.css': ['files/css/maple.css']
+          'app/files/css/maple.css': ['files/css/maple.css']
 
     # Lint CSS files.
     csslint:
       dist:
         options:
           csslintrc: '.csslintrc'
-        src: ['files/css/maple.css']
+        src: ['app/files/css/maple.css']
 
     # Minify CSS files with CSSO.
     csso:
@@ -52,7 +58,7 @@ module.exports = (grunt) ->
 
           """
         files:
-          'files/css/maple.min.css': ['files/css/maple.css']
+          'app/files/css/maple.min.css': ['app/files/css/maple.css']
 
     # Make ImageOptim, ImageAlpha and JPEGmini part of your automated build process
     imageoptim:
@@ -61,18 +67,18 @@ module.exports = (grunt) ->
         jpegMini: false
         quitAfter: true
       dist:
-        src: ['files/img/sprite']
+        src: ['app/files/img/sprite']
 
     # KSS styleguide generator for grunt.
     kss:
       options:
         includeType: 'css'
-        includePath: 'files/css/maple.css'
-        template: 'docs/template'
+        includePath: 'app/files/css/maple.css'
+        template: 'doc/template'
       dist:
         files:
           # dest : src
-          'docs/': ['files/css/sass']
+          'doc/': ['app/files/css/sass']
 
     # Grunt plugin to run Google PageSpeed Insights as part of CI
     pagespeed:
@@ -89,18 +95,24 @@ module.exports = (grunt) ->
     sass:
       dist:
         files:
-          'files/css/maple.css': 'files/css/sass/maple.scss'
+          'app/files/css/maple.css': 'app/files/css/sass/maple.scss'
+
+    # Grunt task to compile Sass SCSS to CSS
+    uncss:
+      dist:
+        files:
+          'app/files/css/dist/tidy.css': ['app/index.html']
 
     # Grunt task for creating spritesheets and their coordinates
     sprite:
       dist:
-        src: 'files/img/sprite/tabs/*.png'
-        destImg: 'files/img/sprite/tabs.png'
+        src: 'app/files/img/sprite/tabs/*.png'
+        destImg: 'app/files/img/sprite/tabs.png'
         imgPath: '/files/img/sprite/tabs.png'
-        destCSS: 'files/css/sass/libs/_sprite.scss'
+        destCSS: 'app/files/css/sass/libs/_sprite.scss'
         algorithm: 'binary-tree'
         padding: 2
-        cssTemplate: 'files/img/sprite/spritesmith.mustache'
+        cssTemplate: 'app/files/img/sprite/spritesmith.mustache'
         # cssOpts: { functions: false }
 
     # Run tasks whenever watched files change.
@@ -108,27 +120,28 @@ module.exports = (grunt) ->
       options:
         livereload: true
       css:
-        files: ['files/css/**/*.scss', '../components/*.html']
-        tasks: ['stylesheet','publish']
+        files: ['app/files/css/**/*.scss', 'app/components/*.html']
+        tasks: ['stylesheet']
       sprite:
-        files: ['files/img/sprite/*/*.png']
+        files: ['app/files/img/sprite/*/*.png']
         tasks: ['sprite']
 
     # SVG to webfont converter for Grunt.
     webfont:
       dist:
-        src: 'files/font/svg/*.svg'
-        dest: 'files/font/'
-        destCss: 'files/css/sass/libs/'
+        src: 'app/files/font/svg/*.svg'
+        dest: 'app/files/font/'
+        destCss: 'app/files/css/sass/libs/'
         options:
           font: 'myfont'
           types: ['woff', 'ttf']
           stylesheet: 'scss'
           htmlDemo: false
           syntax: 'bootstrap'
-          relativeFontPath: 'files/font/'
+          relativeFontPath: 'app/files/font/'
 
   # Load the plugins.
+  grunt.loadNpmTasks 'grunt-uncss'
   grunt.loadNpmTasks 'grunt-kss'
   grunt.loadNpmTasks 'grunt-sass'
   grunt.loadNpmTasks 'grunt-csso'
@@ -146,7 +159,7 @@ module.exports = (grunt) ->
   # Tasks.
   grunt.registerTask 'default', ['develop']
   grunt.registerTask 'stylesheet', ['sass', 'autoprefixer', 'csscomb', 'csslint']
-  grunt.registerTask 'develop', ['connect', 'watch']
+  grunt.registerTask 'develop', ['connect:app', 'watch']
   grunt.registerTask 'typeset', ['webfont', 'stylesheet']
   grunt.registerTask 'publish', ['stylesheet', 'kss']
   grunt.registerTask 'build', ['stylesheet', 'csso', 'imageoptim']
