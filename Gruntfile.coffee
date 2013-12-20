@@ -35,8 +35,10 @@ module.exports = (grunt) ->
     # Sort CSS properties in specific order.
     csscomb:
       dist:
+        options:
+          config: '.csscombrc'
         files:
-          'app/files/css/maple.css': ['files/css/maple.css']
+          'app/files/css/maple.css': ['app/files/css/maple.css']
 
     # Lint CSS files.
     csslint:
