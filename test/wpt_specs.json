@@ -1,0 +1,13 @@
+{
+    "defaults": {
+        "suiteName": "Performance Test Suite for example.com",
+        "text": ": {actual} should be {operation} {expected} for {metric}",
+        "operation": ">"
+    },
+    "median": {
+        "firstView": {
+            "score_gzip": 80,
+            "score_keep-alive": 80
+        }
+    }
+}

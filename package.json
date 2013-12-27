@@ -1,23 +1,35 @@
 {
-  "name": "Maple",
-  "version": "0.0.1",
-  "description": "The better HTML/CSS Project.",
-  "author": "Koji Ishimoto",
-  "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-kss": "~0.2.4",
-    "grunt-sass": "~0.9.0",
-    "grunt-csso": "~0.5.2",
-    "grunt-uncss": "~0.1.5",
-    "grunt-csscss": "~0.6.1",
-    "grunt-csscomb": "~1.2.1",
-    "grunt-webfont": "~0.2.2",
-    "grunt-pagespeed": "0.0.9",
-    "grunt-imageoptim": "~1.4.1",
-    "grunt-spritesmith": "~1.16.0",
-    "grunt-autoprefixer": "~0.5.0",
-    "grunt-contrib-csslint": "~0.1.2",
-    "grunt-contrib-connect": "~0.5.0",
-    "grunt-contrib-watch": "~0.5.3"
-  }
+    "name": "Maple",
+    "version": "0.0.1",
+    "description": "The better HTML/CSS Project.",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/t32k/maple.git"
+    },
+    "author": "Koji Ishimoto",
+    "dependencies": {
+        "webpagetest": "~0.2.0",
+        "phantomjs": "~1.9.2-6"
+    },
+    "scripts": {
+        "yslow": "./node_modules/phantomjs/bin/phantomjs test/yslow.js --info grade --format tap --threshold '{\"yexpires\": 60}' http://t32k.me/maple/test/fixtures/perf_test.html",
+        "wpt": "./node_modules/webpagetest/bin/webpagetest test http://t32k.me/maple/test/fixtures/perf_test.html --key $WPT_API_KEY --first --location Tokyo:Chrome --poll --timeout 60 --specs test/wpt_spec.json --reporter spec"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.2",
+        "grunt-kss": "~0.2.4",
+        "grunt-sass": "~0.9.0",
+        "grunt-csso": "~0.5.2",
+        "grunt-uncss": "~0.1.5",
+        "grunt-csscss": "~0.6.1",
+        "grunt-csscomb": "~2.0.0",
+        "grunt-webfont": "~0.2.2",
+        "grunt-pagespeed": "0.0.9",
+        "grunt-imageoptim": "~1.4.1",
+        "grunt-spritesmith": "~1.16.0",
+        "grunt-autoprefixer": "~0.5.0",
+        "grunt-contrib-csslint": "~0.1.2",
+        "grunt-contrib-connect": "~0.5.0",
+        "grunt-contrib-watch": "~0.5.3"
+    }
 }
