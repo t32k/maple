@@ -12,7 +12,7 @@
         "phantomjs": "~1.9.2-6"
     },
     "scripts": {
-        "yslow": "./node_modules/phantomjs/bin/phantomjs test/yslow.js --info grade --format tap --threshold '{\"yexpires\": 60}' http://t32k.me/maple/test/fixtures/perf_test.html",
+        "test": "./node_modules/phantomjs/bin/phantomjs test/yslow.js --info grade --format tap --threshold '{\"yexpires\": 60}' http://t32k.me/maple/test/fixtures/perf_test.html",
         "wpt": "./node_modules/webpagetest/bin/webpagetest test http://t32k.me/maple/test/fixtures/perf_test.html --key $WPT_API_KEY --first --location Tokyo:Chrome --poll --timeout 60 --specs test/wpt_spec.json --reporter spec"
     },
     "devDependencies": {
