@@ -405,3 +405,4 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 [leaf]: app/files/img/icon/leaf.png
+[![Analytics](https://ga-beacon.appspot.com/UA-2317436-35/maple/readme)](https://github.com/igrigorik/ga-beacon)
