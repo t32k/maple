@@ -8,7 +8,7 @@ env:
     - GIT_AUTHOR_EMAIL=ijok.ijok@gmail.com
     - GIT_COMMITTER_NAME=t32k
     - GIT_COMMITTER_EMAIL=ijok.ijok@gmail.com
-    - secure: UuE3YYrTD4KOz+XinOVq5LIFxfFp/6d2IxuWTEg3SqJWvjUhTZgFWQEQDU4+GWsi9nk+ww9wcjDsuJX7Ia8QDuI01mPIkwhllTxwYvSjDbnzxL6g4xkVK0wU2Dr1SdLuIDqMeq/wz6QomUjK7QRatAm3DUNMSsWDAB3ngTTZJoM=
+    - secure: "XtkUz/wStEsrDvoQE33L9PSkvbuHB14HPGVnnDwQtm8l1RYUqTVCU6h41YJWQFMNKyCbQr3v/qt5LWgmknShPvAm2mvWadPWM2kCEGO880lqd264rSOJXKWZCXo4PuSDwt9MPRfYQJL6WoYuaLEaXpntcdCk3471o7+sOWlX4FM="
 
 script: 
   - "git clone --quiet https://github.com/t32k/maple.git"
