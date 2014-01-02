@@ -12,7 +12,7 @@
         "phantomjs": "~1.9.2-6"
     },
     "scripts": {
-        "test": "./node_modules/phantomjs/bin/phantomjs test/yslow.js --info grade --format tap --threshold '{\"ycdn\": 50, \"yexpires\": 50}' http://t32k.me/maple/test/fixtures/perf_test.html",
+        "test": "./node_modules/phantomjs/bin/phantomjs test/yslow.js --info grade --format tap --threshold '{\"ycdn\": 50, \"yexpires\": 50}' t32k.me/maple/test/fixtures/perf_test.html",
         "wpt": "./node_modules/webpagetest/bin/webpagetest test http://t32k.me/maple/test/fixtures/perf_test.html --key $WPT_API_KEY --first --location Tokyo:Chrome --poll --timeout 60 --specs test/wpt_spec.json --reporter spec"
     },
     "devDependencies": {
@@ -22,12 +22,12 @@
         "grunt-csso": "~0.5.2",
         "grunt-uncss": "~0.1.5",
         "grunt-csscss": "~0.6.1",
-        "grunt-csscomb": "~2.0.0",
+        "grunt-csscomb": "~2.0.1",
         "grunt-webfont": "~0.2.2",
         "grunt-pagespeed": "0.0.9",
         "grunt-imageoptim": "~1.4.1",
-        "grunt-spritesmith": "~1.16.0",
-        "grunt-autoprefixer": "~0.5.0",
+        "grunt-spritesmith": "~1.21.0",
+        "grunt-autoprefixer": "~0.6.3",
         "grunt-contrib-csslint": "~0.1.2",
         "grunt-contrib-connect": "~0.5.0",
         "grunt-contrib-watch": "~0.5.3"
