@@ -9,9 +9,10 @@ env:
     - GIT_COMMITTER_NAME=t32k
     - GIT_COMMITTER_EMAIL=ijok.ijok@gmail.com
     - secure: "XtkUz/wStEsrDvoQE33L9PSkvbuHB14HPGVnnDwQtm8l1RYUqTVCU6h41YJWQFMNKyCbQr3v/qt5LWgmknShPvAm2mvWadPWM2kCEGO880lqd264rSOJXKWZCXo4PuSDwt9MPRfYQJL6WoYuaLEaXpntcdCk3471o7+sOWlX4FM="
-
-script: 
+before_script: 
   - "git clone --quiet https://github.com/t32k/maple.git"
   - "git checkout -b gh-pages"
   - "git rebase master"
   - "[ \"$TRAVIS_BRANCH\" == \"master\" ] && [ $GH_TOKEN ] && git push --quiet https://$GH_TOKEN@github.com/t32k/maple.git gh-pages 2> /dev/null"
+script:
+  - "npm test"
