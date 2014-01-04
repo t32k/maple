@@ -33,6 +33,7 @@ $ npm install generator-maple -g
 
 Usage
 ```sh
+$ mkdir your_proj && cd $_
 $ yo maple
 $ grunt
 ```
@@ -243,10 +244,10 @@ $ grunt typeset
 
 EX.
 ```css
-.btn--a { color: green }
-.btn--b { color: red }
-.btn--c { color: black }
-.btn--d { color: white }
+.btn-a { color: green }
+.btn-b { color: red }
+.btn-c { color: black }
+.btn-d { color: white }
 ```
 
 ### Helper Classes
