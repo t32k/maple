@@ -5,8 +5,7 @@
     font-style: normal;
 }
 
-[class^='icon-']:before,
-[class*=' icon-']:before {
+[class^='icon-']:before, [class*=' icon-']:before {
     font-family: 'myfont';
     display: inline-block;
     font-weight: normal;
@@ -65,29 +64,30 @@
             background-size: 151px 99px;
 }
 
-.sprt-a__bird1 {
+.sprt-a-bird1 {
     width: 30px;
     height: 25px;
     background-position: 0 -74px;
 }
 
-.sprt-a__bird2 {
+.sprt-a-bird2 {
     width: 90px;
     height: 74px;
     background-position: 0 0;
 }
 
-.sprt-a__bird3 {
+.sprt-a-bird3 {
     width: 60px;
     height: 49px;
     background-position: -91px 0;
 }
 
-.sprt-a__bird4 {
+.sprt-a-bird4 {
     width: 30px;
     height: 25px;
     background-position: -31px -74px;
 }
+
 
 .list > li:last-child {
     border: 0 !important;
@@ -95,91 +95,7 @@
             box-shadow: none !important;
 }
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-select,
-button,
-input,
-textarea,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, select, button, input, textarea, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -188,17 +104,7 @@ video {
     vertical-align: baseline;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
@@ -206,20 +112,15 @@ body {
     line-height: 1;
 }
 
-ol,
-ul {
+ol, ul {
     list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
     quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after, q:before, q:after {
     content: '';
     content: none;
 }
@@ -254,17 +155,13 @@ em {
     font-style: normal;
 }
 
-select,
-button,
-input,
-textarea {
+select, button, input, textarea {
     display: block;
     width: 100%;
     -webkit-appearance: none;
 }
 
-.gp:before,
-.gp:after {
+.gp:before, .gp:after {
     content: '';
     display: table !important;
 }
@@ -698,12 +595,11 @@ textarea {
     vertical-align: bottom;
 }
 
-.list > li {
-    padding: 1em;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-    -webkit-box-shadow: rgba(255, 255, 255, .4) 0 1px 0;
-            box-shadow: rgba(255, 255, 255, .4) 0 1px 0;
-}
+
+
+
+
+
 
 .btn {
     display: block;
@@ -714,23 +610,26 @@ textarea {
     text-align: center;
     line-height: 42px;
 }
-
 .btn.is-pressed {
     -webkit-box-shadow: rgba(0, 0, 0, .6) 0 2px 4px 0 inset;
             box-shadow: rgba(0, 0, 0, .6) 0 2px 4px 0 inset;
 }
-
 .btn.is-disabled {
     opacity: .5;
 }
 
-.btn--a {
+.btn-a {
     background: #b3cf4d;
 }
 
-.btn--b {
+.btn-b {
     background: #818181;
 }
+
+
+
+
+
 
 .bar-head {
     border-bottom: 1px #bbb solid;
@@ -742,7 +641,19 @@ textarea {
     line-height: 80px;
 }
 
+
+
+
+
+
 .box-foot {
     padding: 2em;
     border-top: 1px #ccc solid;
+}
+
+.list > li {
+    padding: 1em;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    -webkit-box-shadow: rgba(255, 255, 255, .4) 0 1px 0;
+            box-shadow: rgba(255, 255, 255, .4) 0 1px 0;
 }

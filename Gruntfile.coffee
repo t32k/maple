@@ -105,7 +105,7 @@ module.exports = (grunt) ->
         src: 'app/files/img/sprite/tabs/*.png'
         destImg: 'app/files/img/sprite/tabs.png'
         imgPath: '/files/img/sprite/tabs.png'
-        destCSS: 'app/files/css/sass/libs/_sprite.scss'
+        destCSS: 'app/files/css/sass/lib/_sprite.scss'
         algorithm: 'binary-tree'
         padding: 2
         cssTemplate: 'app/files/img/sprite/spritesmith.mustache'
@@ -133,7 +133,7 @@ module.exports = (grunt) ->
       dist:
         src: 'app/files/font/svg/*.svg'
         dest: 'app/files/font/'
-        destCss: 'app/files/css/sass/libs/'
+        destCss: 'app/files/css/sass/lib/'
         options:
           font: 'myfont'
           types: ['woff', 'ttf']
