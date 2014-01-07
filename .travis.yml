@@ -2,7 +2,6 @@ language: node_js
 node_js: 0.10
 notifications:
   email: false
-
 env: 
   global:
     - GIT_AUTHOR_NAME=t32k
