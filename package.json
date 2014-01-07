@@ -10,7 +10,7 @@
     "dependencies": {
     },
     "scripts": {
-        "test": "$CACHE_CLEAR",
+        "test": "echo $CACHE_CLEAR",
         "wpt": "./node_modules/webpagetest/bin/webpagetest test http://t32k.me/maple/test/fixtures/perf_test.html --key $WPT_API_KEY --first --location Tokyo:Chrome --poll --timeout 60 --specs test/wpt_spec.json --reporter spec"
     },
     "devDependencies": {
