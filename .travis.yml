@@ -5,12 +5,12 @@ notifications:
 
 env: 
   global:
-    - CACHE_CLEAR=$TRAVIS_BUILD_NUMBER
     - GIT_AUTHOR_NAME=t32k
     - GIT_AUTHOR_EMAIL=ijok.ijok@gmail.com
     - GIT_COMMITTER_NAME=t32k
     - GIT_COMMITTER_EMAIL=ijok.ijok@gmail.com
     - secure: "XtkUz/wStEsrDvoQE33L9PSkvbuHB14HPGVnnDwQtm8l1RYUqTVCU6h41YJWQFMNKyCbQr3v/qt5LWgmknShPvAm2mvWadPWM2kCEGO880lqd264rSOJXKWZCXo4PuSDwt9MPRfYQJL6WoYuaLEaXpntcdCk3471o7+sOWlX4FM="
+    - CACHE_CLEAR=$TRAVIS_BUILD_NUMBER
 before_script: 
   - "git clone --quiet https://github.com/t32k/maple.git"
   - "git checkout -b gh-pages"
