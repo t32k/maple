@@ -8,11 +8,9 @@
     },
     "author": "Koji Ishimoto",
     "dependencies": {
-        "webpagetest": "~0.2.0",
-        "phantomjs": "~1.9.2-6"
     },
     "scripts": {
-        "test": "console.log('$TRAVIS_BUILD_NUMBER')",
+        "test": "console.log($TRAVIS_BUILD_NUMBER)",
         "wpt": "./node_modules/webpagetest/bin/webpagetest test http://t32k.me/maple/test/fixtures/perf_test.html --key $WPT_API_KEY --first --location Tokyo:Chrome --poll --timeout 60 --specs test/wpt_spec.json --reporter spec"
     },
     "devDependencies": {
