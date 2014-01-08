@@ -375,6 +375,7 @@ EX.
 
 ### Tips
 
++ [UIKit User Interface Catalog: About Controls](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/UIKitUICatalog/UIControl.html#//apple_ref/doc/uid/TP40012857-UIControl-SW1)
 + [Scalable and Modular Architecture for CSS](http://smacss.com/)
 + [BEM: Methodology of Effective Site Development](http://bem.info/)
 + [SOLID CSS | Miller Medeiros](http://blog.millermedeiros.com/solid-css/)
