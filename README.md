@@ -149,18 +149,6 @@ $ grunt build
 $ grunt publish
 ```
 
-
-### [grunt-pagespeed](https://github.com/jrcryer/grunt-pagespeed)
-
-> Grunt plugin for running Google PageSpeed Insights
-
-+ [Obtain Google API Key](https://developers.google.com/speed/docs/insights/v1/getting_started#auth)
-
-```sh
-$ grunt pagespeed
-```
-
-
 ### [grunt-sass](https://github.com/sindresorhus/grunt-sass)
 
 > Grunt task to compile Sass SCSS to CSS
