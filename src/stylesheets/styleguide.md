@@ -1,4 +1,4 @@
-![Maple](../app/files/img/readme/head.png)
+![Maple](images/head.png)
 
 <h1 class="kss-title kss-title-main"> Overview </h1>
 

@@ -75,7 +75,7 @@ module.exports = (grunt) ->
       dist:
         files:
           # dest : src
-          'doc/': ['build/files/css/sass']
+          'doc/': ['src/stylesheets/']
 
     # Grunt task to compile Sass SCSS to CSS
     sass:
@@ -146,5 +146,5 @@ module.exports = (grunt) ->
   grunt.registerTask 'stylesheet', ['sass', 'autoprefixer', 'csscomb', 'csslint']
   grunt.registerTask 'develop', ['connect:app', 'watch']
   grunt.registerTask 'typeset', ['webfont', 'stylesheet']
-  grunt.registerTask 'publish', ['stylesheet', 'kss']
+  grunt.registerTask 'publish', ['stylesheet', 'kss','connect:doc', 'watch']
   grunt.registerTask 'build', ['stylesheet', 'csso', 'imageoptim']
