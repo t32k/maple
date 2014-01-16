@@ -7,24 +7,18 @@
         "url": "git://github.com/t32k/maple.git"
     },
     "author": "Koji Ishimoto",
-    "dependencies": {
-        "webpagetest": "~0.2.0",
-        "phantomjs": "~1.9.2-6"
-    },
     "scripts": {
-        "test": "./test/yslow.sh",
-        "wpt": "./node_modules/webpagetest/bin/webpagetest test http://t32k.me/maple/test/fixtures/perf_test.html --key $WPT_API_KEY --first --location Tokyo:Chrome --poll --timeout 60 --specs test/wpt_spec.json --reporter spec"
+        "yslow": "./test/yslow.sh",
+        "webpagetest": "./test/wpt.sh"
     },
     "devDependencies": {
         "grunt": "~0.4.2",
         "grunt-kss": "~0.2.4",
-        "grunt-sass": "~0.9.0",
+        "grunt-sass": "~0.10.0",
         "grunt-csso": "~0.5.2",
-        "grunt-uncss": "~0.1.5",
-        "grunt-csscss": "~0.6.1",
+        "grunt-uncss": "~0.1.6",
         "grunt-csscomb": "~2.0.1",
         "grunt-webfont": "~0.2.2",
-        "grunt-pagespeed": "0.0.9",
         "grunt-imageoptim": "~1.4.1",
         "grunt-spritesmith": "~1.21.0",
         "grunt-autoprefixer": "~0.6.3",

@@ -633,12 +633,10 @@ select, button, input, textarea {
 
 .bar-head {
     border-bottom: 1px #bbb solid;
-    background: url(/files/img/readme/logo.png) center center no-repeat;
-    -webkit-background-size: 160px 40px;
-            background-size: 160px 40px;
-    color: #333;
+    color: white;
     text-align: center;
-    line-height: 80px;
+    line-height: 44px;
+    background: #157038;
 }
 
 

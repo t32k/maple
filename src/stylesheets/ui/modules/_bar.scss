@@ -10,11 +10,10 @@
 // Styleguide 1 (digit number to increment eg chapter)
 .bar-head {
 	border-bottom: 1px #bbb solid;
-	background: url(/files/img/readme/logo.png) center center no-repeat;
-	background-size: 160px 40px;
-	color: #333;
+	color: #fff;
 	text-align: center;
-	line-height: 80px;
+	line-height: 44px;
+	background: $color-a;
 }
 .bar-nav { }
 .bar-tool { }

@@ -309,33 +309,31 @@ EX.
 ### Directory structure
 
 ```sh
-├── css
-│   ├── maple.css
-│   ├── sass
-│   │   ├── maple.scss
-│   │   ├── _core.scss
-│   │   ├── _ui.scss
-│   │   ├── core
-│   │   │   ├── _base.scss
-│   │   │   ├── _helper.scss
-│   │   │   ├── _layout.scss
-│   │   │   ├── _reset.scss
-│   │   │   └── _settings.scss
-│   │   ├── lib
-│   │   │   ├── _myfont.scss
-│   │   │   └── _sprite.scss
-│   │   └── ui
-│   │       ├── elements
-│   │       │   ├── _button.scss
-│   │       │   ├── _divider.scss
-│   │       │   ├── _header.scss
-│   │       │   └── _input.scss
-│   │       ├── modules
-│   │       │   ├── _bar.scss
-│   │       │   └── _box.scss
-│   │       └── views
-│   │           ├── _list.scss
-│   │           └── _modal.scss
+# stylesheets
+├── maple.scss
+├── _core.scss
+├── _ui.scss
+├── core
+│   ├── _base.scss
+│   ├── _helper.scss
+│   ├── _layout.scss
+│   ├── _reset.scss
+│   └── _settings.scss
+├── ui
+│   ├── elements
+│   │   ├── _button.scss
+│   │   ├── _divider.scss
+│   │   ├── _header.scss
+│   │   └── _input.scss
+│   ├── modules
+│   │   ├── _bar.scss
+│   │   └── _box.scss
+│   └── views
+│       ├── _list.scss
+│       └── _modal.scss
+└── lib
+    ├── _myfont.scss
+    └── _sprite.scss
 ```
 
 ### Mixins
