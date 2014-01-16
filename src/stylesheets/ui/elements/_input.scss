@@ -9,4 +9,8 @@
 // 
 // Styleguide 4 (digit number to increment eg chapter)
 
-.form-text {}
+.input {
+	padding: 10px;
+	border: 1px #bbb solid;
+	border-radius: $radius-base;
+}

@@ -7,5 +7,6 @@
  "unqualified-attributes": false,
  "fallback-colors": false,
  "zero-units": false,
- "box-sizing": false
+ "box-sizing": false,
+ "font-sizes": false
 }

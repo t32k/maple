@@ -115,16 +115,16 @@ module.exports = (grunt) ->
     # SVG to webfont converter for Grunt.
     webfont:
       dist:
-        src: 'build/files/font/svg/*.svg'
+        src: 'src/svg/*.svg'
         dest: 'build/files/font/'
-        destCss: 'build/files/css/sass/lib/'
+        destCss: 'src/stylesheets/lib/'
         options:
           font: 'myfont'
           types: ['woff', 'ttf']
           stylesheet: 'scss'
           htmlDemo: false
           syntax: 'bootstrap'
-          relativeFontPath: 'build/files/font/'
+          relativeFontPath: '/files/font/'
 
   # Load the plugins.
   grunt.loadNpmTasks 'grunt-uncss'
@@ -147,4 +147,4 @@ module.exports = (grunt) ->
   grunt.registerTask 'develop', ['connect:app', 'watch']
   grunt.registerTask 'typeset', ['webfont', 'stylesheet']
   grunt.registerTask 'publish', ['stylesheet', 'kss']
-  grunt.registerTask 'build/', ['stylesheet', 'csso', 'imageoptim']
+  grunt.registerTask 'build', ['stylesheet', 'csso', 'imageoptim']

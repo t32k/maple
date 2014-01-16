@@ -1,11 +1,11 @@
-![Maple](app/files/img/readme/head.png)
+![Maple](build/files/img/readme/head.png)
 
-This is alpha version, yet.
+__This is alpha version, yet.__
 
 
 ## ![][leaf] Features
 
-![](app/files/img/readme/feature.png)
+![](build/files/img/readme/feature.png)
 
 
 ## ![][leaf] Installation
@@ -205,7 +205,7 @@ Generate custom icon webfonts from SVG/EPS files via Grunt to reduce HTTP reques
 $ brew install fontforge ttfautohint
 ```
 
-You can create glyph SVG from this [glyph.ai](/app/files/ai/glyph.ai), and put it into `/app/files/font/svg` folder.
+You can create glyph SVG from this [glyph.ai](/build/files/ai/glyph.ai), and put it into `/build/files/font/svg` folder.
 
 ```sh
 $ grunt typeset
@@ -409,5 +409,5 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
-[leaf]: app/files/img/icon/leaf.png
+[leaf]: build/files/img/icon/leaf.png
 [![Analytics](https://ga-beacon.appspot.com/UA-2317436-35/maple/readme)](https://github.com/igrigorik/ga-beacon)

@@ -8,12 +8,24 @@
 // :pseudo     - description of the pseudo state
 // 
 // Styleguide 1 (digit number to increment eg chapter)
-.bar-head {
+.barHead {
+	position: relative;
 	border-bottom: 1px #bbb solid;
-	color: #fff;
+	background: #eee;
+	color: $color-a;
 	text-align: center;
 	line-height: 44px;
-	background: $color-a;
+	font-size: $font-size-5;
+}
+.barHead-leftButton {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	font-size: 20px;
+	padding: 0 10px;
+	border: 1px #bbb solid;
+	border-radius: $radius-base;
+	line-height: 34px;
 }
 .bar-nav { }
 .bar-tool { }

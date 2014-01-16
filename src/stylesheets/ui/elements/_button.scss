@@ -17,7 +17,6 @@
 	display: block;
 	border-radius: 4px;
 	padding: 0 1em;
-	background: $color-a;
 	color: #fff;
 	text-align: center;
 	line-height: 42px;
@@ -30,8 +29,11 @@
 	}
 }
 .btn-a {
-	background: $color-b;
+	background: $color-a;
 }
 .btn-b {
+	background: $color-b;
+}
+.btn-c {
 	background: $color-c;
 }

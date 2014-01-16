@@ -10,19 +10,9 @@
 // Styleguide 6 (digit number to increment eg chapter)
 
 .list {
-
 	> li {
 		padding: 1em;
-		border-bottom: 1px solid rgba(0,0,0, 0.1);
+		border-top: 1px solid rgba(0,0,0, 0.1);
 		box-shadow: rgba(255,255,255, 0.4) 0 1px 0;
-		&:last-child {
-			@extend %cancel-border;
-		}
 	}
-}
-.list-has-arrow {
-
-}
-.list-a {
-
 }
