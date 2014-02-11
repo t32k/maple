@@ -111,7 +111,7 @@ A happy land where browsers don't need a Refresh button.
 
 > Optimize PNG, JPEG, GIF images with grunt task.
 
-**Requires Apps**
+**Require**
 
 __Mac OS X__
 
