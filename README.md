@@ -107,7 +107,7 @@ A happy land where browsers don't need a Refresh button.
 + [Chrome Extensions](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
 
 
-### grunt-image](https://github.com/1000ch/grunt-image)
+### [grunt-image](https://github.com/1000ch/grunt-image)
 
 > Optimize PNG, JPEG, GIF images with grunt task.
 
@@ -333,29 +333,17 @@ EX.
 
 ## ![][leaf] Resources
 
-### Framework
+### See Also
 
-+ [Sencha Touch](http://docs.sencha.com/touch/2-2/#!/api/Global_CSS)
++ [suitcss](https://github.com/suitcss)
++ [Topcoat](https://github.com/topcoat)
++ [operatino/MCSS](https://github.com/operatino/MCSS)
 + [jquery/jquery-mobile](https://github.com/jquery/jquery-mobile)
 + [twitter/bootstrap](https://github.com/twitter/bootstrap)
 + [zurb/foundation](https://github.com/zurb/foundation)
 + [stubbornella/oocss](https://github.com/stubbornella/oocss)
 + [csswizardry/inuit.css](https://github.com/csswizardry/inuit.css)
 + [mvcss/mvcss](https://github.com/mvcss/mvcss)
-+ [suitcss](https://github.com/suitcss)
-
-
-### Tips
-
-+ [Your Branding | Android Developers](http://developer.android.com/design/style/branding.html)
-+ [UIKit User Interface Catalog: About Controls](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/UIKitUICatalog/UIControl.html#//apple_ref/doc/uid/TP40012857-UIControl-SW1)
-+ [Scalable and Modular Architecture for CSS](http://smacss.com/)
-+ [BEM: Methodology of Effective Site Development](http://bem.info/)
-+ [SOLID CSS | Miller Medeiros](http://blog.millermedeiros.com/solid-css/)
-+ [About HTML semantics and front-end architecture](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
-+ [csswizardry/CSS-Guidelines](https://github.com/csswizardry/CSS-Guidelines)
-+ [necolas/idiomatic-css](https://github.com/necolas/idiomatic-css/)
-+ [stubbornella/csslint](https://github.com/stubbornella/csslint)
 
 
 ## ![][leaf] License MIT
