@@ -607,7 +607,7 @@ select, button, input, textarea {
     display: block;
     border-radius: 4px;
     padding: 0 1em;
-    color: white;
+    color: #fff;
     text-align: center;
     line-height: 42px;
 }

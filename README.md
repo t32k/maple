@@ -54,21 +54,6 @@ $ grunt
 $ grunt csscomb
 ```
 
-### [grunt-csscss](https://github.com/peterkeating/grunt-csscss)
-
-> Grunt task that runs CSSCSS, a CSS redundancy analyzer.
-
-**Requires CSSCSS**
-
-```sh
-$ gem install csscss
-```
-Task.
-
-```sh
-$ grunt csscss
-```
-
 ### [grunt-csso](https://github.com/t32k/grunt-csso)
 
 > Minify CSS files with CSSO
