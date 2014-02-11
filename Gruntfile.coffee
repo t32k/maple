@@ -57,14 +57,17 @@ module.exports = (grunt) ->
         files:
           'build/files/css/maple.min.css': ['build/files/css/maple.css']
 
-    # Make ImageOptim, ImageAlpha and JPEGmini part of your automated build/ process
-    imageoptim:
+    # Optimize PNG, JPEG, GIF images with grunt task.
+    image:
       options:
-        imageAlpha: false
-        jpegMini: false
-        quitAfter: true
+        optimizationLevel: 3
       dist:
-        src: ['build/files/img/sprite']
+        files: [
+          expand: true
+          cwd: "build/files/img/sprite/"
+          src: ["**/*.{png,jpg,gif}"]
+          dest: "build/files/img/sprite/"
+        ]
 
     # KSS styleguide generator for grunt.
     kss:
@@ -127,19 +130,19 @@ module.exports = (grunt) ->
           relativeFontPath: '/files/font/'
 
   # Load the plugins.
-  grunt.loadNpmTasks 'grunt-uncss'
   grunt.loadNpmTasks 'grunt-kss'
   grunt.loadNpmTasks 'grunt-sass'
   grunt.loadNpmTasks 'grunt-csso'
-  grunt.loadNpmTasks 'grunt-csscss'
+  grunt.loadNpmTasks 'grunt-uncss'
+  grunt.loadNpmTasks 'grunt-image'
   grunt.loadNpmTasks 'grunt-csscomb'
   grunt.loadNpmTasks 'grunt-webfont'
-  grunt.loadNpmTasks 'grunt-imageoptim'
   grunt.loadNpmTasks 'grunt-spritesmith'
   grunt.loadNpmTasks 'grunt-autoprefixer'
+  grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-connect'
   grunt.loadNpmTasks 'grunt-contrib-csslint'
-  grunt.loadNpmTasks 'grunt-contrib-watch'
+
 
   # Tasks.
   grunt.registerTask 'default', ['develop']
@@ -147,4 +150,4 @@ module.exports = (grunt) ->
   grunt.registerTask 'develop', ['connect:app', 'watch']
   grunt.registerTask 'typeset', ['webfont', 'stylesheet']
   grunt.registerTask 'publish', ['stylesheet', 'kss','connect:doc', 'watch']
-  grunt.registerTask 'build', ['stylesheet', 'csso', 'imageoptim']
+  grunt.registerTask 'build', ['stylesheet', 'csso', 'image']

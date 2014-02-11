@@ -107,19 +107,20 @@ A happy land where browsers don't need a Refresh button.
 + [Chrome Extensions](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
 
 
-### [grunt-imageoptim](https://github.com/JamieMason/grunt-imageoptim)
+### grunt-image](https://github.com/1000ch/grunt-image)
 
-> Make ImageOptim, ImageAlpha and JPEGmini part of your automated build process.
+> Optimize PNG, JPEG, GIF images with grunt task.
 
 **Requires Apps**
 
-+ [ImageOptim — make websites and apps load faster (Mac app)](http://imageoptim.com/)
-+ [ImageAlpha — heavy compression for PNG images (like JPEG with alpha channel!)](http://pngmini.com/)
-+ [JPEGmini - Your Photos on a Diet!](http://jpegmini.com/)
-
+__Mac OS X__
 
 ```sh
-$ grunt build
+$ brew install libjpeg libjpeg-turbo
+```
+
+```sh
+$ grunt image
 ```
 
 ### [grunt-kss](https://github.com/t32k/grunt-kss)
