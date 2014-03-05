@@ -310,8 +310,6 @@ hr {
 
     img {
         max-width: 100% !important
-    }@    page {
-        margin: 2cm .5cm
     }
 
     p,h2,h3 {
@@ -1466,11 +1464,6 @@ input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"
     width:device-width
 }
 
-@media screen and (max-width: 400px) {
-@    -ms-viewport {
-        width: 320px
-    }
-}
 
 .hidden {
     display: none !important;
