@@ -1,8 +1,8 @@
-__This is alpha version, yet.__ 
 ![Maple](build/files/img/pages/readme/head.png)
 
 [![devDependency Status](https://david-dm.org/t32k/maple/dev-status.png)](https://david-dm.org/t32k/maple#info=devDependencies)
 
+This is alpha version, yet.
 
 ## ![][leaf] Features
 
