@@ -12,18 +12,18 @@
     "webpagetest": "./test/wpt.sh"
   },
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-kss": "~0.2.4",
-    "grunt-sass": "~0.10.0",
-    "grunt-csso": "~0.5.2",
-    "grunt-uncss": "~0.2.0",
-    "grunt-image": "~0.4.6",
+    "grunt": "~0.4.4",
+    "grunt-kss": "~0.2.6",
+    "grunt-sass": "~0.12.1",
+    "grunt-csso": "~0.6.1",
+    "grunt-uncss": "~0.3.3",
+    "grunt-image": "~0.6.0",
     "grunt-csscomb": "~2.0.1",
-    "grunt-webfont": "~0.3.2",
-    "grunt-spritesmith": "~1.22.0",
-    "grunt-autoprefixer": "~0.6.5",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-connect": "~0.6.0",
+    "grunt-webfont": "~0.3.4",
+    "grunt-spritesmith": "~1.24.0",
+    "grunt-autoprefixer": "~0.7.2",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-connect": "~0.7.1",
     "grunt-contrib-csslint": "~0.2.0"
   }
 }
