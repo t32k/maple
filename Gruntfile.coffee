@@ -98,12 +98,6 @@ module.exports = (grunt) ->
         cssTemplate: 'build/files/img/sprite/spritesmith.mustache'
         # cssOpts: { functions: false }
 
-    # A grunt task for removing unused CSS from your project build/s
-    uncss:
-      dist:
-        files:
-          'build/files/css/tidy.css': ['build/index.html']
-
     # Run tasks whenever watched files change.
     watch:
       options:
@@ -133,7 +127,6 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-kss'
   grunt.loadNpmTasks 'grunt-sass'
   grunt.loadNpmTasks 'grunt-csso'
-  grunt.loadNpmTasks 'grunt-uncss'
   grunt.loadNpmTasks 'grunt-image'
   grunt.loadNpmTasks 'grunt-csscomb'
   grunt.loadNpmTasks 'grunt-webfont'

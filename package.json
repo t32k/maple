@@ -16,7 +16,6 @@
     "grunt-kss": "~0.2.6",
     "grunt-sass": "~0.12.1",
     "grunt-csso": "~0.6.1",
-    "grunt-uncss": "~0.3.3",
     "grunt-image": "~0.6.0",
     "grunt-csscomb": "~2.0.1",
     "grunt-webfont": "~0.3.4",
