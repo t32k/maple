@@ -194,13 +194,12 @@ $ grunt typeset
 
 | Prefix | Module name |
 | ------ | ---------- |
-| head-\* | headline |
-| list-\* | listview |
-| btn-\* | button |
-| box-\* | box/section |
-| icon-\* | icon |
-| bar-\* | bar |
-| sprt-\* | sprite |
+| u-\* | utility |
+| l-\* | layout |
+| c-\* | component |
+| is-\* | state |
+| js-\* | JavaScript Specific |
+
 
 ### Serial Number Suffix
 
@@ -290,7 +289,7 @@ EX.
 ├── _ui.scss
 ├── core
 │   ├── _base.scss
-│   ├── _helper.scss
+│   ├── _utility.scss
 │   ├── _layout.scss
 │   ├── _reset.scss
 │   └── _settings.scss
