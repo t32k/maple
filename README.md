@@ -1,6 +1,6 @@
 ![Maple](build/files/img/pages/readme/head.png)
 
-[![devDependency Status](https://david-dm.org/t32k/maple/dev-status.png)](https://david-dm.org/t32k/maple#info=devDependencies)
+![MIT License](https://img.shields.io/badge/license-MIT-green.svg) [![devDependency Status](https://david-dm.org/t32k/maple/dev-status.png)](https://david-dm.org/t32k/maple#info=devDependencies)
 
 This is alpha version, yet.
 
