@@ -11,7 +11,7 @@ module.exports = (grunt) ->
       options:
         browsers: ['ios >= 5', 'android >= 2.3']
       dist:
-        src: 'build/files/css/maple.css'
+        src: 'public/files/css/maple.css'
 
     # Start a static web server.
     # Reload assets live in the browser
@@ -33,14 +33,14 @@ module.exports = (grunt) ->
         options:
           config: '.csscombrc'
         files:
-          'build/files/css/maple.css': ['build/files/css/maple.css']
+          'public/files/css/maple.css': ['public/files/css/maple.css']
 
     # Lint CSS files.
     csslint:
       dist:
         options:
           csslintrc: '.csslintrc'
-        src: ['build/files/css/maple.css']
+        src: ['public/files/css/maple.css']
 
     # Minify CSS files with CSSO.
     csso:
@@ -55,7 +55,7 @@ module.exports = (grunt) ->
 
           """
         files:
-          'build/files/css/maple.min.css': ['build/files/css/maple.css']
+          'public/files/css/maple.min.css': ['public/files/css/maple.css']
 
     # Optimize PNG, JPEG, GIF images with grunt task.
     image:
@@ -64,16 +64,16 @@ module.exports = (grunt) ->
       dist:
         files: [
           expand: true
-          cwd: "build/files/img/sprite/"
+          cwd: "public/files/img/sprite/"
           src: ["**/*.{png,jpg,gif}"]
-          dest: "build/files/img/sprite/"
+          dest: "public/files/img/sprite/"
         ]
 
     # KSS styleguide generator for grunt.
     kss:
       options:
         includeType: 'css'
-        includePath: 'build/files/css/maple.css'
+        includePath: 'public/files/css/maple.css'
         template: 'doc/template'
       dist:
         files:
@@ -84,18 +84,18 @@ module.exports = (grunt) ->
     sass:
       dist:
         files:
-          'build/files/css/maple.css': 'src/stylesheets/maple.scss'
+          'public/files/css/maple.css': 'src/stylesheets/maple.scss'
 
     # Grunt task for creating spritesheets and their coordinates
     sprite:
       dist:
-        src: 'build/files/img/sprite/tabs/*.png'
-        destImg: 'build/files/img/sprite/tabs.png'
+        src: 'public/files/img/sprite/tabs/*.png'
+        destImg: 'public/files/img/sprite/tabs.png'
         imgPath: '/files/img/sprite/tabs.png'
-        destCSS: 'build/files/css/sass/lib/_sprite.scss'
+        destCSS: 'public/files/css/sass/lib/_sprite.scss'
         algorithm: 'binary-tree'
         padding: 2
-        cssTemplate: 'build/files/img/sprite/spritesmith.mustache'
+        cssTemplate: 'public/files/img/sprite/spritesmith.mustache'
         # cssOpts: { functions: false }
 
     # Run tasks whenever watched files change.
@@ -106,14 +106,14 @@ module.exports = (grunt) ->
         files: ['src/stylesheets/**/*.scss', 'build/**/*.html']
         tasks: ['stylesheet']
       sprite:
-        files: ['build/files/img/sprite/*/*.png']
+        files: ['public/files/img/sprite/*/*.png']
         tasks: ['sprite']
 
     # SVG to webfont converter for Grunt.
     webfont:
       dist:
         src: 'src/svg/*.svg'
-        dest: 'build/files/font/'
+        dest: 'public/files/font/'
         destCss: 'src/stylesheets/lib/'
         options:
           font: 'myfont'

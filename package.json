@@ -7,10 +7,6 @@
     "url": "git://github.com/t32k/maple.git"
   },
   "author": "Koji Ishimoto",
-  "scripts": {
-    "yslow": "./test/yslow.sh",
-    "webpagetest": "./test/wpt.sh"
-  },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^2.0.0",

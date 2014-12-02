@@ -1,7 +1,7 @@
 node_modules
 npm-debug.log
 .sass-cache
-build/files/js/lib/*
-!build/files/js/lib/.gitkeep
+public/files/js/lib/*
+!public/files/js/lib/.gitkeep
 doc/*.html
 maple.*.css
