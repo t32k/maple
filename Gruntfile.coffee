@@ -72,8 +72,7 @@ module.exports = (grunt) ->
     # KSS styleguide generator for grunt.
     kss:
       options:
-        includeType: 'css'
-        includePath: 'public/files/css/maple.css'
+        css: 'public/files/css/maple.css'
         template: 'doc/template'
       dist:
         files:

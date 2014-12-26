@@ -16,9 +16,9 @@
     "grunt-csscomb": "^3.0.0",
     "grunt-csso": "^0.6.3",
     "grunt-image": "^0.9.1",
-    "grunt-kss": "^0.4.0",
-    "grunt-sass": "^0.16.1",
-    "grunt-spritesmith": "^2.1.1",
-    "grunt-webfont": "^0.4.7"
+    "grunt-kss": "^1.0.0",
+    "grunt-sass": "^0.17.0",
+    "grunt-spritesmith": "^3.5.0",
+    "grunt-webfont": "^0.5.0"
   }
 }
