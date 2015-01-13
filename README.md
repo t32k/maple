@@ -332,23 +332,5 @@ EX.
 }
 ```
 
-## ![][leaf] Resources
-
-### See Also
-
-+ [suitcss](https://github.com/suitcss)
-+ [Topcoat](https://github.com/topcoat)
-+ [operatino/MCSS](https://github.com/operatino/MCSS)
-+ [jquery/jquery-mobile](https://github.com/jquery/jquery-mobile)
-+ [twitter/bootstrap](https://github.com/twitter/bootstrap)
-+ [zurb/foundation](https://github.com/zurb/foundation)
-+ [stubbornella/oocss](https://github.com/stubbornella/oocss)
-+ [csswizardry/inuit.css](https://github.com/csswizardry/inuit.css)
-+ [mvcss/mvcss](https://github.com/mvcss/mvcss)
-
-
-## ![][leaf] License
-
-Code is released under [the MIT license](LICENSE-MIT).
 
 [leaf]: public/files/img/icon/leaf.png
