@@ -1,16 +1,19 @@
-![Maple](public/files/img/pages/readme/head.png)
+# Maple 
+
+[![](public/files/img/pages/readme/cover.jpg)](https://plus.google.com/+KarenHutton/posts/VmDawurtRiy?pid=5812042682511318962&oid=112471890387110967375)
+
+Photo by [Karen Hutton](https://plus.google.com/+KarenHutton)
 
 [![devDependency Status](https://david-dm.org/t32k/maple/dev-status.svg)](https://david-dm.org/t32k/maple#info=devDependencies)
-![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
 
 This is alpha version, yet.
 
-## ![][leaf] Features
+## Features
 
 ![](public/files/img/pages/readme/feature.png)
 
 
-## ![][leaf] Installation
+## Installation
 
 ### NPM
 
@@ -20,7 +23,7 @@ Requires [Node.js](http://nodejs.org/)
 $ npm install yo -g
 ```
 
-## ![][leaf] Getting Started
+## Getting Started
 
 ### Project Scaffolding
 
@@ -40,7 +43,7 @@ $ yo maple
 $ grunt
 ```
 
-## ![][leaf] Grunt Tasks
+## Grunt Tasks
 
 ### [grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer)
 
@@ -189,7 +192,7 @@ $ grunt typeset
 
 
 
-## ![][leaf] CSS
+## CSS
 
 ### Module Prefix
 
@@ -279,7 +282,7 @@ EX.
 ```
 
 
-## ![][leaf] Sass
+## Sass
 
 ### Directory structure
 
@@ -331,6 +334,3 @@ EX.
   }
 }
 ```
-
-
-[leaf]: public/files/img/icon/leaf.png
