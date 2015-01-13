@@ -1,4 +1,4 @@
-![Maple](build/files/img/pages/readme/head.png)
+![Maple](public/files/img/pages/readme/head.png)
 
 [![devDependency Status](https://david-dm.org/t32k/maple/dev-status.svg)](https://david-dm.org/t32k/maple#info=devDependencies)
 ![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
@@ -7,7 +7,7 @@ This is alpha version, yet.
 
 ## ![][leaf] Features
 
-![](build/files/img/pages/readme/feature.png)
+![](public/files/img/pages/readme/feature.png)
 
 
 ## ![][leaf] Installation
@@ -181,7 +181,7 @@ Generate custom icon webfonts from SVG/EPS files via Grunt to reduce HTTP reques
 $ brew install fontforge ttfautohint
 ```
 
-You can create glyph SVG from this [glyph.ai](/build/files/ai/glyph.ai), and put it into `/build/files/font/svg` folder.
+You can create glyph SVG from this [glyph.ai](/public/files/ai/glyph.ai), and put it into `/public/files/font/svg` folder.
 
 ```sh
 $ grunt typeset
@@ -351,4 +351,4 @@ EX.
 
 Code is released under [the MIT license](LICENSE-MIT).
 
-[leaf]: build/files/img/icon/leaf.png
+[leaf]: public/files/img/icon/leaf.png
