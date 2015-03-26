@@ -27,17 +27,17 @@
     "watch": "^0.14.0"
   },
   "scripts": {
-    "start": "",
+    "start": "browser-sync start --server public/ --files public/files/**/*",
     "test": "stylestats public/files/css/maple.css",
     "clean": "rm -rf public/files/css/*",
-    "build:js": "",
+    "build:js": "browserify assets/scripts/app.js > public/files/js/app.js",
     "build:css": "node-sass assets/styles/maple.scss public/files/css/maple.css",
-    "build": "",
-    "lint:js": "",
+    "build": "npm run build:js && npm run build:css",
+    "lint:js": "jshint assets/scripts/app.js",
     "lint:css": "scss-lint assets/styles/**/*.scss",
-    "lint": "",
-    "watch:js": "",
+    "lint": "npm run lint:js && npm run lint:css",
+    "watch:js": "watch 'npm run build:js' assets/scripts/",
     "watch:css": "watch 'npm run build:css' assets/styles/",
-    "watch": ""
+    "watch": "parallelshell 'npm run watch:js' 'npm run watch:css'"
   }
 }
