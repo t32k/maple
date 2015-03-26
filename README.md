@@ -29,7 +29,9 @@ $ gem install sass scss-lint
 
 You don't have to install [grunt](http://gruntjs.com/)/[gulp](http://gulpjs.com/), yay!
 
+
 ```
+$ chmod +x bin/build.sh
 # Show all tasks
 $ npm run
 ```
