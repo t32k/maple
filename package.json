@@ -21,8 +21,23 @@
     "jshint": "^2.6.3",
     "kss": "^2.0.2",
     "node-sass": "^2.0.1",
+    "parallelshell": "^1.1.1",
     "stylestats": "^5.0.1",
     "uglify-js": "^2.4.17",
     "watch": "^0.14.0"
+  },
+  "scripts": {
+    "start": "",
+    "test": "stylestats public/files/css/maple.css",
+    "clean": "rm -rf public/files/css/*",
+    "build:js": "",
+    "build:css": "node-sass assets/styles/maple.scss public/files/css/maple.css",
+    "build": "",
+    "lint:js": "",
+    "lint:css": "scss-lint assets/styles/**/*.scss",
+    "lint": "",
+    "watch:js": "",
+    "watch:css": "watch 'npm run build:css' assets/styles/",
+    "watch": ""
   }
 }

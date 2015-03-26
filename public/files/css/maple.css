@@ -1,69 +1,68 @@
 @font-face {
-  font-family: 'myfont';
-  src: url('/files/font/myfont-165a1ce8bfb947828896adcacf58555f.woff') format('woff'), url('/files/font/myfont-165a1ce8bfb947828896adcacf58555f.ttf') format('truetype');
+  font-family: "myfont";
+  src: url("/files/font/myfont-165a1ce8bfb947828896adcacf58555f.woff") format("woff"), url("/files/font/myfont-165a1ce8bfb947828896adcacf58555f.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
-[class^='icon-']:before, [class*=' icon-']:before {
-  font-family: 'myfont';
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "myfont";
   display: inline-block;
   font-weight: normal;
   font-style: normal;
   text-decoration: inherit; }
 
 .icon-arrow-b:before {
-  content: '\f100'; }
+  content: "\f100"; }
 
 .icon-arrow-l:before {
-  content: '\f101'; }
+  content: "\f101"; }
 
 .icon-arrow-r:before {
-  content: '\f102'; }
+  content: "\f102"; }
 
 .icon-arrow-t:before {
-  content: '\f103'; }
+  content: "\f103"; }
 
 .icon-check:before {
-  content: '\f104'; }
+  content: "\f104"; }
 
 .icon-leaf-h:before {
-  content: '\f105'; }
+  content: "\f105"; }
 
 .icon-leaf-p:before {
-  content: '\f106'; }
+  content: "\f106"; }
 
 .icon-maple:before {
-  content: '\f107'; }
+  content: "\f107"; }
 
 .icon-minus:before {
-  content: '\f108'; }
+  content: "\f108"; }
 
 .icon-plus:before {
-  content: '\f109'; }
+  content: "\f109"; }
 
 .icon-star:before {
-  content: '\f10a'; }
+  content: "\f10a"; }
 
 .sprt-a {
-  background-image: url('/files/img/sprite/tabs.png');
+  background-image: url("/files/img/sprite/tabs.png");
   background-repeat: no-repeat;
-  -webkit-background-size: 151px 99px;
-          background-size: 151px 99px; }
+  background-size: 151px 99px; }
 
 .sprt-a-bird1 {
   width: 30px;
   height: 25px;
-  background-position: 0 -74px; }
+  background-position: 0px -74px; }
 
 .sprt-a-bird2 {
   width: 90px;
   height: 74px;
-  background-position: 0 0; }
+  background-position: 0px 0px; }
 
 .sprt-a-bird3 {
   width: 60px;
   height: 49px;
-  background-position: -91px 0; }
+  background-position: -91px 0px; }
 
 .sprt-a-bird4 {
   width: 30px;
@@ -101,7 +100,7 @@ table {
 body {
   color: #444;
   font-size: 16px;
-  font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
   line-height: 1.3; }
 
@@ -123,11 +122,10 @@ select, button, input, textarea {
   display: block;
   width: 100%;
   -webkit-appearance: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 .u-gp:before, .u-gp:after {
-  content: '';
+  content: "";
   display: table !important; }
 
 .u-gp:after {
@@ -466,11 +464,10 @@ select, button, input, textarea {
   color: #fff;
   text-align: center;
   line-height: 42px; }
-.btn.is-pressed {
-  -webkit-box-shadow: rgba(0, 0, 0, .6) 0 2px 4px 0 inset;
-          box-shadow: rgba(0, 0, 0, .6) 0 2px 4px 0 inset; }
-.btn.is-disabled {
-  opacity: .5; }
+  .btn.is-pressed {
+    box-shadow: rgba(0, 0, 0, 0.6) 0 2px 4px 0 inset; }
+  .btn.is-disabled {
+    opacity: 0.5; }
 
 .btn-a {
   background: #157038; }
@@ -511,6 +508,5 @@ select, button, input, textarea {
 
 .list > li {
   padding: 1em;
-  border-top: 1px solid rgba(0, 0, 0, .1);
-  -webkit-box-shadow: rgba(255, 255, 255, .4) 0 1px 0;
-          box-shadow: rgba(255, 255, 255, .4) 0 1px 0; }
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0; }
