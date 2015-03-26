@@ -1,1 +1,0 @@
-./node_modules/phantomjs/bin/phantomjs test/yslow.js --info grade --format tap --threshold '{"ycdn": 10, "yexpires": 10}' t32k.me/maple/test/fixtures/perf_test.html?${CACHE_CLEAR}
