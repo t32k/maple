@@ -21,23 +21,26 @@
     "jshint": "^2.6.3",
     "kss": "^2.0.2",
     "node-sass": "^2.0.1",
-    "parallelshell": "^1.1.1",
     "stylestats": "^5.0.1",
     "uglify-js": "^2.4.17",
     "watch": "^0.14.0"
   },
   "config": {
-    "csscomb": ""
+    "scsslint": "",
+    "csscomb": "",
+    "stylestats": ""
   },
   "scripts": {
-    "start": "browser-sync start --server public/ --files public/files/**/*",
+    "start": "npm run start-serve & npm run watch",
     "test": "stylestats public/files/css/maple.css",
+    "start-serve": "browser-sync start --server public/ --files public/files/**/*",
     "clean": "rm -rf public/files/css/*",
+    "js:min": "uglifyjs public/files/js/app.js > public/files/js/app.min.js",
     "build:js": "browserify assets/scripts/app.js > public/files/js/app.js",
     "css:sass": "node-sass assets/styles/maple.scss public/files/css/maple.css",
-    "css:prefix": "autoprefixer ",
+    "css:prefix": "autoprefixer -b 'last 2 versions' public/files/css/maple.css",
     "css:comb": "csscomb public/files/css/maple.css",
-    "css:csso": "csso public/files/css/maple.css public/files/css/maple.min.css",
+    "css:min": "csso public/files/css/maple.css public/files/css/maple.min.css",
     "build:css": "bin/build-css.sh",
     "build": "npm run build:js && npm run build:css",
     "lint:js": "jshint assets/scripts/app.js",
