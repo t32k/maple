@@ -27,7 +27,7 @@
     "watch": "^0.14.0"
   },
   "config": {
-    "csscomb": "aaaaaaaaaaaaaaa"
+    "csscomb": ""
   },
   "scripts": {
     "start": "browser-sync start --server public/ --files public/files/**/*",
@@ -43,7 +43,6 @@
     "lint:js": "jshint assets/scripts/app.js",
     "lint:css": "scss-lint assets/styles/**/*.scss",
     "lint": "npm run lint:js && npm run lint:css",
-    "unko": "echo $npm_package_config_csscomb",
     "watch:js": "watch 'npm run build:js' assets/scripts/",
     "watch:css": "watch 'npm run build:css' assets/styles/",
     "watch": "npm run watch:js & npm run watch:css"
