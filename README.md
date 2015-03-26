@@ -19,177 +19,6 @@ This is alpha version, yet.
 
 Requires [Node.js](http://nodejs.org/)
 
-```sh
-$ npm install yo -g
-```
-
-## Getting Started
-
-### Project Scaffolding
-
-[t32k/generator-maple](https://github.com/t32k/generator-maple)
-
-> Create a basic maple project with Yeoman. 
-
-Installation
-```sh
-$ npm install generator-maple -g 
-```
-
-Usage
-```sh
-$ mkdir your_proj && cd $_
-$ yo maple
-$ grunt
-```
-
-## Grunt Tasks
-
-### [grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer)
-
-> Parse CSS and add vendor-prefixed CSS properties using the Can I Use database. Based on Autoprefixer.
-
-### [grunt-csscomb](https://github.com/csscomb/grunt-csscomb)
-
-> The grunt plugin for sorting CSS properties in specific order.
-
-+ [The Greatest tool for sorting CSS properties in specific order](http://csscomb.com/)
-
-```sh
-$ grunt csscomb
-```
-
-### [grunt-csso](https://github.com/t32k/grunt-csso)
-
-> Minify CSS files with CSSO
-
-CSSO (CSS Optimizer) is a CSS minimizer unlike others. In addition to usual minification techniques it can perform structural optimization of CSS files, resulting in smaller file size compared to other minifiers.
-
-+ [css/csso](https://github.com/css/csso)
-
-```sh
-$ grunt build
-```
-
-### [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect) 
-
-> Start a connect web server.
-
-```sh
-$ grunt develop
-```
-
-### [grunt-contrib-csslint](https://github.com/gruntjs/grunt-contrib-csslint)
-
-> Lint CSS files.
-
-CSSLint is a tool to help point out problems with your CSS code. It does basic syntax checking as well as applying a set of rules to the code that look for problematic patterns or signs of inefficiency. 
-
-+ [Rules · stubbornella/csslint Wiki](https://github.com/stubbornella/csslint/wiki/Rules)
-
-#### Lint turn off in Maple project
-
-+ Bulletproof font face (Compatibility)
-+ Disallow adjoining classes (Compatibility)
-+ Require compatible vendor prefixes (Compatibility)
-+ Disallow !important (Maintainability & Duplication)
-+ Disallow selectors that look like regular expressions (Performance)
-+ Disallow unqualified attribute selectors (Performance)
-+ Disallow units for zero values (Performance)
-
-```sh
-$ grunt build
-```
-
-### [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
-
-> Run tasks whenever watched files change.
-
-`livereload: true`
-
-A happy land where browsers don't need a Refresh button.
-
-+ [Chrome Extensions](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
-
-
-### [grunt-image](https://github.com/1000ch/grunt-image)
-
-> Optimize PNG, JPEG, GIF images with grunt task.
-
-**Require**
-
-__Mac OS X__
-
-```sh
-$ brew install libjpeg libjpeg-turbo
-```
-
-```sh
-$ grunt image
-```
-
-### [grunt-kss](https://github.com/t32k/grunt-kss)
-
-> KSS styleguide generator for grunt.
-
-[A NodeJS Implementation of KSS](https://github.com/hughsk/kss-node): a methodology for documenting CSS and generating styleguides
-
-`http://localhost:8081/`
-
-```sh
-$ grunt publish
-```
-
-### [grunt-sass](https://github.com/sindresorhus/grunt-sass)
-
-> Grunt task to compile Sass SCSS to CSS
-
-```sh
-$ grunt develop
-```
-
-### [grunt-spritesmith](https://github.com/Ensighten/grunt-spritesmith)
-
-> Grunt task for creating spritesheets and their coordinates
-
-**Requires Phantomjs(or canvas or gm)**
-
-If Homebrew is not installed...
-
-```sh
-$ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
-```
-
-```sh
-$ brew install phantomjs
-```
-
-```sh
-$ grunt sprite
-```
-
-### [grunt-webfont](https://github.com/sapegin/grunt-webfont)
-
-> SVG to webfont converter for Grunt
-
-Generate custom icon webfonts from SVG/EPS files via Grunt to reduce HTTP requests.
-
-+ [cognitom/symbols](https://github.com/cognitom/symbols)
-+ [iconmonstr - Free simple icons for your next project](http://iconmonstr.com/)
-
-
-**Requires fontforge, ttfautohint**
-
-```sh
-$ brew install fontforge ttfautohint
-```
-
-You can create glyph SVG from this [glyph.ai](/public/files/ai/glyph.ai), and put it into `/public/files/font/svg` folder.
-
-```sh
-$ grunt typeset
-```
-
 
 
 ## CSS
@@ -198,10 +27,10 @@ $ grunt typeset
 
 | Prefix | Module name |
 | ------ | ---------- |
-| u-\* | utility |
-| l-\* | layout |
-| c-\* | component |
-| is-\* | state |
+| u-\* | Utility |
+| l-\* | Layout |
+| c-\* | Component |
+| is-\* | State |
 | js-\* | JavaScript Specific |
 
 
@@ -312,25 +141,4 @@ EX.
 └── lib
     ├── _myfont.scss
     └── _sprite.scss
-```
-
-### Mixins
-
-#### CSS Sprite for Retina(Using Spritesmith)
-
-[Previous Verison](https://gist.github.com/t32k/e65534b5a8bb124e1cbe)
-
-```scss
-// $list: <X> <Y> <Offset X> <Offset Y> <Width> <Height> <Total Width> <Total Height> <Image Path>
-@mixin sprite($isParent, $sprite) {
-  @if $isParent == "parent" {
-    background-image: url( unquote( nth($sprite, 9) ) );
-    background-repeat: no-repeat;
-    background-size: round( nth($sprite, 7) / 2 ) round( nth($sprite, 8) / 2 );
-  } @else {
-    width: round( nth($sprite, 5) / 2 );
-    height: round( nth($sprite, 6) / 2 );
-    background-position: round( nth($sprite, 3) / 2 ) round( nth($sprite, 4) / 2 );
-  }
-}
 ```

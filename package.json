@@ -1,10 +1,26 @@
 {
   "name": "Maple",
   "version": "0.2.0",
-  "description": "The better HTML/CSS Project.",
+  "description": "A better Front-end Project.",
   "repository": {
     "type": "git",
     "url": "git://github.com/t32k/maple.git"
   },
-  "author": "Koji Ishimoto"
+  "author": "Koji Ishimoto",
+  "dependencies": {
+    "backbone": "^1.1.2",
+    "jquery": "^2.1.3",
+    "underscore": "^1.8.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^5.1.0",
+    "browserify": "^9.0.3",
+    "csscomb": "^3.0.4",
+    "csso": "^1.3.11",
+    "jshint": "^2.6.3",
+    "kss": "^2.0.2",
+    "node-sass": "^2.0.1",
+    "stylestats": "^5.0.1",
+    "uglify-js": "^2.4.17"
+  }
 }
