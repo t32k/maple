@@ -46,6 +46,6 @@
     "unko": "echo $npm_package_config_csscomb",
     "watch:js": "watch 'npm run build:js' assets/scripts/",
     "watch:css": "watch 'npm run build:css' assets/styles/",
-    "watch": "parallelshell 'npm run watch:js' 'npm run watch:css'"
+    "watch": "npm run watch:js & npm run watch:css"
   }
 }
