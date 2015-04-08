@@ -1,7 +1,7 @@
 {
   "name": "Maple",
   "version": "0.2.0",
-  "description": "A better Front-end Project.",
+  "description": "A better Front-end Boilerplate Project.",
   "repository": {
     "type": "git",
     "url": "git://github.com/t32k/maple.git"
@@ -21,7 +21,7 @@
     "jshint": "^2.6.3",
     "kss": "^2.0.2",
     "node-sass": "^2.0.1",
-    "stylestats": "^5.0.1",
+    "stylestats": "^5.1.0",
     "uglify-js": "^2.4.17",
     "watch": "^0.14.0"
   },
