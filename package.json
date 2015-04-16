@@ -39,7 +39,7 @@
     "build:js": "browserify assets/scripts/app.js > public/files/js/app.js",
     "css:sass": "node-sass assets/styles/maple.scss public/files/css/maple.css",
     "css:prefix": "autoprefixer -b 'last 2 versions' public/files/css/maple.css",
-    "css:comb": "csscomb public/files/css/maple.css",
+    "css:comb": "csscomb -c csscomb.json public/files/css/maple.css",
     "css:min": "csso public/files/css/maple.css public/files/css/maple.min.css",
     "build:css": "bin/build-css.sh",
     "build": "npm run build:js && npm run build:css",

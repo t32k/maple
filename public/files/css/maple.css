@@ -1,28 +1,3 @@
-.sprt-a {
-  background-image: url("/files/img/sprite/tabs.png");
-  background-repeat: no-repeat;
-  background-size: 151px 99px; }
-
-.sprt-a-bird1 {
-  width: 30px;
-  height: 25px;
-  background-position: 0px -74px; }
-
-.sprt-a-bird2 {
-  width: 90px;
-  height: 74px;
-  background-position: 0px 0px; }
-
-.sprt-a-bird3 {
-  width: 60px;
-  height: 49px;
-  background-position: -91px 0px; }
-
-.sprt-a-bird4 {
-  width: 30px;
-  height: 25px;
-  background-position: -31px -74px; }
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, select, button, input, textarea, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;

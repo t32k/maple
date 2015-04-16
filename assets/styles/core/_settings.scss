@@ -46,15 +46,6 @@ $radius-3: $radius-base * 4;
 $font-family-body: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 
-//  Mixins
-//-------------------------------------
-@import "../lib/sprite";
-
-.sprt-a { @include sprite(parent, $_bird1); }
-.sprt-a-bird1 { @include sprite(child, $_bird1); }
-.sprt-a-bird2 { @include sprite(child, $_bird2); }
-.sprt-a-bird3 { @include sprite(child, $_bird3); }
-.sprt-a-bird4 { @include sprite(child, $_bird4); }
 
 //  Extends
 //-------------------------------------
