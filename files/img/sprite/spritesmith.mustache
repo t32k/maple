@@ -1,0 +1,25 @@
+{
+  // Default options
+  'functions': true
+}
+
+{{#items}}
+$_{{name}}: {{px.x}} {{px.y}} {{px.offset_x}} {{px.offset_y}} {{px.width}} {{px.height}} {{px.total_width}} {{px.total_height}} '{{{escaped_image}}}';
+{{/items}}
+
+{{#options.functions}}
+// $list: <X> <Y> <Offset X> <Offset Y> <Width> <Height> <Total Width> <Total Height> <Image Path>
+
+@mixin sprite($isParent, $sprite) {
+  @if $isParent == "parent" {
+    $imagePath: nth($sprite, 9);
+    background-image: url("#{$imagePath}");
+    background-repeat: no-repeat;
+    background-size: round( nth($sprite, 7) / 2 ) round( nth($sprite, 8) / 2 );
+  } @else {
+    width: round( nth($sprite, 5) / 2 );
+    height: round( nth($sprite, 6) / 2 );
+    background-position: round( nth($sprite, 3) / 2 ) round( nth($sprite, 4) / 2 );
+  }
+}
+{{/options.functions}}
