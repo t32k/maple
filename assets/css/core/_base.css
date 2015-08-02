@@ -1,6 +1,6 @@
-//-------------------------------------//
-//  User's Base Style
-//-------------------------------------//
+/*-------------------------------------*\
+    User's Base Style
+\*-------------------------------------*/
 body {
 	color: $color-e;
 	font-size: $font-size-base;
@@ -16,7 +16,6 @@ a {
 b {
 	font-weight: bold;
 }
-// For using as icon.
 i {
 	display: inline-block;
 }

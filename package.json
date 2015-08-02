@@ -8,14 +8,9 @@
   },
   "author": "Koji Ishimoto",
   "devDependencies": {
-    "browser-sync": "^2.4.0",
-    "watch": "^0.16.0"
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0",
+    "gulp-cssnext": "^1.0.1"
   },
-  "config": {
-    "scsslint": "",
-    "csscomb": "",
-    "stylestats": ""
-  },
-  "scripts": {
-  }
+  "scripts": {}
 }
