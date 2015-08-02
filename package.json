@@ -10,7 +10,10 @@
   "devDependencies": {
     "browser-sync": "^2.8.2",
     "gulp": "^3.9.0",
-    "gulp-cssnext": "^1.0.1"
+    "gulp-cssnext": "^1.0.1",
+    "gulp-postcss": "^5.1.10",
+    "postcss-reporter": "^0.3.1",
+    "stylelint": "^0.6.0"
   },
   "scripts": {}
 }
