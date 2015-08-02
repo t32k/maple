@@ -1,9 +1,9 @@
 var gulp = require('gulp');
+var watch = require('gulp-watch');
 var cssnext = require("gulp-cssnext");
 var browserSync = require('browser-sync').create();
 
-// cssnext
-gulp.task("css", function () {
+gulp.task('css', function () {
   gulp.src('assets/css/maple.css')
     .pipe(cssnext({
       browsers: ['last 2 versions'],
@@ -11,3 +11,9 @@ gulp.task("css", function () {
     }))
     .pipe(gulp.dest('public/files/css/'));
 });
+
+gulp.task('watch', function(){
+  gulp.watch('assets/css/**/*.css', ['css']);
+});
+
+gulp.task('default', ['watch']);
