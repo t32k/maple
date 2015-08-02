@@ -17,25 +17,6 @@ This project use a bunch of npm, so you need [Node.js](https://nodejs.org/).
 $ npm install
 ```
 
-### gem
-
-You need to install [Ruby](https://www.ruby-lang.org/) to use [scss-lint](https://github.com/causes/scss-lint) in advance.
-
-```
-$ gem install sass scss-lint
-```
-
-## Tasks
-
-You don't have to install [grunt](http://gruntjs.com/)/[gulp](http://gulpjs.com/), yay!
-
-
-```
-$ chmod +x bin/build.sh
-# Show all tasks
-$ npm run
-```
-
 ## CSS
 
 ### Module Prefix
@@ -80,48 +61,4 @@ EX.
  + is-animated
  + is-disabled
 
-### Comments
-
-```css
-//-------------------------------------//
-//  First Level
-//-------------------------------------//
-
-//  Second Level
-//-------------------------------------
-
-//  Third Level
-```
-
-
 ## Sass
-
-### Directory structure
-
-```sh
-# stylesheets
-├── maple.scss
-├── _core.scss
-├── _ui.scss
-├── core
-│   ├── _base.scss
-│   ├── _utility.scss
-│   ├── _layout.scss
-│   ├── _reset.scss
-│   └── _settings.scss
-├── ui
-│   ├── elements
-│   │   ├── _button.scss
-│   │   ├── _divider.scss
-│   │   ├── _header.scss
-│   │   └── _input.scss
-│   ├── modules
-│   │   ├── _bar.scss
-│   │   └── _box.scss
-│   └── views
-│       ├── _list.scss
-│       └── _modal.scss
-└── lib
-    ├── _myfont.scss
-    └── _sprite.scss
-```
