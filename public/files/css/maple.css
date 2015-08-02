@@ -6,4 +6,10 @@
 /* @import files
 /*-------------------------------------*/
 
-@import "ui.css";
+.btn {
+	display: block;
+	border-radius: 4px;
+	padding: 0 1em;
+	color: #fff;
+	text-align: center;
+}
