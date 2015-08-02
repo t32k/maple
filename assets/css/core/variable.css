@@ -1,0 +1,39 @@
+/*-------------------------------------*\
+    Variables
+\*-------------------------------------*/
+
+:root {
+    --color-a: #157038;
+    --color-b: #b3cf4d;
+    --color-c: #818181;
+    --color-d: #cc5514;
+    --color-e: #444;
+    --color-f: #555;
+    --color-g: #666;
+    --color-h: #777;
+    --color-i: #888;
+    --color-j: #999;
+
+    --space-base: 6px;
+    --space-2: calc(var(--space-base) * 2);
+    --space-3: calc(var(--space-base) * 4);
+    --space-4: calc(var(--space-base) * 6);
+
+    --font-size-base: 16px;
+    --font-size-1: calc(var(--font-size-base) - 6px);
+    --font-size-2: calc(var(--font-size-base) - 4px);
+    --font-size-3: calc(var(--font-size-base) - 2px);
+    --font-size-4: calc(var(--font-size-base) + 2px);
+    --font-size-5: calc(var(--font-size-base) + 4px);
+    --font-size-6: calc(var(--font-size-base) + 6px);
+
+    --height-tap-1: 26px;
+    --height-tap-2: 32px;
+    --height-tap-3: 42px;
+
+    --radius-base: 4px;
+    --radius-2: calc(var(--radius-base) * 2);
+    --radius-3: calc(var(--radius-base) * 4);
+
+    --font-family-body: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
