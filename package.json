@@ -1,28 +1,14 @@
 {
   "name": "Maple",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A better Front-end Boilerplate Project.",
   "repository": {
     "type": "git",
     "url": "git://github.com/t32k/maple.git"
   },
   "author": "Koji Ishimoto",
-  "dependencies": {
-    "backbone": "^1.1.2",
-    "jquery": "^2.1.3",
-    "underscore": "^1.8.2"
-  },
   "devDependencies": {
-    "autoprefixer": "^5.1.0",
     "browser-sync": "^2.4.0",
-    "browserify": "^11.0.0",
-    "csscomb": "^3.0.4",
-    "csso": "^1.3.11",
-    "jshint": "^2.6.3",
-    "kss": "^2.0.2",
-    "node-sass": "^3.2.0",
-    "stylestats": "^5.1.0",
-    "uglify-js": "^2.4.17",
     "watch": "^0.16.0"
   },
   "config": {
@@ -31,23 +17,5 @@
     "stylestats": ""
   },
   "scripts": {
-    "start": "npm run start-serve & npm run watch",
-    "test": "stylestats public/files/css/maple.css",
-    "start-serve": "browser-sync start --server public/ --files public/files/**/*",
-    "clean": "rm -rf public/files/css/*",
-    "js:min": "uglifyjs public/files/js/app.js > public/files/js/app.min.js",
-    "build:js": "browserify assets/scripts/app.js > public/files/js/app.js",
-    "css:sass": "node-sass assets/styles/maple.scss public/files/css/maple.css",
-    "css:prefix": "autoprefixer -b 'last 2 versions' public/files/css/maple.css",
-    "css:comb": "csscomb -c csscomb.json public/files/css/maple.css",
-    "css:min": "csso public/files/css/maple.css public/files/css/maple.min.css",
-    "build:css": "bin/build-css.sh",
-    "build": "npm run build:js && npm run build:css",
-    "lint:js": "jshint assets/scripts/app.js",
-    "lint:css": "scss-lint assets/styles/**/*.scss",
-    "lint": "npm run lint:js && npm run lint:css",
-    "watch:js": "watch 'npm run build:js' assets/scripts/",
-    "watch:css": "watch 'npm run build:css' assets/styles/",
-    "watch": "npm run watch:js & npm run watch:css"
   }
 }
