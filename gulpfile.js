@@ -12,14 +12,25 @@ gulp.task('css', function () {
             browsers: ['last 2 versions'],
             compress: false
         }))
+        .pipe(postcss([
+            stylelint({
+                'rules': {
+                    'block-no-empty': 2
+                }
+            }),
+            reporter({
+                clearMessages: true
+            })
+        ]))
         .pipe(gulp.dest('public/files/css/'));
 });
 
 gulp.task('serve', function () {
     browserSync.init({
-        server: "public/"
+        server: 'public/',
+        open: false
     });
-    gulp.watch('/css/**/*.css', ['css']);
+    gulp.watch('css/**/*.css', ['css']);
     gulp.watch('public/**/*.html').on('change', browserSync.reload);
 });
 

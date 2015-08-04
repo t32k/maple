@@ -320,9 +320,9 @@ select, button, input, textarea {
 .u-vm { vertical-align: middle !important; }
 .u-vb { vertical-align: bottom !important; }
 .button {
-	display: block;
-	border-radius: 4px;
-	padding: 0 1em;
-	color: #fff;
-	text-align: center;
-}
+	 display: block;
+	 border-radius: 4px;
+	 padding: 0 1em;
+	 color: #fff;
+	 text-align: center;
+ }
