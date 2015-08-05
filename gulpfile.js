@@ -7,7 +7,7 @@ var reporter = require('postcss-reporter');
 
 
 gulp.task('css', function () {
-    gulp.src('css/maple.css')
+    gulp.src('src/css/maple.css')
         .pipe(cssnext({
             browsers: ['last 2 versions'],
             compress: false
@@ -22,16 +22,16 @@ gulp.task('css', function () {
                 clearMessages: true
             })
         ]))
-        .pipe(gulp.dest('public/files/css/'));
+        .pipe(gulp.dest('dist/css/'));
 });
 
 gulp.task('serve', function () {
     browserSync.init({
-        server: 'public/',
+        server: 'dist/',
         open: false
     });
-    gulp.watch('css/**/*.css', ['css']);
-    gulp.watch('public/**/*.html').on('change', browserSync.reload);
+    gulp.watch('src/css/**/*.css', ['css']);
+    gulp.watch('dist/**/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('default', ['serve']);
