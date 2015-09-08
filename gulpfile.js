@@ -18,7 +18,10 @@ gulp.task('css', function () {
     cssnano(),
     stylelint({
       "rules": {
-        "string-quotes": [2,"double"]
+        "string-quotes": [2, "double"],
+        "block-no-empty": 2,
+        "color-hex-case": [2, "lower"],
+        "selector-no-id": 2
       }
     }),
     reporter({
