@@ -8,17 +8,19 @@
     "url": "git://github.com/t32k/maple.git"
   },
   "engines": {
-    "node": "0.12"
+    "node": "^0.12"
   },
   "scripts": {
     "start": "gulp serve"
   },
   "devDependencies": {
+    "autoprefixer": "^6.0.2",
     "browser-sync": "^2.8.2",
+    "cssnano": "^3.0.0",
     "gulp": "^3.9.0",
-    "gulp-cssnext": "^1.0.1",
-    "gulp-postcss": "^5.1.10",
-    "postcss-reporter": "^0.3.1",
-    "stylelint": "^0.6.0"
+    "gulp-postcss": "^6.0.0",
+    "postcss-calc": "^5.0.0",
+    "postcss-custom-properties": "^5.0.0",
+    "postcss-import": "^7.0.0"
   }
 }

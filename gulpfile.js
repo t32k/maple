@@ -1,28 +1,24 @@
 var gulp = require('gulp');
-var cssnext = require('gulp-cssnext');
-var browserSync = require('browser-sync').create();
+var browserSync = require('browser-sync');
 var postcss = require('gulp-postcss');
-var stylelint = require('stylelint');
-var reporter = require('postcss-reporter');
+var atImport = require('postcss-import');
+var customProperties = require('postcss-custom-properties');
+var calc = require('postcss-calc');
+var autoprefixer = require('autoprefixer');
+var cssnano = require('cssnano');
 
 
 gulp.task('css', function () {
-    gulp.src('src/css/maple.css')
-        .pipe(cssnext({
-            browsers: ['last 2 versions'],
-            compress: false
-        }))
-        .pipe(postcss([
-            stylelint({
-                'rules': {
-                    'block-no-empty': 2
-                }
-            }),
-            reporter({
-                clearMessages: true
-            })
-        ]))
-        .pipe(gulp.dest('dist/css/'));
+    var processors = [
+        atImport(),
+        customProperties(),
+        calc(),
+        autoprefixer({browsers: ['last 2 version']}),
+        cssnano()
+    ];
+    return gulp.src('./src/css/*.css')
+        .pipe(postcss(processors))
+        .pipe(gulp.dest('./dest/css'));
 });
 
 gulp.task('serve', function () {
