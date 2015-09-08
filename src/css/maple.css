@@ -3,10 +3,3 @@
 @import "core/base.css";
 @import "core/utility";
 @import "ui/button.css";
-
-
-a {
-
-    content: '';
-    color: red
-}
