@@ -24,12 +24,7 @@
     "type": "git",
     "url": "git://github.com/t32k/maple.git"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/t32k/maple/blob/master/LICENSE"
-    }
-  ],
+  "license": "MIT",
   "engines": {
     "node": ">=0.12"
   },
@@ -44,6 +39,8 @@
     "gulp-postcss": "^6.0.0",
     "postcss-calc": "^5.0.0",
     "postcss-custom-properties": "^5.0.0",
-    "postcss-import": "^7.0.0"
+    "postcss-import": "^7.0.0",
+    "postcss-reporter": "^1.1.0",
+    "stylelint": "^1.0.1"
   }
 }
