@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var postcss = require('gulp-postcss');
 var atImport = require('postcss-import');
-var customProperties = require('postcss-custom-properties');
+var customProps = require('postcss-custom-properties');
 var calc = require('postcss-calc');
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
@@ -11,7 +11,7 @@ var cssnano = require('cssnano');
 gulp.task('css', function () {
     var processors = [
         atImport(),
-        customProperties(),
+        customProps(),
         calc(),
         autoprefixer({browsers: ['last 2 version']}),
         cssnano()

@@ -1,19 +1,42 @@
 {
   "name": "Maple",
   "version": "0.3.0",
-  "author": "Koji Ishimoto",
   "description": "A better Front-end Boilerplate Project.",
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Front-end"
+  ],
+  "homepage": "https://github.com/t32k/maple",
+  "bugs": "https://github.com/t32k/maple/issues",
+  "author": {
+    "name": "Koji Ishimoto",
+    "email": "ijok.ijok@gmail.com",
+    "web": "http://t32k.me"
+  },
+  "contributors": [
+    {
+      "name": "Hiroki Tani",
+      "web": "http://inkdesign.jp"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/t32k/maple.git"
   },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/t32k/maple/blob/master/LICENSE"
+    }
+  ],
   "engines": {
-    "node": "^0.12"
+    "node": ">=0.12"
   },
   "scripts": {
     "start": "gulp serve"
   },
-  "devDependencies": {
+  "dependencies": {
     "autoprefixer": "^6.0.2",
     "browser-sync": "^2.8.2",
     "cssnano": "^3.0.0",
