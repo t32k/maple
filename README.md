@@ -1,8 +1,6 @@
 # Maple 
 
-This is alpha version, yet.
-
-## Features
+This project is alpha version, forever.
 
 ## Installation
 
