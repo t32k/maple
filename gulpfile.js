@@ -23,11 +23,11 @@ gulp.task('css', function () {
 
 gulp.task('serve', function () {
     browserSync.init({
-        server: 'dist/',
+        server: 'dest/',
         open: false
     });
     gulp.watch('src/css/**/*.css', ['css']);
-    gulp.watch('dist/**/*.html').on('change', browserSync.reload);
+    gulp.watch('dest/**/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('default', ['serve']);

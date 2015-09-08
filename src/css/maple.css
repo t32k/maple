@@ -1,5 +1,5 @@
-@import "core/reset.css";
 @import "core/variable.css";
+@import "core/reset.css";
 @import "core/base.css";
 @import "core/utility";
 @import "ui/button.css";
