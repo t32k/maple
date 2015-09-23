@@ -14,19 +14,13 @@
     "email": "ijok.ijok@gmail.com",
     "web": "http://t32k.me"
   },
-  "contributors": [
-    {
-      "name": "Hiroki Tani",
-      "web": "http://inkdesign.jp"
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/t32k/maple.git"
   },
   "license": "MIT",
   "engines": {
-    "node": ">=0.12"
+    "node": ">=4.0"
   },
   "scripts": {
     "start": "gulp serve"
