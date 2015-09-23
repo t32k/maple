@@ -38,6 +38,8 @@
     "stylelint": "^1.0.1"
   },
   "devDependencies": {
+    "gulp-babel": "^5.2.1",
+    "gulp-concat": "^2.6.0",
     "gulp-sourcemaps": "^1.5.2"
   }
 }
