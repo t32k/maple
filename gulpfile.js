@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var postcss = require('gulp-postcss');
+var sourcemaps = require('gulp-sourcemaps');
 var processors = [
   require('postcss-import'),
   require('postcss-custom-properties'),
@@ -22,7 +23,9 @@ var processors = [
 
 gulp.task('css', function () {
   return gulp.src('./src/css/*.css')
+    .pipe(sourcemaps.init())
     .pipe(postcss(processors))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./dest/css'));
 });
 
