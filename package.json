@@ -23,7 +23,8 @@
     "node": ">=4.0"
   },
   "scripts": {
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "build": "gulp build"
   },
   "dependencies": {
     "autoprefixer": "^6.0.2",
