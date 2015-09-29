@@ -1,7 +1,7 @@
 {
   "name": "Maple",
   "version": "0.3.0",
-  "description": "A better Front-end Boilerplate Project.",
+  "description": "A Better Front-End Boilerplate Project.",
   "keywords": [
     "HTML",
     "CSS",
@@ -14,24 +14,18 @@
     "email": "ijok.ijok@gmail.com",
     "web": "http://t32k.me"
   },
-  "contributors": [
-    {
-      "name": "Hiroki Tani",
-      "web": "http://inkdesign.jp"
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/t32k/maple.git"
   },
-  "license": "MIT",
   "engines": {
-    "node": ">=0.12"
+    "node": ">=4.0"
   },
   "scripts": {
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "build": "gulp build"
   },
-  "dependencies": {
+  "devDependencies": {
     "autoprefixer": "^6.0.2",
     "browser-sync": "^2.8.2",
     "cssnano": "^3.0.0",
@@ -41,9 +35,11 @@
     "postcss-custom-properties": "^5.0.0",
     "postcss-import": "^7.0.0",
     "postcss-reporter": "^1.1.0",
-    "stylelint": "^1.0.1"
+    "stylelint": "^1.0.1",
+    "kss": "^2.1.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sourcemaps": "^1.5.2"
   },
-  "devDependencies": {
-    "kss": "^2.1.0"
-  }
+  "license": "MIT"
 }
