@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var sourcemaps = require('gulp-sourcemaps');
 var babel = require('gulp-babel');
+var eslint = require('gulp-eslint');
 var concat = require('gulp-concat');
 var postcss = require('gulp-postcss');
 var processors = [
@@ -26,6 +27,8 @@ var processors = [
 gulp.task('js', function () {
   return gulp.src('src/**/*.js')
     .pipe(sourcemaps.init())
+    .pipe(eslint())
+    .pipe(eslint.format())
     .pipe(babel())
     .pipe(concat('app.js'))
     .pipe(sourcemaps.write('.'))
