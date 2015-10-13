@@ -3,7 +3,6 @@ var browserSync = require('browser-sync');
 var sourcemaps = require('gulp-sourcemaps');
 var babel = require('gulp-babel');
 var eslint = require('gulp-eslint');
-var concat = require('gulp-concat');
 var postcss = require('gulp-postcss');
 var del = require('del');
 var processors = [
@@ -17,6 +16,9 @@ var processors = [
     clearMessages: true
   })
 ];
+
+var browserify = require('browserify');
+var babelify = require('babelify');
 
 // Clean Dir
 gulp.task('clean', function () {
@@ -32,7 +34,6 @@ gulp.task('js', function () {
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(babel())
-    .pipe(concat('app.js'))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dest/js'));
 });
