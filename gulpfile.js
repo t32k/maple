@@ -25,12 +25,14 @@ var processors = [
   })
 ];
 
-gulp.task('clean', function(cb){
+// Clean Dir
+gulp.task('clean', function () {
   del(['dest/js', 'dest/css']).then(function (paths) {
     console.log('Deleted files/folders:\n', paths.join('\n'));
   });
 });
 
+// JavaScript Task
 gulp.task('js', function () {
   return gulp.src('src/**/*.js')
     .pipe(sourcemaps.init())
@@ -42,8 +44,9 @@ gulp.task('js', function () {
     .pipe(gulp.dest('dest/js'));
 });
 
+// CSS Task
 gulp.task('css', function () {
-  return gulp.src('src/**/*.css')
+  return gulp.src('src/css/maple.css')
     .pipe(sourcemaps.init())
     .pipe(postcss(processors))
     .pipe(sourcemaps.write('.'))
