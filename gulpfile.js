@@ -12,14 +12,7 @@ var processors = [
   require('postcss-calc'),
   require('autoprefixer')({browsers: ['last 2 version']}),
   require('cssnano'),
-  require('stylelint')({
-    'rules': {
-      'string-quotes': [2, 'double'],
-      'block-no-empty': 2,
-      'color-hex-case': [2, 'lower'],
-      'selector-no-id': 2
-    }
-  }),
+  require('stylelint')(),
   require('postcss-reporter')({
     clearMessages: true
   })
