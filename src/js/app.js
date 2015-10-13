@@ -1,6 +1,6 @@
 require('babel/polyfill');
 
-var log = message =>
+var log = (message) =>
   console.log(message);
 
 log('Hello Babel!');

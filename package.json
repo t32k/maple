@@ -44,7 +44,7 @@
     "postcss-custom-properties": "^5.0.0",
     "postcss-import": "^7.0.0",
     "postcss-reporter": "^1.1.0",
-    "stylelint": "^1.0.1",
+    "stylelint": "^1.2.1",
     "watchify": "^3.4.0"
   },
   "license": "MIT"
