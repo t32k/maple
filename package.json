@@ -26,9 +26,11 @@
     "build": "gulp build"
   },
   "devDependencies": {
-    "babel": "^5.8.23",
     "autoprefixer": "^6.0.2",
+    "babel": "^5.8.23",
+    "babelify": "^6.3.0",
     "browser-sync": "^2.8.2",
+    "browserify": "^11.2.0",
     "cssnano": "^3.0.0",
     "gulp": "^3.9.0",
     "gulp-babel": "^5.2.1",
@@ -41,7 +43,8 @@
     "postcss-custom-properties": "^5.0.0",
     "postcss-import": "^7.0.0",
     "postcss-reporter": "^1.1.0",
-    "stylelint": "^1.0.1"
+    "stylelint": "^1.0.1",
+    "watchify": "^3.4.0"
   },
   "license": "MIT"
 }
