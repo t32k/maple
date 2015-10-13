@@ -19,6 +19,7 @@ var processors = [
 
 var browserify = require('browserify');
 var babelify = require('babelify');
+var uglify = require('gulp-uglify');
 
 // Clean Dir
 gulp.task('clean', function () {
@@ -29,11 +30,12 @@ gulp.task('clean', function () {
 
 // JavaScript Task
 gulp.task('js', function () {
-  return gulp.src('src/**/*.js')
+  return gulp.src('src/js/app.js')
     .pipe(sourcemaps.init())
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(babel())
+    .pipe(uglify())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dest/js'));
 });
