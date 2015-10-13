@@ -5,6 +5,7 @@ var babel = require('gulp-babel');
 var eslint = require('gulp-eslint');
 var concat = require('gulp-concat');
 var postcss = require('gulp-postcss');
+var del = require('del');
 var processors = [
   require('postcss-import'),
   require('postcss-custom-properties'),
@@ -23,6 +24,12 @@ var processors = [
     clearMessages: true
   })
 ];
+
+gulp.task('clean', function(cb){
+  del(['dest/js', 'dest/css']).then(function (paths) {
+    console.log('Deleted files/folders:\n', paths.join('\n'));
+  });
+});
 
 gulp.task('js', function () {
   return gulp.src('src/**/*.js')
