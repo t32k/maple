@@ -26,6 +26,7 @@
     "build": "gulp build"
   },
   "devDependencies": {
+    "babel": "^5.8.23",
     "autoprefixer": "^6.0.2",
     "browser-sync": "^2.8.2",
     "cssnano": "^3.0.0",

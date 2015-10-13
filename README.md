@@ -4,7 +4,7 @@ This project is alpha version, forever.
 
 ## Features
 
-Require [PostCSS](https://github.com/postcss/postcss).
+Require [Babel](https://babeljs.io/), [PostCSS](https://github.com/postcss/postcss).
 
 ### Plugins
 
