@@ -48,15 +48,12 @@ function compile(watch) {
   }
   rebundle();
 }
-function watch() {
-  return compile(true);
-}
 
 gulp.task('build:js', function () {
   return compile();
 });
 gulp.task('watch:js', function () {
-  return watch();
+  return compile(true);
 });
 
 // Clean Dir
@@ -66,7 +63,7 @@ gulp.task('clean', function () {
   });
 });
 
-// JavaScript Task
+// ES Lint Task
 gulp.task('lint:js', function () {
   return gulp.src('src/js/app.js')
     .pipe(eslint())
