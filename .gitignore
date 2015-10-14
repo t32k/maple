@@ -1,5 +1,3 @@
 node_modules
-dest/css/maple.css
-dest/js/app.js
 *.map
 npm-debug.log

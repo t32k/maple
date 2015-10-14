@@ -4,7 +4,7 @@ This project is alpha version, forever.
 
 ## Installation
 
-Firtst up, you have to install latest [Node.js](https://nodejs.org/en/).
+Firtst up, you have to install the latest [Node.js](https://nodejs.org/en/).
 
 Next, please type the following commands.
 
@@ -15,7 +15,7 @@ $ npm install
 $ npm start
 ```
 
-### Taking Future Syntax
+## Taking Future Syntaxes
 
 + JavaScript: [Babel](https://babeljs.io/)
 + CSS: [cssnext](http://cssnext.io/)(some specs only)
