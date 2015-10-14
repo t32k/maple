@@ -1,3 +1,5 @@
 node_modules
-npm-debug.log
+dest/css/maple.css
+dest/js/app.js
 *.map
+npm-debug.log

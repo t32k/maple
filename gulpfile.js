@@ -3,6 +3,12 @@ var browserSync = require('browser-sync');
 var sourcemaps = require('gulp-sourcemaps');
 var eslint = require('gulp-eslint');
 var postcss = require('gulp-postcss');
+var source = require('vinyl-source-stream');
+var buffer = require('vinyl-buffer');
+var browserify = require('browserify');
+var babelify = require('babelify');
+var watchify = require('watchify');
+var uglify = require('gulp-uglify');
 var del = require('del');
 var processors = [
   require('postcss-import'),
@@ -16,17 +22,10 @@ var processors = [
   })
 ];
 
-var source = require('vinyl-source-stream');
-var buffer = require('vinyl-buffer');
-var browserify = require('browserify');
-var babelify = require('babelify');
-var watchify = require('watchify');
-var uglify = require('gulp-uglify');
-
-// Thanks
-// https://gist.github.com/danharper/3ca2273125f500429945
+// Thanks @danharper, https://gist.github.com/danharper/3ca2273125f500429945
 function compile(watch) {
   var bundler = watchify(browserify('src/js/app.js', {debug: true}).transform(babelify));
+
   function rebundle() {
     bundler.bundle()
       .on('error', function (err) {
@@ -35,11 +34,12 @@ function compile(watch) {
       })
       .pipe(source('app.js'))
       .pipe(buffer())
-      .pipe(sourcemaps.init()
+      .pipe(sourcemaps.init({loadMaps: true}))
       .pipe(uglify())
       .pipe(sourcemaps.write('./'))
       .pipe(gulp.dest('dest/js'));
   }
+
   if (watch) {
     bundler.on('update', function () {
       console.log('-> bundling...');
@@ -48,13 +48,16 @@ function compile(watch) {
   }
   rebundle();
 }
-
 function watch() {
   return compile(true);
 }
-gulp.task('build:js', function() { return compile(); });
-gulp.task('watch:js', function() { return watch(); });
 
+gulp.task('build:js', function () {
+  return compile();
+});
+gulp.task('watch:js', function () {
+  return watch();
+});
 
 // Clean Dir
 gulp.task('clean', function () {
@@ -63,8 +66,8 @@ gulp.task('clean', function () {
   });
 });
 
-// ES Lint
-gulp.task('lint', function () {
+// JavaScript Task
+gulp.task('lint:js', function () {
   return gulp.src('src/js/app.js')
     .pipe(eslint())
     .pipe(eslint.format());
@@ -84,7 +87,7 @@ gulp.task('serve', function () {
     server: 'dest/',
     open: false
   });
-  gulp.watch('src/**/*.js', ['js']);
+  gulp.watch('src/**/*.js', ['lint:js', 'watch:js']);
   gulp.watch('src/**/*.css', ['css']);
   gulp.watch('dest/**/*.html').on('change', browserSync.reload);
 });
