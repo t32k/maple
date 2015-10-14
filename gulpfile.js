@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var sourcemaps = require('gulp-sourcemaps');
-var babel = require('gulp-babel');
 var eslint = require('gulp-eslint');
 var postcss = require('gulp-postcss');
 var del = require('del');
@@ -17,10 +16,45 @@ var processors = [
   })
 ];
 
+var source = require('vinyl-source-stream');
+var buffer = require('vinyl-buffer');
 var browserify = require('browserify');
 var babelify = require('babelify');
 var watchify = require('watchify');
 var uglify = require('gulp-uglify');
+
+// Thanks
+// https://gist.github.com/danharper/3ca2273125f500429945
+function compile(watch) {
+  var bundler = watchify(browserify('src/js/app.js', {debug: true}).transform(babelify));
+  function rebundle() {
+    bundler.bundle()
+      .on('error', function (err) {
+        console.error(err);
+        this.emit('end');
+      })
+      .pipe(source('app.js'))
+      .pipe(buffer())
+      .pipe(sourcemaps.init()
+      .pipe(uglify())
+      .pipe(sourcemaps.write('./'))
+      .pipe(gulp.dest('dest/js'));
+  }
+  if (watch) {
+    bundler.on('update', function () {
+      console.log('-> bundling...');
+      rebundle();
+    });
+  }
+  rebundle();
+}
+
+function watch() {
+  return compile(true);
+}
+gulp.task('build:js', function() { return compile(); });
+gulp.task('watch:js', function() { return watch(); });
+
 
 // Clean Dir
 gulp.task('clean', function () {
@@ -29,16 +63,11 @@ gulp.task('clean', function () {
   });
 });
 
-// JavaScript Task
-gulp.task('js', function () {
+// ES Lint
+gulp.task('lint', function () {
   return gulp.src('src/js/app.js')
-    .pipe(sourcemaps.init())
     .pipe(eslint())
-    .pipe(eslint.format())
-    .pipe(babel())
-    .pipe(uglify())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('dest/js'));
+    .pipe(eslint.format());
 });
 
 // CSS Task

@@ -25,16 +25,17 @@
     "start": "gulp serve",
     "build": "gulp build"
   },
+  "dependencies": {
+    "babel": "^5.8.23"
+  },
   "devDependencies": {
     "autoprefixer": "^6.0.2",
-    "babel": "^5.8.23",
     "babelify": "^6.3.0",
     "browser-sync": "^2.8.2",
     "browserify": "^11.2.0",
     "cssnano": "^3.0.0",
     "del": "^2.0.2",
     "gulp": "^3.9.0",
-    "gulp-babel": "^5.2.1",
     "gulp-eslint": "^1.0.0",
     "gulp-postcss": "^6.0.0",
     "gulp-sourcemaps": "^1.5.2",
@@ -45,6 +46,8 @@
     "postcss-import": "^7.0.0",
     "postcss-reporter": "^1.1.0",
     "stylelint": "^1.2.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.4.0"
   },
   "license": "MIT"
